@@ -1,0 +1,526 @@
+<html lang="en">
+
+<head>
+    <meta name="google-site-verification" content="ftFOlJETX-2KNjaPh8W6s8lhigItRuu9fOmjHZZ0nY0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>A-FRCNN</title>
+    <style type="text/css">
+        table {
+            width: 100%;
+            table-layout: fixed;
+        }
+        
+        audio {
+            width: 100%;
+        }
+        
+        thead>tr>th:first-child {
+            width: 96px;
+        }
+        
+        @media (max-width: 767px) {
+            .big-screen {
+                display: none;
+            }
+        }
+        
+        @media (min-width: 767px) {
+            .small-screen {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+
+<body data-gr-c-s-loaded="true">
+    <header class="header">
+        <div class="jumbotron bg-dark text-center">
+            <div class="container ">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <h2><a class="text-light">
+                                                        Speech Separation Using an Asynchronous Fully Recurrent Convolutional Neural Network </a></h2>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                        <div class="row">
+                            <div class="col-md col-sm-12">
+                                <a class="text-light" href="#">Xiaolin Hu<sup>1,*,#</sup>, </a>
+                                <a class="text-light" href="#">Kai Li (tsinghua.kaili@gmail.com)<sup>1,#</sup>, </a>
+                                <a class="text-light" href="#">Weiyi Zhang<sup>1</sup> </a>
+                                <a class="text-light" href="#">Yi Luo<sup>2</sup> </a>
+                                <a class="text-light" href="#">Jean-Marie Lemercier<sup>3</sup> </a>
+                                <a class="text-light" href="#">Timo Gerkmann<sup>3</sup> </a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="col-md col-sm-12"><a class="text-light" href="#">1.
+                                Department of Computer Science and Technology, Tsinghua University, Beijing, China</a>
+                            </div>
+                            <div class="col-md col-sm-12"><a class="text-light" href="#">2.
+                                Department of Electrical Engineering, Columbia University, NY, USA</a>
+                            </div>
+                            <div class="col-md col-sm-12"><a class="text-light" href="#">2.
+                                Department of Informatics, University Hamburg, Hamburg, Germany</a>
+                            </div>
+                            <div class="col-md col-sm-12"><a class="text-light" href="#">*Corresponding Author</a>
+                            </div>
+                            <div class="col-md col-sm-12"><a class="text-light" href="#">#These authors contributed equally to this work</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <p></p>
+                    <div class="row">
+                    </div>
+                    <p></p>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="container">
+        <div class="row" id="result">
+            <div class="col-md-12">
+                <h2>Speech Samples</h2>
+                <hr>
+                <p>The model is evaluated with Libri2mix from:<br> librimix: an open-source dataset for generalizable speech separation [<a class="text-success" href="#1">1</a>]:
+                </p>
+                <table class="table table-responsive">
+                    <thead class="w-100">
+                        <tr style="border-top:1px solid black" class="text-center">
+                            <th style="width: 180px;">Mixture input</th>
+                            <th style="width: 180px;">DPCL<sup><a class="text-success"
+                                                                                href="#2">2</a></sup></th>
+                            <th style="width: 180px;">uPIT<sup><a class="text-success"
+                                                                                href="#3">3</a></sup></th>
+                            <th style="width: 180px;">Conv-TasNet<sup><a
+                                                                                class="text-success"
+                                                                                href="#4">4</a></sup></th>
+                            <th style="width: 180px;">SudoRMRF 1.0x<sup><a
+                                                                                class="text-success"
+                                                                                href="#5">5</a></sup></th>
+                            <th style="width: 180px;">Dual-Path-RNN<sup><a
+                                                                                class="text-success"
+                                                                                href="#6">6</a></sup></th>
+                            <th style="width: 180px;">A-FRCNN-16</th>
+                            <th style="width: 180px;">Ground-Truth</th>
+                        </tr>
+                    </thead>
+                    <tbody class="w-100">
+                        <tr style="border-top:1px solid black">
+                            <td scope="row" rowspan="2"><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./mix/260-123286-0023_2830-3980-0030.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./DPCL/s1/260-123286-0023_2830-3980-0030.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./uPIT/s1/260-123286-0023_2830-3980-0030.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./Conv-TasNet/s1/260-123286-0023_2830-3980-0030.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./SudoRMRF 1.0x/s1/260-123286-0023_2830-3980-0030.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./DualPathRNN/s1/260-123286-0023_2830-3980-0030.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./A-FRCNN-16/s1/260-123286-0023_2830-3980-0030.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./Ground Truth/s1/260-123286-0023_2830-3980-0030.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./DPCL/s2/260-123286-0023_2830-3980-0030.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./uPIT/s2/260-123286-0023_2830-3980-0030.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./Conv-TasNet/s2/260-123286-0023_2830-3980-0030.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./SudoRMRF 1.0x/s2/260-123286-0023_2830-3980-0030.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./DualPathRNN/s2/260-123286-0023_2830-3980-0030.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./A-FRCNN-16/s2/260-123286-0023_2830-3980-0030.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./Ground Truth/s2/260-123286-0023_2830-3980-0030.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                        </tr>
+
+
+
+                        <tr style="border-top:1px solid black">
+                            <td scope="row" rowspan="2"><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./mix/5683-32866-0013_8555-284447-0024.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./DPCL/s1/5683-32866-0013_8555-284447-0024.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./uPIT/s1/5683-32866-0013_8555-284447-0024.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./Conv-TasNet/s1/5683-32866-0013_8555-284447-0024.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./SudoRMRF 1.0x/s1/5683-32866-0013_8555-284447-0024.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./DualPathRNN/s1/5683-32866-0013_8555-284447-0024.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./A-FRCNN-16/s1/5683-32866-0013_8555-284447-0024.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./Ground Truth/s1/5683-32866-0013_8555-284447-0024.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./DPCL/s2/5683-32866-0013_8555-284447-0024.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./uPIT/s2/5683-32866-0013_8555-284447-0024.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./Conv-TasNet/s2/5683-32866-0013_8555-284447-0024.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./SudoRMRF 1.0x/s2/5683-32866-0013_8555-284447-0024.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./DualPathRNN/s2/5683-32866-0013_8555-284447-0024.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./A-FRCNN-16/s2/5683-32866-0013_8555-284447-0024.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./Ground Truth/s2/5683-32866-0013_8555-284447-0024.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                        </tr>
+
+
+
+                        <tr style="border-top:1px solid black">
+                            <td scope="row" rowspan="2"><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./mix/61-70968-0035_4446-2273-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./DPCL/s1/61-70968-0035_4446-2273-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./uPIT/s1/61-70968-0035_4446-2273-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./Conv-TasNet/s1/61-70968-0035_4446-2273-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./SudoRMRF 1.0x/s1/61-70968-0035_4446-2273-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./DualPathRNN/s1/61-70968-0035_4446-2273-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./A-FRCNN-16/s1/61-70968-0035_4446-2273-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./Ground Truth/s1/61-70968-0035_4446-2273-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./DPCL/s2/61-70968-0035_4446-2273-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./uPIT/s2/61-70968-0035_4446-2273-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./Conv-TasNet/s2/61-70968-0035_4446-2273-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./SudoRMRF 1.0x/s2/61-70968-0035_4446-2273-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./DualPathRNN/s2/61-70968-0035_4446-2273-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./A-FRCNN-16/s2/61-70968-0035_4446-2273-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./Ground Truth/s2/61-70968-0035_4446-2273-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                        </tr>
+
+
+                        <tr style="border-top:1px solid black">
+                            <td scope="row" rowspan="2"><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./mix/6829-68769-0002_3729-6852-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./DPCL/s1/6829-68769-0002_3729-6852-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./uPIT/s1/6829-68769-0002_3729-6852-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./Conv-TasNet/s1/6829-68769-0002_3729-6852-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./SudoRMRF 1.0x/s1/6829-68769-0002_3729-6852-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./DualPathRNN/s1/6829-68769-0002_3729-6852-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./A-FRCNN-16/s1/6829-68769-0002_3729-6852-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./Ground Truth/s1/6829-68769-0002_3729-6852-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./DPCL/s2/6829-68769-0002_3729-6852-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./uPIT/s2/6829-68769-0002_3729-6852-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./Conv-TasNet/s2/6829-68769-0002_3729-6852-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./SudoRMRF 1.0x/s2/6829-68769-0002_3729-6852-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./DualPathRNN/s2/6829-68769-0002_3729-6852-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./A-FRCNN-16/s2/6829-68769-0002_3729-6852-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./Ground Truth/s2/6829-68769-0002_3729-6852-0016.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                        </tr>
+
+
+                        <tr style="border-top:1px solid black">
+                            <td scope="row" rowspan="2"><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./mix/8555-284449-0018_8463-287645-0000.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./DPCL/s1/8555-284449-0018_8463-287645-0000.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./uPIT/s1/8555-284449-0018_8463-287645-0000.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./Conv-TasNet/s1/8555-284449-0018_8463-287645-0000.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./SudoRMRF 1.0x/s1/8555-284449-0018_8463-287645-0000.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./DualPathRNN/s1/8555-284449-0018_8463-287645-0000.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./A-FRCNN-16/s1/8555-284449-0018_8463-287645-0000.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./Ground Truth/s1/8555-284449-0018_8463-287645-0000.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./DPCL/s2/8555-284449-0018_8463-287645-0000.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./uPIT/s2/8555-284449-0018_8463-287645-0000.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./Conv-TasNet/s2/8555-284449-0018_8463-287645-0000.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./SudoRMRF 1.0x/s2/8555-284449-0018_8463-287645-0000.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./DualPathRNN/s2/8555-284449-0018_8463-287645-0000.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./A-FRCNN-16/s2/8555-284449-0018_8463-287645-0000.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                                                        <source src="./Ground Truth/s2/8555-284449-0018_8463-287645-0000.wav"
+                                                                                type="audio/wav">
+                                                                </audio></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <hr>
+        <div class="row" id="ref">
+            <div class="col">
+                <h2>Material</h2>
+                <div class="col-sm-12" style="padding-left: 0px">
+                    <a class="text-dark" href="#" style="margin-right: 10px;">
+                        <font size="4">[Main]</font>
+                    </a>
+                    <a class="text-dark" href="#" style="margin-right: 10px;">
+                        <font size="4">[Supp]</font>
+                    </a>
+                    <a class="text-dark" href="./bib.txt" style="margin-right: 10px;">
+                        <font size="4">[Bibtex]</font>
+                    </a>
+                    <a class="text-dark" href="https://github.com/JusperLee/AFRCNN-For-Speech-Separation" style="margin-right: 10px;">
+                        <font size="4">[Code]</font>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="ref">
+            <div class="col">
+                <h2>References</h2>
+                <div>
+                    <p>
+                        <a name="1">[1]</a> Cosentino J, Pariente M, Cornell S, et al. LibriMix: An Open-Source Dataset for Generalizable Speech Separation[J]. arXiv preprint arXiv:2005.11262, 2020.
+                    </p>
+                    <p>
+                        <a name="2">[2]</a> Hershey J R, Chen Z, Le Roux J, et al. Deep clustering: Discriminative embeddings for segmentation and separation[C]//2016 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE,
+                        2016: 31-35.
+
+                    </p>
+                    <p>
+                        <a name="3">[3]</a> Kolbæk M, Yu D, Tan Z H, et al. Multitalker speech separation with utterance-level permutation invariant training of deep recurrent neural networks[J]. IEEE/ACM Transactions on Audio, Speech, and Language Processing,
+                        2017, 25(10): 1901-1913.
+                    </p>
+                    <p>
+                        <a name="4">[4]</a> Luo Y, Mesgarani N. Conv-tasnet: Surpassing ideal time–frequency magnitude masking for speech separation[J]. IEEE/ACM transactions on audio, speech, and language processing, 2019, 27(8): 1256-1266.
+
+                    </p>
+                    <p>
+                        <a name="5">[5]</a> Tzinis E, Wang Z, Smaragdis P. Sudo rm-rf: Efficient networks for universal audio source separation[C]//2020 IEEE 30th International Workshop on Machine Learning for Signal Processing (MLSP). IEEE, 2020: 1-6.
+                    </p>
+                    <p>
+                        <a name="6">[6]</a> Luo Y, Chen Z, Yoshioka T. Dual-path rnn: efficient long sequence modeling for time-domain single-channel speech separation[C]//ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal
+                        Processing (ICASSP). IEEE, 2020: 46-50.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- <div class="row" id="contact">
+          <div class="col">
+            <h2>Contact</h2>
+            <div></div>
+          </div>
+        </div> -->
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+    </script>
+
+
+</body>
+
+</html>
