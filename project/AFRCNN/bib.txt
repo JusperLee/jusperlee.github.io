@@ -1,6 +1,6 @@
 @inproceedings{gao2021VisualVoice,
   title = {Speech Separation Using an Asynchronous FullyRecurrent Convolutional Neural Network},
-  author = {Xiaolin Hu1, Kai Li, Weiyi Zhang, Yi Luo, Jean-Marie Lemercier, Timo Gerkmann},
+  author = {Xiaolin Hu, Kai Li, Weiyi Zhang, Yi Luo, Jean-Marie Lemercier, Timo Gerkmann},
   booktitle = {NeurIPS},
   year = {2021}
 }
