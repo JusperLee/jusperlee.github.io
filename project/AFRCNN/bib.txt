@@ -1,5 +1,5 @@
 @inproceedings{afrcnnnips2021,
-  title = {Speech Separation Using an Asynchronous FullyRecurrent Convolutional Neural Network},
+  title = {Speech Separation Using an Asynchronous Fully Recurrent Convolutional Neural Network},
   author = {Xiaolin Hu, Kai Li, Weiyi Zhang, Yi Luo, Jean-Marie Lemercier, Timo Gerkmann},
   booktitle = {NeurIPS},
   year = {2021}
