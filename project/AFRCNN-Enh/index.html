@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Speech Enhancement using an Asynchronous Fully Recurrent Convolutional Neural Network</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="../../img/ico.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("#div1").toggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <br>
+                <h1>Speech Enhancement using an Asynchronous Fully Recurrent Convolutional Neural Network</h1>
+                <br>
+                <h4><a href="https://cslikai.cn/">Kai&nbsp;Li</a><sup>1</sup></h4>
+            </div>
+            <div class="col-xs-12 text-center">
+                <h4><sup>1</sup>Tsinghua University, Beijing&nbsp;China</h4>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <img class="img-responsive" src="./pipeline.png">
+                    </div>
+                    <!-- <div class="col-xs-12 col-sm-4" style="margin-top: 5%">
+                        <img class="img-responsive" src="img/ours_0087.gif">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-left">
+                <h3>Abstract</h3>
+                <p>Speech enhancement (SE) aims to improve the intelligibility of speech signals in the presence of noise, which contributes to the recognition accuracy of the speech (automatic speech recognition). In this study, thanks to the successful
+                    application of our previously proposed Asynchronous Fully Recurrent Convolutional Neural Network (AFRCNN) to speech separation task showing the better separation performance, we use AFRCNN as the backbone of the speech enhancement
+                    network. Besides, in order to optimize the intelligibility of the enhanced signal, we consider speech information for training the SE model, which is computed using the potential representations of the wav2vec model. This powerful
+                    self-supervised encoder can produce abundant speech representations. We use a multi-task learning approach to train our model, employing the wasserstein distance as the distance between the speech representations and using signal level
+                    loss (SDR loss) to measure the gap between the augmented signal and the target signal. Our experimental results shown that AFRCNN-Enh can achieve the competitive performance in normalization quality and intelligibility evaluation of
+                    the Voice Bank–DEMAND dataset. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-left">
+                <h3>Links</h3>
+                <!-- <a href="#">
+                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span> Paper</button>
+                </a> -->
+                <!-- <a href="#">
+                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span> Supplementary Material (11MB)</button>
+                </a> -->
+                <a href="https://github.com/JusperLee/AFRCNN-For-Speech-Separation">
+                    <button type="button" class="btn btn-primary"><img src="./GitHub-Mark-Light-32px.png" height="16px">
+                        Codes</button>
+                </a>
+                <a href="https://zenodo.org/record/1227121#.Yb8XTxNBzzc">
+                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-folder-open"
+                            aria-hidden="true"></span>&nbsp;&nbsp;DEMAND Dataset</button>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-left">
+                <h3>Examples</h3>
+                <button type="button" class="btn btn-info">More Comparisons <span
+                        class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+                <!-- <a href="result.html"><button type="button" class="btn btn-info">Full Results on ETH3D Datasets <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button></a> -->
+                <a href="https://1drv.ms/u/s!AoA3NyEQIlSOcs4HBTm4lY9WwZc?e=N1hpmF">
+                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-download-alt"
+                            aria-hidden="true"></span> Download Full Results on DEMAND Datasets (300M)</button>
+                </a>
+            </div>
+            <h3>&nbsp</h3>
+            <div id="div1" class="col-xs-12 text-left" style="display:none">
+                <table class="table table-hover">
+                    <thead class="w-100">
+                        <tr style="border-top:1px solid black" class="text-center">
+                            <th style="width: 180px;">Noise</th>
+                            <th style="width: 180px;">Ours</th>
+                            <th style="width: 180px;">Clean</th>
+                        </tr>
+                    </thead>
+                    <tbody class="w-100">
+                        <tr style="border-top:1px solid black">
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./noise/p232_001_16k.wav" type="audio/wav">
+                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./ours/p232_001_16k.wav" type="audio/wav">
+                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./clean/p232_001_16k.wav" type="audio/wav">
+                                </audio></td>
+
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./noise/001.png"></img>
+                            </td>
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./ours/001.png"></img>
+                            </td>
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./clean/001.png"></img>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="w-100">
+                        <tr style="border-top:1px solid black">
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./noise/p232_002_16k.wav" type="audio/wav">
+                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./ours/p232_002_16k.wav" type="audio/wav">
+                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./clean/p232_002_16k.wav" type="audio/wav">
+                                </audio></td>
+
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./noise/002.png"></img>
+                            </td>
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./ours/002.png"></img>
+                            </td>
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./clean/002.png"></img>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="w-100">
+                        <tr style="border-top:1px solid black">
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./noise/p232_003_16k.wav" type="audio/wav">
+                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./ours/p232_003_16k.wav" type="audio/wav">
+                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./clean/p232_003_16k.wav" type="audio/wav">
+                                </audio></td>
+
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./noise/003.png"></img>
+                            </td>
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./ours/003.png"></img>
+                            </td>
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./clean/003.png"></img>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="w-100">
+                        <tr style="border-top:1px solid black">
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./noise/p232_005_16k.wav" type="audio/wav">
+                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./ours/p232_005_16k.wav" type="audio/wav">
+                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./clean/p232_005_16k.wav" type="audio/wav">
+                                </audio></td>
+
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./noise/005.png"></img>
+                            </td>
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./ours/005.png"></img>
+                            </td>
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./clean/005.png"></img>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="w-100">
+                        <tr style="border-top:1px solid black">
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./noise/p232_006_16k.wav" type="audio/wav">
+                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./ours/p232_006_16k.wav" type="audio/wav">
+                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./clean/p232_006_16k.wav" type="audio/wav">
+                                </audio></td>
+
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./noise/006.png"></img>
+                            </td>
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./ours/006.png"></img>
+                            </td>
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./clean/006.png"></img>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="w-100">
+                        <tr style="border-top:1px solid black">
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./noise/p232_007_16k.wav" type="audio/wav">
+                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./ours/p232_007_16k.wav" type="audio/wav">
+                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./clean/p232_007_16k.wav" type="audio/wav">
+                                </audio></td>
+
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./noise/007.png"></img>
+                            </td>
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./ours/007.png"></img>
+                            </td>
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./clean/007.png"></img>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="w-100">
+                        <tr style="border-top:1px solid black">
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./noise/p232_009_16k.wav" type="audio/wav">
+                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./ours/p232_009_16k.wav" type="audio/wav">
+                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./clean/p232_009_16k.wav" type="audio/wav">
+                                </audio></td>
+
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./noise/009.png"></img>
+                            </td>
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./ours/009.png"></img>
+                            </td>
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./clean/009.png"></img>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="w-100">
+                        <tr style="border-top:1px solid black">
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./noise/p232_010_16k.wav" type="audio/wav">
+                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./ours/p232_010_16k.wav" type="audio/wav">
+                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./clean/p232_010_16k.wav" type="audio/wav">
+                                </audio></td>
+
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./noise/010.png"></img>
+                            </td>
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./ours/010.png"></img>
+                            </td>
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./clean/010.png"></img>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="w-100">
+                        <tr style="border-top:1px solid black">
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./noise/p232_011_16k.wav" type="audio/wav">
+                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./ours/p232_011_16k.wav" type="audio/wav">
+                                </audio></td>
+                            <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                    <source src="./clean/p232_011_16k.wav" type="audio/wav">
+                                </audio></td>
+
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./noise/011.png"></img>
+                            </td>
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./ours/011.png"></img>
+                            </td>
+                            <td><img controls="" class="rounded" style="width: 100%;" src="./clean/011.png"></img>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-3 col-md-offset-0">
+                <div class="row">
+                    <div class="col-xs-12 teaser-img">
+                        <img class="img-responsive" src="img/teaser_0030.gif">
+                    </div>
+                    <div class="col-xs-12 teaser-img">
+                        <img class="img-responsive" src="img/ours_0030.gif">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0 col-md-3 col-md-offset-0">
+                <div class="row">
+                    <div class="col-xs-12 teaser-img">
+                        <img class="img-responsive" src="img/teaser_0010.gif">
+                    </div>
+                    <div class="col-xs-12 teaser-img">
+                        <img class="img-responsive" src="img/ours_0010.gif">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-3 col-md-offset-0">
+                <div class="row">
+                    <div class="col-xs-12 teaser-img">
+                        <img class="img-responsive" src="img/teaser_0110.gif">
+                    </div>
+                    <div class="col-xs-12 teaser-img">
+                        <img class="img-responsive" src="img/ours_0110.gif">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0 col-md-3 col-md-offset-0">
+                <div class="row">
+                    <div class="col-xs-12 teaser-img">
+                        <img class="img-responsive" src="img/teaser_0126.gif">
+                    </div>
+                    <div class="col-xs-12 teaser-img">
+                        <img class="img-responsive" src="img/ours_0126.gif">
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-left">
+                <h3>BibTeX</h3>
+                <p>If you use our code or data, please cite:</p>
+                <pre>
+        @inproceedings{afrcnn2021nips,
+            title={Speech Separation Using an Asynchronous Fully Recurrent Convolutional Neural Network},
+            author={Hu, Xiaolin and Li, Kai and Zhang, Weiyi and Luo, Yi and Lemercier, Jean-Marie and Gerkmann, Timo},
+            booktitle={NeurIPS},
+            year={2021}
+        }
+</pre>
+            </div>
+        </div>
+    </div>
+
+
+
+    <style type="text/css">
+        .container {
+            background-color: #FBFBFC;
+        }
+        
+        .teaser-img {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .img-responsive {
+            margin: auto;
+        }
+    </style>
+</body>
+
+</html>
