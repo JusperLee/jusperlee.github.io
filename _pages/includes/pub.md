@@ -12,6 +12,8 @@
 
 Ting-Yu Kuo, Yuanda Liao, **Kai Li**, Bo Hong, Xiaolin Hu.
 
+<a href="https://github.com/liaoyd16/cocktail_lk"><img src="https://img.shields.io/github/stars/liaoyd16/cocktail_lk?style=social&amp;label=Code+Stars" alt=""></a>
+
 </div>
 </div>
 
@@ -21,8 +23,6 @@ Ting-Yu Kuo, Yuanda Liao, **Kai Li**, Bo Hong, Xiaolin Hu.
 [An Auditory-Visual Speech Separation Model Inspired by Cortico-thalamo-cortical Circuits]()
 
 **Kai Li**, Fenghua Xie, Hang Chen, Kexin Yuan, Xiaolin Hu.
-
-<a href="https://github.com/liaoyd16/cocktail_lk"><img src="https://img.shields.io/github/starsliaoyd16/cocktail_lk?style=social&amp;label=Code+Stars" alt=""></a>
 
 </div>
 </div>
