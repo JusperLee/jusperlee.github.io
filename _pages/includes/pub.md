@@ -8,7 +8,7 @@
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge" style="background-color: green">Neural Computation 2022</div><img src='images/nerualcom.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Inferring mechanisms of auditory attentional modulation with deep neural networks]()
+[Inferring mechanisms of auditory attentional modulation with deep neural networks](./files/neural.pdf)
 
 Ting-Yu Kuo, Yuanda Liao, **Kai Li**, Bo Hong, Xiaolin Hu.
 
@@ -21,6 +21,8 @@ Ting-Yu Kuo, Yuanda Liao, **Kai Li**, Bo Hong, Xiaolin Hu.
 [An Auditory-Visual Speech Separation Model Inspired by Cortico-thalamo-cortical Circuits]()
 
 **Kai Li**, Fenghua Xie, Hang Chen, Kexin Yuan, Xiaolin Hu.
+
+<a href="https://github.com/liaoyd16/cocktail_lk"><img src="https://img.shields.io/github/starsliaoyd16/cocktail_lk?style=social&amp;label=Code+Stars" alt=""></a>
 
 </div>
 </div>
