@@ -47,14 +47,14 @@ Ting-Yu Kuo, Yuanda Liao, **Kai Li**, Bo Hong, Xiaolin Hu.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2022</div><img src='images/afrcnn.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2021</div><img src='images/afrcnn.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Speech Separation Using an Asynchronous Fully Recurrent Convolutional Neural Network](https://papers.nips.cc/paper/2021/file/be1bc7997695495f756312886f566110-Paper.pdf)
 
 Xiaolin Hu<sup>*, #</sup>, **Kai Li$^*$**, Weiyi Zhang, Yi Luo, Jean-Marie Lemercier, Timo Gerkmann.
 
-[**Audio Demo Page**](./project/AFRCNN) \| [**Speech Enhancement Demo**](./project/AFRCNN-Enh) \| <a href="https://github.com/JusperLee/AFRCNN-For-Speech-Separation"><img src="https://img.shields.io/github/stars/JusperLee/AFRCNN-For-Speech-Separation?style=social&amp;label=Code+Stars" alt=""></a> \| **Citations: 6**
+[**Audio Demo Page**](./project/AFRCNN) \| [**Speech Enhancement Demo**](./project/AFRCNN-Enh) \| <a href="https://github.com/JusperLee/AFRCNN-For-Speech-Separation"><img src="https://img.shields.io/github/stars/JusperLee/AFRCNN-For-Speech-Separation?style=social&amp;label=Code+Stars" alt=""></a> \| **Citations: 7**
 
 </div>
 </div>
@@ -89,7 +89,7 @@ Xiaolin Hu<sup>*, #</sup>, **Kai Li$^*$**, Weiyi Zhang, Yi Luo, Jean-Marie Lemer
 
 **Kai Li**, Shenghao Yang, Runting Dong, Jianqiang Huang<sup>#</sup>, Xiaoying Wang.
 
-**Citations: 25**
+**Citations: 26**
 
 </div>
 </div>
