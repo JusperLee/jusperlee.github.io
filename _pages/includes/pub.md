@@ -20,15 +20,6 @@ Ting-Yu Kuo, Yuanda Liao, **Kai Li**, Bo Hong, Xiaolin Hu.
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge" style="background-color: green">Submitted Nature Machine Intelligence</div><img src='images/submitted.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[An Auditory-Visual Speech Separation Model Inspired by Cortico-thalamo-cortical Circuits]()
-
-**Kai Li**, Fenghua Xie, Hang Chen, Kexin Yuan, Xiaolin Hu.
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">InterSpeech 2022</div><img src='images/overss.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
 
 [On the Use of Deep Mask Estimation Module for Neural Source Separation Systems](http://arxiv.org/pdf/2206.07347v1)
 
