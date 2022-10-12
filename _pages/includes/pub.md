@@ -5,6 +5,18 @@
 
 ## 🎙 Speech Separation
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge" style="background-color: green">Arxiv 2022</div><img src='images/tdanet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[An efficient encoder-decoder architecture with top-down attention for speech separation](https://arxiv.org/pdf/2209.15200)
+
+**Kai Li**, Runxuan Yang, Xiaolin Hu.
+
+<a href="https://github.com/JusperLee/TDANet"><img src="https://img.shields.io/github/stars/JusperLee/TDANet?style=social&amp;label=Code+Stars" alt=""></a> <strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:LkGwnXOMwfcC'></span></strong>
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge" style="background-color: green">Neural Computation 2022</div><img src='images/nerualcom.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -12,7 +24,7 @@
 
 Ting-Yu Kuo, Yuanda Liao, **Kai Li**, Bo Hong, Xiaolin Hu.
 
-<a href="https://github.com/liaoyd16/cocktail_lk"><img src="https://img.shields.io/github/stars/liaoyd16/cocktail_lk?style=social&amp;label=Code+Stars" alt=""></a>
+<a href="https://github.com/liaoyd16/cocktail_lk"><img src="https://img.shields.io/github/stars/liaoyd16/cocktail_lk?style=social&amp;label=Code+Stars" alt=""></a> <strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:ufrVoPGSRksC'></span></strong>
 
 </div>
 </div>
@@ -24,6 +36,7 @@ Ting-Yu Kuo, Yuanda Liao, **Kai Li**, Bo Hong, Xiaolin Hu.
 
 **Kai Li**, Xiaolin Hu, Yi Luo.
 
+<strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:_FxGoFyzp5QC'></span></strong>
 </div>
 </div>
 
@@ -34,6 +47,7 @@ Ting-Yu Kuo, Yuanda Liao, **Kai Li**, Bo Hong, Xiaolin Hu.
 
 **Kai Li**, Yi Luo.
 
+<strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:YsMSGLbcyi4C'></span></strong>
 </div>
 </div>
 
@@ -44,7 +58,7 @@ Ting-Yu Kuo, Yuanda Liao, **Kai Li**, Bo Hong, Xiaolin Hu.
 
 Xiaolin Hu<sup>*, #</sup>, **Kai Li$^*$**, Weiyi Zhang, Yi Luo, Jean-Marie Lemercier, Timo Gerkmann.
 
-[**Audio Demo Page**](./project/AFRCNN) \| [**Speech Enhancement Demo**](./project/AFRCNN-Enh) \| <a href="https://github.com/JusperLee/AFRCNN-For-Speech-Separation"><img src="https://img.shields.io/github/stars/JusperLee/AFRCNN-For-Speech-Separation?style=social&amp;label=Code+Stars" alt=""></a> \| **Citations: 7**
+[**Audio Demo Page**](./project/AFRCNN) \| [**Speech Enhancement Demo**](./project/AFRCNN-Enh) \| <a href="https://github.com/JusperLee/AFRCNN-For-Speech-Separation"><img src="https://img.shields.io/github/stars/JusperLee/AFRCNN-For-Speech-Separation?style=social&amp;label=Code+Stars" alt=""></a> <strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:zYLM7Y9cAGgC'></span></strong>
 
 </div>
 </div>
@@ -79,7 +93,7 @@ Xiaolin Hu<sup>*, #</sup>, **Kai Li$^*$**, Weiyi Zhang, Yi Luo, Jean-Marie Lemer
 
 **Kai Li**, Shenghao Yang, Runting Dong, Jianqiang Huang<sup>#</sup>, Xiaoying Wang.
 
-**Citations: 26**
+<strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:u5HHmVD_uO8C'></span></strong>
 
 </div>
 </div>
@@ -91,7 +105,7 @@ Xiaolin Hu<sup>*, #</sup>, **Kai Li$^*$**, Weiyi Zhang, Yi Luo, Jean-Marie Lemer
 
 Jianqiang Huang<sup>*, #</sup>, **Kai Li$^*$**, Xiaoying Wang.
 
-**Citations: 1**
+<strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:9yKSN-GCB0IC'></span></strong>
 
 </div>
 </div>
@@ -103,5 +117,6 @@ Jianqiang Huang<sup>*, #</sup>, **Kai Li$^*$**, Xiaoying Wang.
 
 **Kai Li**, Liang Ye, Shenghao Yang, Jianqiang Huang<sup>#</sup>, Xiaoying Wang.
 
+<strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:Tyk-4Ss8FVUC'></span></strong>
 </div>
 </div>
