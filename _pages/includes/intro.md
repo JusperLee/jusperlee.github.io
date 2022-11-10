@@ -1,6 +1,6 @@
 # 🎊 Welcome to my website!
 
-My name is Kai Li (Chinese name: 李凯). I'm is a first-year master student at Department of Computer Science and Technology, Tsinghua University, supervised by Prof. [Xiaolin Hu (胡晓林)](http://www.xlhu.cn/). I am also a member of [TSAIL Group](https://ml.cs.tsinghua.edu.cn/) directed by Prof. [Bo Zhang (张拨)](https://www.cs.tsinghua.edu.cn/info/1121/3552.htm) and Prof. [Jun zhu (朱军)](https://ml.cs.tsinghua.edu.cn/~jun/index.shtml).
+My name is Kai Li (Chinese name: 李凯). I'm a second-year master student at Department of Computer Science and Technology, Tsinghua University, supervised by Prof. [Xiaolin Hu (胡晓林)](http://www.xlhu.cn/). I am also a member of [TSAIL Group](https://ml.cs.tsinghua.edu.cn/) directed by Prof. [Bo Zhang (张拨)](https://www.cs.tsinghua.edu.cn/info/1121/3552.htm) and Prof. [Jun zhu (朱军)](https://ml.cs.tsinghua.edu.cn/~jun/index.shtml).
 
 I was an intern at Tencent AI Lab <img src='images/Tencent.png' style='width: 3.5em;'>, mainly doing research on causal speech separation, supervised by [Yi Luo (罗艺)](https://scholar.google.com/citations?user=OSM9xooAAAAJ&hl=en).
 
