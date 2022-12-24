@@ -6,8 +6,8 @@ main:
   - title: "News"
     url: "/#-news"
 
-  - title: "Project"
-    url: "/#-project"
+  # - title: "Project"
+  #   url: "/#-project"
 
   - title: "Publications"
     url: "/#-publications"

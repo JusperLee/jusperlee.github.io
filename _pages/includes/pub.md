@@ -18,6 +18,18 @@ Ting-Yu Kuo, Yuanda Liao, **Kai Li**, Bo Hong, Xiaolin Hu.
 
 ## 🎙 Speech Separation
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge" style="background-color: green">Arxiv 2022</div><img src='images/ctcnet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[An Audio-Visual Speech Separation Model Inspired by Cortico-Thalamo-Cortical Circuits](https://arxiv.org/abs/2212.10744)
+
+**Kai Li**, Fenghua Xie, Hang Chen, Kexin Yuan, Xiaolin Hu.
+
+<a href="https://github.com/JusperLee/CTCNet"><img src="https://img.shields.io/github/stars/JusperLee/CTCNet?style=social&amp;label=Code+Stars" alt=""></a> <strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:roLk4NBRz8UC'></span></strong>
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge" style="background-color: green">Arxiv 2022</div><img src='images/tdanet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 

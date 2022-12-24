@@ -13,8 +13,6 @@ redirect_from:
 
 {% include_relative includes/news.md %}
 
-{% include_relative includes/project.md %}
-
 {% include_relative includes/pub.md %}
 
 {% include_relative includes/honers.md %}
@@ -24,5 +22,5 @@ redirect_from:
 <center>
     <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=pGgE1hMket84twOks8hu76lWjl5ORukOJRPcVR9nRBI&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>
 
-    <br> &copy; Kai Li | Last updated: Dec. 15th, 2022 | Theme by Yi Ren
+    <br> &copy; Kai Li | Last updated: Dec. 25th, 2022 | Theme by Yi Ren
 </center>
