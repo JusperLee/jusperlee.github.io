@@ -21,5 +21,8 @@ main:
   - title: "Internships"
     url: "/#-internships"
 
+  - title: "Services"
+    url: "/#-services"
+
   - title: "Teaching"
     url: "/#-teaching"
