@@ -1,10 +1,8 @@
 # 🔥 News
-- *2022.06*: 🧩 One paper is accepted by Neural Computation:
-  - Inferring mechanisms of auditory attentional modulation with deep neural networks, Ting-Yu Kuo, Yuanda Liao, **Kai Li**, Bo Hong, Xiaolin Hu.
-- *2022.06*: 🎉 One paper is accepted by InterSpeech 2022:
-  - On the Use of Deep Mask Estimation Module for Neural Source Separation Systems, **Kai Li**, Xiaolin Hu, Yi Luo.
-- *2022.06*: 🎲 One paper is appeared by Arxiv:
-  - On the Design and Training Strategies for RNN-based Online Neural Speech Separation Systems, **Kai Li**, Yi Luo.
+- *2023.01*: 🧩 One paper is accepted by ICLR 2023.
+- *2022.06*: 🧩 One paper is accepted by Neural Computation.
+- *2022.06*: 🎉 One paper is accepted by InterSpeech 2022.
+- *2022.06*: 🎲 One paper is appeared by Arxiv.
 - *2022.05*: 🧩 One paper to submit in Nature Machine Intelligence.
 - *2022.03*: 🎉 We won the **first prize** 🥇 of the [Global College Student Supercomputer Challenge (ASC22)](http://asc-events.org/ASC22/PreliminaryResult.php)
 - *2022.03*: 🧩 One paper to submit in IEEE Transactions on Industrial Informatics.

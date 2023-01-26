@@ -30,7 +30,7 @@ Ting-Yu Kuo, Yuanda Liao, **Kai Li**, Bo Hong, Xiaolin Hu.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge" style="background-color: green">Arxiv 2022</div><img src='images/tdanet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge" style="background-color: green">ICLR 2023</div><img src='images/tdanet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [An efficient encoder-decoder architecture with top-down attention for speech separation](https://arxiv.org/pdf/2209.15200)
