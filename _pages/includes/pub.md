@@ -4,7 +4,7 @@
 > ( <sup>*</sup> equal contribution, <sup>#</sup> corresponding author)
 
 ## 🧠 Neuroscience
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge" style="background-color: green">Neural Computation 2022</div><img src='images/nerualcom.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Neural Computation 2022</div><img src='images/nerualcom.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Inferring mechanisms of auditory attentional modulation with deep neural networks](./files/neural.pdf)
@@ -18,7 +18,7 @@ Ting-Yu Kuo, Yuanda Liao, **Kai Li**, Bo Hong, Xiaolin Hu.
 
 ## 🎙 Speech Separation
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge" style="background-color: green">Arxiv 2022</div><img src='images/ctcnet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2022</div><img src='images/ctcnet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [An Audio-Visual Speech Separation Model Inspired by Cortico-Thalamo-Cortical Circuits](https://arxiv.org/abs/2212.10744)
@@ -30,13 +30,14 @@ Ting-Yu Kuo, Yuanda Liao, **Kai Li**, Bo Hong, Xiaolin Hu.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge" style="background-color: green">ICLR 2023</div><img src='images/tdanet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2023</div><img src='images/tdanet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [An efficient encoder-decoder architecture with top-down attention for speech separation](https://arxiv.org/pdf/2209.15200)
 
 **Kai Li**, Runxuan Yang, Xiaolin Hu.
 
+[![知乎](https://img.shields.io/badge/知乎-TDANet(ICLR 2023)-0084FF.svg)](https://zhuanlan.zhihu.com/p/605100121) \| 
 [**Audio Demo Page**](./project/TDANet) \| <a href="https://github.com/JusperLee/TDANet"><img src="https://img.shields.io/github/stars/JusperLee/TDANet?style=social&amp;label=Code+Stars" alt=""></a> <strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:LkGwnXOMwfcC'></span></strong>
 
 </div>
@@ -71,7 +72,7 @@ Ting-Yu Kuo, Yuanda Liao, **Kai Li**, Bo Hong, Xiaolin Hu.
 
 Xiaolin Hu<sup>*, #</sup>, **Kai Li$^*$**, Weiyi Zhang, Yi Luo, Jean-Marie Lemercier, Timo Gerkmann.
 
-[**Audio Demo Page**](./project/AFRCNN) \| [**Speech Enhancement Demo**](./project/AFRCNN-Enh) \| <a href="https://github.com/JusperLee/AFRCNN-For-Speech-Separation"><img src="https://img.shields.io/github/stars/JusperLee/AFRCNN-For-Speech-Separation?style=social&amp;label=Code+Stars" alt=""></a> <strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:zYLM7Y9cAGgC'></span></strong>
+[![知乎](https://img.shields.io/badge/知乎-AFRCNN(NeuralPS 2021)-0084FF.svg)](https://zhuanlan.zhihu.com/p/508868699) \| [**Audio Demo Page**](./project/AFRCNN) \| [**Speech Enhancement Demo**](./project/AFRCNN-Enh) \| <a href="https://github.com/JusperLee/AFRCNN-For-Speech-Separation"><img src="https://img.shields.io/github/stars/JusperLee/AFRCNN-For-Speech-Separation?style=social&amp;label=Code+Stars" alt=""></a> <strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:zYLM7Y9cAGgC'></span></strong>
 
 </div>
 </div>
@@ -89,7 +90,7 @@ Xiaolin Hu<sup>*, #</sup>, **Kai Li$^*$**, Weiyi Zhang, Yi Luo, Jean-Marie Lemer
 </div>
 
 ## 📷 Image Super Resolution
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge" style="background-color: green">Submitted IEEE Transactions on Industrial Informatics</div><img src='images/submitted.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted IEEE Transactions on Industrial Informatics</div><img src='images/submitted.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Single Image Super-Resolution through Image Pixel Information Clustering and Generative Adversarial Network]()
