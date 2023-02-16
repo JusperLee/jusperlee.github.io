@@ -54,7 +54,7 @@ Ting-Yu Kuo, Yuanda Liao, **Kai Li**, Bo Hong, Xiaolin Hu.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2022</div><img src='images/causal.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2023</div><img src='images/causal.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [On the Design and Training Strategies for RNN-based Online Neural Speech Separation Systems](http://arxiv.org/pdf/2206.07347v1)
