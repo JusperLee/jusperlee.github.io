@@ -25,7 +25,7 @@ Ting-Yu Kuo, Yuanda Liao, **Kai Li**, Bo Hong, Xiaolin Hu.
 
 **Kai Li**, Fenghua Xie, Hang Chen, Kexin Yuan, Xiaolin Hu.
 
-<a href="https://github.com/JusperLee/CTCNet"><img src="https://img.shields.io/github/stars/JusperLee/CTCNet?style=social&amp;label=Code+Stars" alt=""></a> <strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:roLk4NBRz8UC'></span></strong>
+[**Demo Page**](./project/CTCNet) \|<a href="https://github.com/JusperLee/CTCNet"><img src="https://img.shields.io/github/stars/JusperLee/CTCNet?style=social&amp;label=Code+Stars" alt=""></a> <strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:roLk4NBRz8UC'></span></strong>
 
 </div>
 </div>
