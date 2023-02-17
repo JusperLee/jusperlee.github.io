@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>CTCNet</title>
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">An Audio-Visual Speech Separation Model Inspired by
+              Cortico-Thalamo-Cortical Circuits</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://cslikai.cn" target="_blank">Kai Li</a>, </span>
+              <span class="author-block">
+                Fenghua Xie,</span>
+              <span class="author-block">
+                Hang Chen,
+              </span>
+              <span class="author-block">
+                Kexin Yuan,
+              </span>
+              <span class="author-block">
+                <a href="https://xlhu.cn" target="_blank">Xiaolin Hu</a>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Tsinghua University, Beijing, China<br>Arxiv 2022</span>
+              <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+            </div>
+
+            <div class="column has-text-centered">
+              <!-- ArXiv abstract Link -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2212.10744" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- <div class="publication-links"> -->
+              <!-- Arxiv PDF link -->
+              <!-- <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span> -->
+
+              <!-- Supplementary PDF link -->
+              <!-- <span class="link-block">
+                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span> -->
+
+              <!-- Github link -->
+              <span class="link-block">
+                <a href="https://github.com/JusperLee/CTCNet" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser video-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!-- <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/videos/banner_video.mp4" type="video/mp4">
+        </video> -->
+        <img src="main.png" height="100%"></img>
+        <h2 class="subtitle has-text-justified">
+          The following are the key points of our article:<br>
+          (1) A novel neural network called Cortico-Thalamo-Cortical Network (CTCNet) is proposed for audio-visual
+          speech separation. <br>
+          (2) CTCNet learns hierarchical auditory and visual representations in separate subnetworks.<br>
+          (3) The model fuses auditory and visual information in a thalamic subnetwork through top-down connections.<br>
+          (4) CTCNet outperforms existing AVSS methods with fewer parameters.<br>
+          (5) Mimicking the anatomical connectome of the mammalian brain has great potential for advancing deep neural
+          networks.<br>
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Audio-visual approaches involving visual inputs have laid the foundation for recent progress in speech
+              separation. However, the optimization of the concurrent usage of auditory and visual inputs is still an
+              active research area. Inspired by the cortico-thalamocortical circuit, in which the sensory processing
+              mechanisms of different modalities modulate one another via the non-lemniscal sensory thalamus, we propose
+              a novel cortico-thalamo-cortical neural network (CTCNet) for audio-visual speech separation (AVSS). First,
+              the CTCNet learns hierarchical auditory and visual representations in a bottom-up manner in separate
+              auditory and visual subnetworks, mimicking the functions of the auditory and visual cortical areas. Then,
+              inspired by the large number of connections between cortical regions and the thalamus, the model fuses the
+              auditory and visual information in a thalamic subnetwork through top-down connections. Finally, the model
+              transmits this fused information back to the auditory and visual subnetworks, and the above process is
+              repeated several times. The results of experiments on three speech separation benchmark datasets show that
+              CTCNet remarkably outperforms existing AVSS methods with considerablely fewer parameters. These results
+              suggest that mimicking the anatomical connectome of the mammalian brain has great potential for advancing
+              the development of deep neural networks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+
+  <!-- Image carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="is-centered has-text-centered title is-3" style="margin-bottom: auto;">Model Structures and Results
+        </h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <!-- Your image here -->
+            <img src="structure-1.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              (B) The multimodal information process of the cortico-thalamocortical transthalamic connectivity patterns
+              (left) and CTCNet structure (right). (C) The recurrent process of AV
+              fusion in the CTCNet model over time.
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="result-1.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              (A) and (B) Two example target speech spectrograms. The corresponding textual content was labeled in the
+              corresponding positions above the spectrograms. (C) The mixture speech spectrogram. (D) The mixture
+              contour. (E) and (F) The two restored speech spectrograms.
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="result-2.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              (G) Scatter plot of correlation for all test examples (N=3,000). Each point indicates the correlation
+              between the spectrograms of the separated speeches and the target speeches. The point “ × ” indicates the
+              correlation for the example of the displayed spectrograms. (H) Visualization of the speaker identity of
+              the target speeches (left) and separated speeches (right) by the t-SNE method. Each point corresponds to
+              the speaker’s embedding from the x-vector.
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="result-3.png" alt="MY ALT TEXT" />
+            <h2 class="subtitle has-text-centered">
+              Comparison between CTCNet and existing methods on the LRS2-2Mix, LRS3-2Mix and VoxCeleb2-2Mix datasets.
+              “*” indicates that the method uses ground-truth phases for speech signal reconstruction. “-” indicates
+              that the results were not reported in the original papers. “ † ” indicates results were obtained by us
+              with the aid of the Asteroid toolkit [60] under the MIT license. “ ♭ ” indicates results were obtained by
+              using the codes provided by the original authors. “Train/Val” denotes the data scales of training and
+              validation sets. For these methods, the real-time factor (RTF) indicates the estimated time consumption
+              per second on the CPU (Intel(R) Xeon(R) Silver 4210 CPU @ 2.20 GHz).
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
+
+
+
+
+  <!-- Youtube video -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <!-- Paper video. -->
+        <h2 class="is-centered has-text-centered title is-3">Video Presentation</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+
+            <div class="publication-video">
+              <!-- Youtube embed code here -->
+              <iframe src="https://www.youtube.com/embed/1fPRmQDOe7U" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End youtube video -->
+
+
+  <!-- Video carousel -->
+  <!-- <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Another Carousel</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <video poster="" id="video1" autoplay controls muted loop height="100%">
+
+              <source src="static/videos/carousel1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video2">
+            <video poster="" id="video2" autoplay controls muted loop height="100%">
+
+              <source src="static/videos/carousel2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" autoplay controls muted loop height="100%">\
+
+              <source src="static/videos/carousel3.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- End video carousel -->
+
+  <!-- Paper poster -->
+  <!-- <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title">Poster</h2>
+
+        <iframe src="static/pdfs/sample.pdf" width="100%" height="550">
+        </iframe>
+
+      </div>
+    </div>
+  </section> -->
+  <!--End paper poster -->
+
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="is-centered has-text-centered title">BibTeX</h2>
+      <pre><code>@article{li2022audio,
+        title={An Audio-Visual Speech Separation Model Inspired by Cortico-Thalamo-Cortical Circuits},
+        author={Li, Kai and Xie, Fenghua and Chen, Hang and Yuan, Kexin and Hu, Xiaolin},
+        journal={arXiv preprint arXiv:2212.10744},
+        year={2022}
+      }</code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a>.
+              You are free to borrow the of this website, we just ask that you link back to this page in the footer.
+              <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=e03sCpn-Bps2eQqelImPAkqTapmP6oKuYM5grbgArH8'></script>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
