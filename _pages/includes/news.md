@@ -1,18 +1,20 @@
 # 🔥 News
+- *2023.05*: 🎉 We won the **first prize** 🥇 of the [Cinematic Sound Demixing Track 23](https://www.aicrowd.com/challenges/sound-demixing-challenge-2023/problems/cinematic-sound-demixing-track-cdx-23/leaderboards) in the **Leaderboard A and B**.
+- *2023.05*: 🎉 We won the **first prize** 🥇 of the ASC23 and Best Application Award.
 - *2023.04*: 🎲 One paper is appeared by Arxiv.
 - *2023.02*: 🧩 One paper is accepted by ICASSP 2023.
 - *2023.01*: 🧩 One paper is accepted by ICLR 2023.
-- *2022.06*: 🧩 One paper is accepted by Neural Computation.
-- *2022.06*: 🎉 One paper is accepted by InterSpeech 2022.
-- *2022.06*: 🎲 One paper is appeared by Arxiv.
-- *2022.05*: 🧩 One paper to submit in Nature Machine Intelligence.
-- *2022.03*: 🎉 We won the **first prize** 🥇 of the [Global College Student Supercomputer Challenge (ASC22)](http://asc-events.org/ASC22/PreliminaryResult.php)
-- *2022.03*: 🧩 One paper to submit in IEEE Transactions on Industrial Informatics.
-- *2022.03*: 🧩🧩 Two paper to submit in Interspeech 2022.
 
 <details>
 <summary markdown="span">Click for More</summary>
 <ul>
+<li> <i>2022.06</i>: 🧩 One paper is accepted by Neural Computation.
+<li> <i>2022.06</i>: 🎉 One paper is accepted by InterSpeech 2022.
+<li> <i>2022.06</i>: 🎲 One paper is appeared by Arxiv.
+<li> <i>2022.05</i>: 🧩 One paper to submit in Nature Machine Intelligence.
+<li> <i>2022.03</i>: 🎉 We won the first prize 🥇 of the Global College Student Supercomputer Challenge (ASC22)
+<li> <i>2022.03</i>: 🧩 One paper to submit in IEEE Transactions on Industrial Informatics.
+<li> <i>2022.03</i>: 🧩🧩 Two paper to submit in Interspeech 2022.
 <li> <i>2021.10</i>: 🎉 paper is accepted by NeurIPS 2021:
   <ul><li style="list-style:circle"> Speech Separation Using an Asynchronous Fully Recurrent Convolutional Neural Network, Xiaolin Hu$^*$, <b>Kai Li$^*$</b>, Weiyi Zhang, Yi Luo, Jean-Marie Lemercier, Timo Gerkmann. </li></ul> </li>
 <li> <i>2021.05</i>: 🎉 We won the <b>5%</b> of the [Global College Student Supercomputer Challenge (ASC20-21)](http://www.asc-events.net/ASC20-21/Finals.php) </li>
