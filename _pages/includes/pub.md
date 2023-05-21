@@ -18,6 +18,38 @@ Ting-Yu Kuo, Yuanda Liao, **Kai Li**, Bo Hong, Xiaolin Hu.
 
 ## 🎙 Speech Separation
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Interspeech 2023</div><img src='images/avlit.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Audio-Visual Speech Separation in Noisy Environments with a Lightweight Iterative Model]()
+
+Héctor Martel, Julius Richter, **Kai Li**, Xiaolin Hu and Timo Gerkmann.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Interspeech 2023</div><img src='images/s4m.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[A Neural State-Space Model Approach to Efficient Speech Separation]()
+
+Chenchen, Chao-Han Huck Yang, **Kai Li**, Yuchen Hu, Pin-Jui Ku and Eng Siong Chng.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2022</div><img src='images/ctcnet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[An Audio-Visual Speech Separation Model Inspired by Cortico-Thalamo-Cortical Circuits](https://arxiv.org/abs/2212.10744)
+
+**Kai Li**, Fenghua Xie, Hang Chen, Kexin Yuan, Xiaolin Hu.
+
+[**Demo Page**](./project/CTCNet) \|<a href="https://github.com/JusperLee/CTCNet"><img src="https://img.shields.io/github/stars/JusperLee/CTCNet?style=social&amp;label=Code+Stars" alt=""></a> <strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:roLk4NBRz8UC'></span></strong>
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2022</div><img src='images/ctcnet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -104,7 +136,7 @@ Xuechao Zou<sup>*</sup>, **Kai Li<sup>*</sup>**, Junliang Xing, Pin Tao<sup>#</s
 </div>
 
 ## 📷 Image Super Resolution
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted IEEE Transactions on Industrial Informatics</div><img src='images/submitted.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted IEEE Transactions on Industrial Informatics</div><img src='images/CL-gan.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Single Image Super-Resolution through Image Pixel Information Clustering and Generative Adversarial Network]()
