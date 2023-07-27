@@ -22,5 +22,5 @@ redirect_from:
 <center>
     <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=pGgE1hMket84twOks8hu76lWjl5ORukOJRPcVR9nRBI&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>
 
-    <br> &copy; Kai Li | Last updated: May. 15th, 2023 | Theme by Yi Ren
+    <br> &copy; Kai Li | Last updated: July. 27th, 2023 | Theme by Yi Ren
 </center>

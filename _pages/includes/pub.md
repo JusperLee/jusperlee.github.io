@@ -123,7 +123,7 @@ Xiaolin Hu<sup>*, #</sup>, **Kai Li$^*$**, Weiyi Zhang, Yi Luo, Jean-Marie Lemer
 
 ## 🌏 Cloud Removal
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2023</div><img src='images/pmaa.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECAI 2023</div><img src='images/pmaa.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [PMAA: A Progressive Multi-scale Attention Autoencoder Model for High-Performance Cloud Removal from Multi-temporal Satellite Imagery](https://arxiv.org/pdf/2303.16565.pdf)
