@@ -35,6 +35,8 @@ Héctor Martel, Julius Richter, **Kai Li**, Xiaolin Hu and Timo Gerkmann.
 
 Chenchen, Chao-Han Huck Yang, **Kai Li**, Yuchen Hu, Pin-Jui Ku and Eng Siong Chng.
 
+<a href="https://github.com/JusperLee/S4M"><img src="https://img.shields.io/github/stars/JusperLee/S4M?style=social&amp;label=Code+Stars" alt=""></a> 
+
 </div>
 </div>
 
