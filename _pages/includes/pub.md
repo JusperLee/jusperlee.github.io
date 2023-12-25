@@ -16,14 +16,42 @@ Ting-Yu Kuo, Yuanda Liao, **Kai Li**, Bo Hong, Xiaolin Hu.
 </div>
 </div>
 
+## 🎼 Music Separation
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2024</div><img src='images/sub-to-go.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Subnetwork-to-go: Elastic Neural Network with Dynamic Training and Customizable Inference](https://arxiv.org/pdf/2312.03464)
+
+**Kai Li**, Yi Luo.
+
+<strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:aqlVkmm33-oC'></span></strong>
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SDX Workshop 2023</div><img src='images/sdx.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[One-page Report for Tencent AI Lab’s CDX 2023 System](https://sdx-workshop.github.io/papers/Li.pdf)
+
+**Kai Li**, Yi Luo.
+
+<strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:M3ejUd6NZC8C'></span></strong>
+
+</div>
+</div>
+
 ## 🎙 Speech Separation
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Interspeech 2023</div><img src='images/avlit.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Audio-Visual Speech Separation in Noisy Environments with a Lightweight Iterative Model]()
+[Audio-Visual Speech Separation in Noisy Environments with a Lightweight Iterative Model](https://arxiv.org/pdf/2306.00160)
 
 Héctor Martel, Julius Richter, **Kai Li**, Xiaolin Hu and Timo Gerkmann.
+
+<a href="https://github.com/hmartelb/avlit"><img src="https://img.shields.io/github/stars/hmartelb/avlit?style=social&amp;label=Code+Stars" alt=""></a> \| <strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:hqOjcs7Dif8C'></span></strong>
 
 </div>
 </div>
@@ -31,11 +59,11 @@ Héctor Martel, Julius Richter, **Kai Li**, Xiaolin Hu and Timo Gerkmann.
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Interspeech 2023</div><img src='images/s4m.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[A Neural State-Space Model Approach to Efficient Speech Separation]()
+[A Neural State-Space Model Approach to Efficient Speech Separation](https://arxiv.org/pdf/2305.16932)
 
 Chenchen, Chao-Han Huck Yang, **Kai Li**, Yuchen Hu, Pin-Jui Ku and Eng Siong Chng.
 
-<a href="https://github.com/JusperLee/S4M"><img src="https://img.shields.io/github/stars/JusperLee/S4M?style=social&amp;label=Code+Stars" alt=""></a> 
+<a href="https://github.com/JusperLee/S4M"><img src="https://img.shields.io/github/stars/JusperLee/S4M?style=social&amp;label=Code+Stars" alt=""></a> \| <strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:UebtZRa9Y70C'></span></strong>
 
 </div>
 </div>
@@ -111,7 +139,19 @@ Xiaolin Hu<sup>*, #</sup>, **Kai Li$^*$**, Weiyi Zhang, Yi Luo, Jean-Marie Lemer
 </div>
 </div>
 
-## 🌏 Cloud Removal
+## 🖼️ Computer Vision
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2024</div><img src='images/leformer.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[LEFormer: A Hybrid CNN-Transformer Architecture for Accurate Lake Extraction from Remote Sensing Imagery](https://arxiv.org/pdf/2308.04397)
+
+Ben Chen, Xuechao Zou, Yu Zhang, Jiayu Li, **Kai Li**, Pin Tao.
+
+<strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:8k81kl-MbHgC'></span></strong>
+
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECAI 2023</div><img src='images/pmaa.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -125,7 +165,6 @@ Xuechao Zou<sup>*</sup>, **Kai Li<sup>*</sup>**, Junliang Xing, Pin Tao<sup>#</s
 </div>
 </div>
 
-## 📷 Image Super Resolution
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Submitted IEEE Transactions on Industrial Informatics</div><img src='images/CL-gan.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -157,16 +196,5 @@ Jianqiang Huang<sup>*, #</sup>, **Kai Li$^*$**, Xiaoying Wang.
 
 <strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:9yKSN-GCB0IC'></span></strong>
 
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICDIP 2019</div><img src='images/esrgan-pro.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Single image super resolution based on generative adversarial networks](./files/111790T.pdf)
-
-**Kai Li**, Liang Ye, Shenghao Yang, Jianqiang Huang<sup>#</sup>, Xiaoying Wang.
-
-<strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:Tyk-4Ss8FVUC'></span></strong>
 </div>
 </div>
