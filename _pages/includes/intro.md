@@ -8,4 +8,4 @@ I got my bachelor's degree from Department of Computer Technology and Applicatio
 
 🤗 &nbsp; These works are open source to the best of my ability.
 
-🤗 &nbsp; I am currently doing research on Source Separation and Embodied-AI, and am interested in other speech tasks (e.g., pre-training models and neuralscience). If you would like to collaborate, please contact me. Many thanks.
+🤗 &nbsp; I am currently doing research on Source Separation, and am interested in other speech tasks (e.g., pre-training models and neuralscience). If you would like to collaborate, please contact me. Many thanks.
