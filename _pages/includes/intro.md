@@ -8,4 +8,4 @@ I got my bachelor's degree from Department of Computer Technology and Applicatio
 
 🤗 &nbsp; These works are open source to the best of my ability.
 
-🤗 &nbsp; My research interest includes **Speech/Music Separation, Multi-Modal Speech Separation, and Embodied AI**. I have published many papers at the top conferences/journals such as **NeurIPS/ICLR/TPAMI/ACL/IJCAI**. If you want to collaborate, feel free to email me.
+🤗 &nbsp; My research interest includes **Speech/Music Separation, Multi-Modal Speech Separation, and Embodied AI**. I have published many papers at the top conferences/journals such as **NeurIPS/ICLR/TPAMI/ICASSP/Interspeech**. If you want to collaborate, feel free to email me.

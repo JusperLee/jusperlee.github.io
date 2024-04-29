@@ -15,7 +15,7 @@
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2024</div><img src='https://github.com/BastianChen/LEPrompter/blob/master/resources/leprompter_decoder.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2024</div><img src='./images/spmamba.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [SPMamba: State-space model is all you need in speech separation.](https://arxiv.org/pdf/2404.02063) Kai Li, Guo Chen. **Arxiv 2024.**
@@ -27,7 +27,7 @@
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2024</div><img src='https://github.com/BastianChen/LEPrompter/blob/master/resources/leprompter_decoder.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2024</div><img src='https://github.com/BastianChen/LEPrompter/raw/master/resources/leprompter_decoder.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [High-Fidelity Lake Extraction via Two-Stage Prompt Enhancement: Establishing a Novel Baseline and Benchmark.](https://arxiv.org/pdf/2308.08443) Ben Chen, Xuechao Zou, **Kai Li**, Yu Zhang, Junliang Xing, Pin Tao **ICME 2024. Niagra Falls, Canada**
