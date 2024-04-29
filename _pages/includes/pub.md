@@ -97,10 +97,10 @@
 
 # 2023
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICIST 2023</div><img src='images/pmaa.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICIST 2023</div><img src='images/tdfnet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[TDFNet: An Efficient Audio-Visual Speech Separation Model with Top-down Fusion.](https://arxiv.org/pdf/2303.16565.pdf) Pegg<sup>*</sup>, **Kai Li<sup>*</sup>**, Xiaolin Hu. **ICIST 2023. Cairo, Egypt.**
+[TDFNet: An Efficient Audio-Visual Speech Separation Model with Top-down Fusion.](https://arxiv.org/pdf/2401.14185) Samuel Pegg<sup>*</sup>, **Kai Li<sup>*</sup>**, Xiaolin Hu. **ICIST 2023. Cairo, Egypt.**
 
 - TDFNet is a cutting-edge method in the field of audio-visual speech separation. It introduces a **multi-scale and multi-stage** framework, leveraging the strengths of TDANet and CTCNet. This model is designed to address the inefficiencies and limitations of existing multimodal speech separation models, particularly in real-time tasks.
 
