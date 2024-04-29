@@ -63,7 +63,7 @@
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TGRS 2024</div><img src='https://github.com/XavierJiezou/DiffCR/blob/main/image/README/diffcr.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TGRS 2024</div><img src='https://github.com/XavierJiezou/DiffCR/raw/main/image/README/diffcr.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [DiffCR: A Fast Conditional Diffusion Framework for Cloud Removal From Optical Satellite Images.](https://arxiv.org/pdf/2308.04417) Xuechao Zou<sup>*</sup>, **Kai Li<sup>*</sup>**, Junliang Xing, Yu Zhang, Shiying Wang, Lei Jin, Pin Tao. **TGRS 2024.**
