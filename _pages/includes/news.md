@@ -9,6 +9,11 @@
 
 <div class="scrollable">
   <ul>
+  <li> <i>2024.08</i>: 🎉 Winner of the Best Student Presentation Award in NCMMSC 2024 </li>
+  <li> <i>2024.08</i>: 🎲 One paper is accepted by Remote Sensing 2024. </li>
+  <li> <i>2024.06</i>: 🎉 I was awarded the Excellent Master Thesis of Tsinghua University </li>
+  <li> <i>2024.06</i>: 🎉 I was awarded Outstanding Graduate of Beijing </li>
+  <li> <i>2024.05</i>: 🧩 One paper is accepted by ICML 2024. </li>
   <li> <i>2024.04</i>: 🎲 One paper is accepted by ISMIR 2024. </li>
   <li> <i>2024.04</i>: 🎲 One paper is accepted by ICME 2024. </li>
   <li> <i>2024.03</i>: 🎲 One paper is accepted by TPAMI 2024. </li>

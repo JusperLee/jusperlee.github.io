@@ -5,6 +5,26 @@
 
 # 2024
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2024</div><img src='https://www.xlhu.cn/images/IIANet.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[IIANet: an intra- and inter-modality attention network for audio-visual speech separation](https://openreview.net/pdf?id=FM61SQzF3N) **Kai Li**, Runxuan Yang, Sun Fuchun, Xiaolin Hu. **ICML 2024. Vienna, Austria.**
+
+- Inspired by the cross-modal processing mechanism in the brain, we design intra- and inter-attention modules to integrate auditary and visual information for efficient speech separation. The model simulates audio-visual fusion in different levels of sensory cortical areas as well as higher association areas such as parietal cortex.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Remote Sensing 2024</div><img src='https://www.mdpi.com/remotesensing/remotesensing-16-02899/article_deploy/html/images/remotesensing-16-02899-g004.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Towards Robust Pansharpening: A Large-Scale High-Resolution Multi-Scene Dataset and Novel Approach](https://www.mdpi.com/2072-4292/16/16/2899) Shiying Wang, Xuechao Zou, **Kai Li**, Junliang Xing, Tengfei Cao, Pin Tao. **Remote Sensing 2024.**
+
+- PanBench, a high-resolution multi-scene dataset containing all mainstream satellites and comprising 5898 pairs of samples.
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ISMIR 2024</div><img src='./images/cinematic.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
