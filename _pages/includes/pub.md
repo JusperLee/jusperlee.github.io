@@ -3,14 +3,32 @@
 
 > ( <sup>*</sup> equal contribution, <sup>#</sup> corresponding author)
 
+# 2025
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2025</div><img src='./images/apollo.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Apollo: Band-sequence Modeling for High-Quality Audio Restoration](https://arxiv.org/pdf/2409.08514) **Kai Li**, Yi Luo. **ICASSP 2025. Hyderabad, India.**
+
+- Apollo is a generative model for high-sample-rate audio restoration that utilizes a frequency band split module to enhance audio quality, outperforming existing SR-GAN models in terms of restoration quality and computational efficiency.
+
+- <a href="https://cslikai.cn/Apollo/"><img src="https://img.shields.io/badge/Demo_Page-Online-brightgreen" alt=""></a> \| <a href="https://github.com/JusperLee/Apollo"><img src="https://img.shields.io/github/stars/JusperLee/Apollo?style=social&amp;label=Code+Stars" alt=""></a> \| [![Apollo Model](https://img.shields.io/badge/Huggingface-Apollo-orange?logo=huggingface)](https://huggingface.co/JusperLee/Apollo) \| [![Apollo Space](https://img.shields.io/badge/Huggingface-Apollo%20Space-blue?logo=huggingface)](https://huggingface.co/spaces/patriotyk/Apollo)
+
+
+
+</div>
+</div>
+
 # 2024
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2024</div><img src='https://www.xlhu.cn/images/IIANet.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2024</div><img src='./images/iianet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [IIANet: an intra- and inter-modality attention network for audio-visual speech separation](https://openreview.net/pdf?id=FM61SQzF3N) **Kai Li**, Runxuan Yang, Sun Fuchun, Xiaolin Hu. **ICML 2024. Vienna, Austria.**
 
 - Inspired by the cross-modal processing mechanism in the brain, we design intra- and inter-attention modules to integrate auditary and visual information for efficient speech separation. The model simulates audio-visual fusion in different levels of sensory cortical areas as well as higher association areas such as parietal cortex.
+
+- <a href="https://cslikai.cn/IIANet/"><img src="https://img.shields.io/badge/Demo_Page-Online-brightgreen" alt=""></a> \| <a href="https://github.com/JusperLee/IIANet"><img src="https://img.shields.io/github/stars/JusperLee/IIANet?style=social&amp;label=Code+Stars" alt=""></a> \| [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scanet-a-self-and-cross-attention-network-for/speech-separation-on-lrs2)](https://paperswithcode.com/sota/speech-separation-on-lrs2?p=scanet-a-self-and-cross-attention-network-for) \| [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scanet-a-self-and-cross-attention-network-for/speech-separation-on-lrs3)](https://paperswithcode.com/sota/speech-separation-on-lrs3?p=scanet-a-self-and-cross-attention-network-for) \| [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/scanet-a-self-and-cross-attention-network-for/speech-separation-on-voxceleb2)](https://paperswithcode.com/sota/speech-separation-on-voxceleb2?p=scanet-a-self-and-cross-attention-network-for)
 
 </div>
 </div>
@@ -22,6 +40,8 @@
 
 - PanBench, a high-resolution multi-scene dataset containing all mainstream satellites and comprising 5898 pairs of samples.
 
+- <a href="https://github.com/XavierJiezou/Pansharpening"><img src="https://img.shields.io/github/stars/XavierJiezou/Pansharpening?style=social&amp;label=Code+Stars" alt=""></a> \| [![Huggingface-Dataset](https://img.shields.io/badge/Huggingface-Dataset-orange?logo=huggingface)](https://huggingface.co/datasets/XavierJiezou/pansharpening-datasets)
+
 </div>
 </div>
 
@@ -31,6 +51,8 @@
 [The sound demixing challenge 2023–Cinematic demixing track.](https://arxiv.org/pdf/2308.06981) Stefan Uhlich, Giorgio Fabbro, Masato Hirano, Shusuke Takahashi, Gordon Wichern, Jonathan Le Roux, Dipam Chakraborty, Sharada Mohanty, **Kai Li**, Yi Luo, Jianwei Yu, Rongzhi Gu, Roman Solovyev, Alexander Stempkovskiy, Tatiana Habruseva, Mikhail Sukhovei, Yuki Mitsufuji. **ISMIR 2024.**
 
 - This paper summarizes the cinematic demixing (CDX) track of the Sound Demixing Challenge 2023 (SDX’23). We provide a **comprehensive summary** of the challenge setup, detailing the structure of the competition and the datasets used.
+
+- [![Sound Demixing Challenge](https://img.shields.io/badge/Sound%20Demixing-Challenge-blue?logo=audio&logoColor=white)](https://www.aicrowd.com/challenges/sound-demixing-challenge-2023/problems/cinematic-sound-demixing-track-cdx-23)
 
 </div>
 </div>
@@ -42,7 +64,7 @@
 
 - SPMamba revolutionizes the field of speech separation tasks by leveraging the power of **Mamba** in conjunction with the robust **TF-GridNet** infrastructure.
 
-- We have code released at <a href="https://github.com/JusperLee/SPMamba"><img src="https://img.shields.io/github/stars/JusperLee/SPMamba?style=social&amp;label=Code+Stars" alt=""></a>
+- [![Demo-Page](https://img.shields.io/badge/Demo_Page-Online-brightgreen)](https://cslikai.cn/SPMamba/) \| <a href="https://github.com/JusperLee/SPMamba"><img src="https://img.shields.io/github/stars/JusperLee/SPMamba?style=social&amp;label=Code+Stars" alt=""></a> \| [![MITTR News](https://img.shields.io/badge/MITTR%20News-Article-blue?logo=read-the-docs)](https://www.mittrchina.com/news/detail/13425)
 
 </div>
 </div>
@@ -54,7 +76,7 @@
 
 - This paper presents LEPrompter, a **two-stage prompt-based** framework that enhances lake extraction from remote sensing imagery by using training prompts to improve segmentation accuracy and operating prompt-free during inference for efficient automated extraction.
 
-- We have code released at <a href="https://github.com/BastianChen/LEPrompter"><img src="https://img.shields.io/github/stars/BastianChen/LEPrompter?style=social&amp;label=Code+Stars" alt=""></a>
+- <a href="https://github.com/BastianChen/LEPrompter"><img src="https://img.shields.io/github/stars/BastianChen/LEPrompter?style=social&amp;label=Code+Stars" alt=""></a>
 
 </div>
 </div>
@@ -66,7 +88,7 @@
 
 - A **brain-inspired model** for audio-visual speech separation. The **state-of-the-art** model on this task.
 
-- [**Demo Page**](./project/CTCNet) \| <a href="https://github.com/JusperLee/CTCNet"><img src="https://img.shields.io/github/stars/JusperLee/CTCNet?style=social&amp;label=Code+Stars" alt=""></a> \| [**Brain and Intelligence Laboratory**](https://mp.weixin.qq.com/s/Q51QOLswgVhdt2JBNI-hSQ)
+-  [![Demo-Page](https://img.shields.io/badge/Demo_Page-Online-brightgreen)](./project/CTCNet) \| <a href="https://github.com/JusperLee/CTCNet"><img src="https://img.shields.io/github/stars/JusperLee/CTCNet?style=social&amp;label=Code+Stars" alt=""></a> \| [![Brain and Intelligence Laboratory](https://img.shields.io/badge/Brain%20and%20Intelligence%20Laboratory-公众号-blue?logo=wechat)](https://mp.weixin.qq.com/s/Q51QOLswgVhdt2JBNI-hSQ)
 
 </div>
 </div>
@@ -78,7 +100,8 @@
 
 - The core contribution of this paper is the development of the DiffCR framework, a novel **fast conditional diffusion model** for high-quality cloud removal from optical satellite images, which significantly outperforms existing models in both synthesis **quality and computational efficiency**.
 
-- [**Demo Page**](https://anonymous.4open.science/w/RTFS-Net/AV-Model-Demo.html) \| <a href="https://github.com/spkgyk/RTFS-Net"><img src="https://img.shields.io/github/stars/spkgyk/RTFS-Net?style=social&amp;label=Code+Stars" alt=""></a>
+- [![Demo-Page](https://img.shields.io/badge/Demo_Page-Online-brightgreen)](https://anonymous.4open.science/w/RTFS-Net/AV-Model-Demo.html) \| <a href="https://github.com/spkgyk/RTFS-Net"><img src="https://img.shields.io/github/stars/spkgyk/RTFS-Net?style=social&amp;label=Code+Stars" alt=""></a> \| [![Jiqizhixin Article](https://img.shields.io/badge/Jiqizhixin-Article-blue?logo=read-the-docs)](https://www.jiqizhixin.com/articles/2024-03-06)
+
 
 </div>
 </div>
@@ -90,7 +113,7 @@
 
 - The core contribution of this paper is the development of the DiffCR framework, a novel **fast conditional diffusion model** for high-quality cloud removal from optical satellite images, which significantly outperforms existing models in both synthesis **quality and computational efficiency**.
 
-- [**Demo Page**](https://xavierjiezou.github.io/DiffCR/) \| <a href="https://github.com/XavierJiezou/DiffCR"><img src="https://img.shields.io/github/stars/XavierJiezou/DiffCR?style=social&amp;label=Code+Stars" alt=""></a>
+- [![Demo-Page](https://img.shields.io/badge/Demo_Page-Online-brightgreen)](https://xavierjiezou.github.io/DiffCR/) \| <a href="https://github.com/XavierJiezou/DiffCR"><img src="https://img.shields.io/github/stars/XavierJiezou/DiffCR?style=social&amp;label=Code+Stars" alt=""></a>
 
 </div>
 </div>
@@ -112,6 +135,8 @@
 
 - The core contribution of this paper is the introduction of LEFormer, a **hybrid CNN-Transformer** architecture that effectively combines local and global features for high-precision lake extraction from remote sensing images, achieving **state-of-the-art performance and efficiency** on benchmark datasets.
 
+- <a href="https://github.com/BastianChen/LEFormer"><img src="https://img.shields.io/github/stars/BastianChen/LEFormer?style=social&amp;label=Code+Stars" alt=""></a>
+
 </div>
 </div>
 
@@ -124,7 +149,7 @@
 
 - TDFNet is a cutting-edge method in the field of audio-visual speech separation. It introduces a **multi-scale and multi-stage** framework, leveraging the strengths of TDANet and CTCNet. This model is designed to address the inefficiencies and limitations of existing multimodal speech separation models, particularly in real-time tasks.
 
-- We have code released at <a href="https://github.com/spkgyk/TDFNet"><img src="https://img.shields.io/github/stars/spkgyk/TDFNet?style=social&amp;label=Code+Stars" alt=""></a>
+- <a href="https://github.com/spkgyk/TDFNet"><img src="https://img.shields.io/github/stars/spkgyk/TDFNet?style=social&amp;label=Code+Stars" alt=""></a>
 
 </div>
 </div>
@@ -135,7 +160,7 @@
 [PMAA: A Progressive Multi-scale Attention Autoencoder Model for High-Performance Cloud Removal from Multi-temporal Satellite Imagery.](https://arxiv.org/pdf/2303.16565.pdf) Xuechao Zou<sup>*</sup>, **Kai Li<sup>*</sup>**, Junliang Xing, Pin Tao<sup>#</sup>, Yachao Cui. **ECAI 2023. Kraków, Poland.**
 
 - A **Progressive Multi-scale Attention Autoencoder (PMAA)** model for high-performance cloud removal from multi-temporal satellite imagery, which achieves **state-of-the-art performance** on benchmark datasets.
-- We have code released at <a href="https://github.com/XavierJiezou/PMAA"><img src="https://img.shields.io/github/stars/XavierJiezou/PMAA?style=social&amp;label=Code+Stars" alt=""></a>
+- [![Demo-Page](https://img.shields.io/badge/Demo_Page-Online-brightgreen)](https://xavierjiezou.github.io/PMAA/) \| <a href="https://github.com/XavierJiezou/PMAA"><img src="https://img.shields.io/github/stars/XavierJiezou/PMAA?style=social&amp;label=Code+Stars" alt=""></a>
 
 </div>
 </div>
@@ -148,7 +173,7 @@
 - **Top-down neural projections** are ubiquitous in the brain. We found that this kind of projections are very useful for solving the Cocktail Party Problem.
 
 - [![知乎](https://img.shields.io/badge/知乎-TDANet(ICLR 2023)-0084FF.svg)](https://zhuanlan.zhihu.com/p/605100121) \| 
-[**Audio Demo Page**](./project/TDANet) \| <a href="https://github.com/JusperLee/TDANet"><img src="https://img.shields.io/github/stars/JusperLee/TDANet?style=social&amp;label=Code+Stars" alt=""></a> <strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:LkGwnXOMwfcC'></span></strong>
+[![Demo-Page](https://img.shields.io/badge/Demo_Page-Online-brightgreen)](./project/TDANet) \| <a href="https://github.com/JusperLee/TDANet"><img src="https://img.shields.io/github/stars/JusperLee/TDANet?style=social&amp;label=Code+Stars" alt=""></a> <strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:LkGwnXOMwfcC'></span></strong>
 
 </div>
 </div>
@@ -170,7 +195,7 @@
 
 - An audio-visual **lightweight iterative model** for speech separation in noisy environments. AVLIT employs **Progressive Learning (PL)** to decompose the mapping between inputs and outputs into multiple steps, enhancing computational efficiency. 
 
-- We have code released at <a href="https://github.com/hmartelb/avlit"><img src="https://img.shields.io/github/stars/hmartelb/avlit?style=social&amp;label=Code+Stars" alt=""></a>
+- [![Demo-Page](https://img.shields.io/badge/Demo_Page-Online-brightgreen)](https://avlit-interspeech.github.io/) \| <a href="https://github.com/hmartelb/avlit"><img src="https://img.shields.io/github/stars/hmartelb/avlit?style=social&amp;label=Code+Stars" alt=""></a>
 
 </div>
 </div>
@@ -182,7 +207,7 @@
 
 - We propose a **Neural State-Space Model (S4M)** for speech separation, which can **efficiently** separate multiple speakers.
 
-- We have code released at <a href="https://github.com/JusperLee/S4M"><img src="https://img.shields.io/github/stars/JusperLee/S4M?style=social&amp;label=Code+Stars" alt=""></a>
+- <a href="https://github.com/JusperLee/S4M"><img src="https://img.shields.io/github/stars/JusperLee/S4M?style=social&amp;label=Code+Stars" alt=""></a>
 
 </div>
 </div>
@@ -216,7 +241,7 @@
 
 - With the help of DNNs, we suggest that the projection of **top-down attention** signals to lower stages within the auditory pathway of the human brain plays a more significant role than the higher stages in solving the "cocktail party problem".
 
-- We have code released at <a href="https://github.com/liaoyd16/cocktail_lk"><img src="https://img.shields.io/github/stars/liaoyd16/cocktail_lk?style=social&amp;label=Code+Stars" alt=""></a><strong>
+- <a href="https://github.com/liaoyd16/cocktail_lk"><img src="https://img.shields.io/github/stars/liaoyd16/cocktail_lk?style=social&amp;label=Code+Stars" alt=""></a><strong>
 
 </div>
 </div>
@@ -230,7 +255,7 @@
 
 - This paper introduces an asynchronous updating scheme in a **bio-inspired recurrent neural network architecture**, significantly enhancing speech separation **efficiency and accuracy** compared to traditional synchronous methods.
 
-- [![知乎](https://img.shields.io/badge/知乎-AFRCNN(NeuralPS 2021)-0084FF.svg)](https://zhuanlan.zhihu.com/p/508868699) \| [**Audio Demo Page**](./project/AFRCNN) \| [**Speech Enhancement Demo**](./project/AFRCNN-Enh) \| <a href="https://github.com/JusperLee/AFRCNN-For-Speech-Separation"><img src="https://img.shields.io/github/stars/JusperLee/AFRCNN-For-Speech-Separation?style=social&amp;label=Code+Stars" alt=""></a> <strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:zYLM7Y9cAGgC'></span></strong>
+- [![知乎](https://img.shields.io/badge/知乎-AFRCNN(NeuralPS 2021)-0084FF.svg)](https://zhuanlan.zhihu.com/p/508868699) \| [![Demo-Page](https://img.shields.io/badge/Sep_Demo_Page-Online-brightgreen)](./project/AFRCNN) \| [![Enh-Demo-Page](https://img.shields.io/badge/Enh_Demo_Page-Online-brightgreen)](./project/AFRCNN-Enh) \| <a href="https://github.com/JusperLee/AFRCNN-For-Speech-Separation"><img src="https://img.shields.io/github/stars/JusperLee/AFRCNN-For-Speech-Separation?style=social&amp;label=Code+Stars" alt=""></a> <strong><span class='show_paper_citations' data='fHkHcMsAAAAJ:zYLM7Y9cAGgC'></span></strong>
 
 </div>
 </div>
