@@ -11,6 +11,7 @@
   <ul>
   <li> <i>2024.12</i>: 🎲 One paper is accepted by ICASSP 2025. </li>
   <li> <i>2024.12</i>: 🎉 Outstanding Master's Thesis Award from China Society of Image and Graphics. </li>
+  <li> <i>2024.09</i>: 🎲 One paper is accepted by CCS 2024. </li>
   <li> <i>2024.08</i>: 🎉 Best Student Presentation Award in NCMMSC 2024 </li>
   <li> <i>2024.08</i>: 🎲 One paper is accepted by Remote Sensing 2024. </li>
   <li> <i>2024.06</i>: 🎉 I was awarded the Excellent Master Thesis of Tsinghua University </li>

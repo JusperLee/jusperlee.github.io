@@ -21,6 +21,19 @@
 
 # 2024
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CCS 2024</div><img src='./images/safeear.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[SafeEar: Content Privacy-Preserving Audio Deepfake Detection](https://dl.acm.org/doi/abs/10.1145/3658644.3670285) Xinfeng Li, **Kai Li***, Yifan Zheng, Chen Yan, Xiaoyu Ji, Wenyuan Xu. **CCS 2024. Salt Lake City, U.S.A.**
+
+- SafeEar, a novel framework that aims to detect deepfake audios without relying on accessing the speech content within.
+  
+- <a href="https://safeearweb.github.io/Project/"><img src="https://img.shields.io/badge/Demo_Page-Online-brightgreen" alt=""></a> \| <a href="https://github.com/LetterLiGo/SafeEar"><img src="https://img.shields.io/github/stars/LetterLiGo/SafeEar?style=social&amp;label=Code+Stars" alt=""></a> \| [![Zenodo](https://img.shields.io/badge/Zenodo-CVoiceFake_Full-blue?logo=zenodo)](https://zenodo.org/records/14062964) \| [![Zenodo](https://img.shields.io/badge/Zenodo-CVoiceFake-blue?logo=zenodo)](https://zenodo.org/records/11124319) \| [![WeChat Article](https://img.shields.io/badge/Xinzhiyuan-新智元-green?logo=wechat)](https://mp.weixin.qq.com/s/6OWv6nzYoiSRsSv79-FSbQ)
+
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2024</div><img src='./images/iianet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -88,7 +101,7 @@
 
 - A **brain-inspired model** for audio-visual speech separation. The **state-of-the-art** model on this task.
 
--  [![Demo-Page](https://img.shields.io/badge/Demo_Page-Online-brightgreen)](./project/CTCNet) \| <a href="https://github.com/JusperLee/CTCNet"><img src="https://img.shields.io/github/stars/JusperLee/CTCNet?style=social&amp;label=Code+Stars" alt=""></a> \| [![Brain and Intelligence Laboratory](https://img.shields.io/badge/Brain%20and%20Intelligence%20Laboratory-公众号-blue?logo=wechat)](https://mp.weixin.qq.com/s/Q51QOLswgVhdt2JBNI-hSQ)
+-  [![Demo-Page](https://img.shields.io/badge/Demo_Page-Online-brightgreen)](./project/CTCNet) \| <a href="https://github.com/JusperLee/CTCNet"><img src="https://img.shields.io/github/stars/JusperLee/CTCNet?style=social&amp;label=Code+Stars" alt=""></a> \| [![Brain and Intelligence Laboratory](https://img.shields.io/badge/Brain%20and%20Intelligence%20Laboratory-脑与智能实验室-blue?logo=wechat)](https://mp.weixin.qq.com/s/Q51QOLswgVhdt2JBNI-hSQ)
 
 </div>
 </div>
