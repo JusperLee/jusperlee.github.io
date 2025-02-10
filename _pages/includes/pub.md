@@ -5,6 +5,30 @@
 
 # 2025
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='./images/sonicsim.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[SonicSim: A customizable simulation platform for speech processing in moving sound source scenarios](https://openreview.net/pdf?id=Hx2ADQLi8M) **Kai Li**, Wendi Sang, Chang Zeng, Guo Che, Runxuan Yang, Xiaolin Hu. **ICLR 2025. Singapore EXPO.**
+
+- SonicSim is a customizable simulation platform built on Habitat-sim, designed to generate high-fidelity, diverse synthetic data for speech separation and enhancement tasks involving moving sound sources, addressing the limitations of real-world and existing synthetic datasets in acoustic realism and scalability.
+
+- <a href="https://cslikai.cn/SonicSim/"><img src="https://img.shields.io/badge/Demo_Page-Online-brightgreen" alt=""></a> \| <a href="https://github.com/JusperLee/SonicSim"><img src="https://img.shields.io/github/stars/JusperLee/SonicSim?style=social&amp;label=Code+Stars" alt=""></a> \| [![SonicSim Docker](https://img.shields.io/badge/Docker-TIGER_Speech-blue?logo=docker)](https://huggingface.co/JusperLee/TIGER-speech) \| [![SonicSet](https://img.shields.io/badge/Huggingface-SonicSet-orange?logo=huggingface)](https://huggingface.co/JusperLee/SonicSet) \| [![WeChat Article](https://img.shields.io/badge/Xinzhiyuan-新智元-green?logo=wechat)](https://mp.weixin.qq.com/s/7tZDu5nDBoG1h0YuXA1C2g)
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='./images/tiger.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[TIGER: Time-frequency Interleaved Gain Extraction and Reconstruction for Efficient Speech Separation](https://openreview.net/pdf?id=rzx3vcvlzj) Mohan Xu, **Kai Li***, Guo Chen, Xiaolin Hu. **ICLR 2025. Singapore EXPO.**
+
+- TIGER is an efficient time-frequency domain speech separation model that significantly reduces parameters and computational costs by leveraging frequency band-split and multi-scale attention, achieving state-of-the-art performance while being highly lightweight.
+
+- <a href="https://cslikai.cn/TIGER/"><img src="https://img.shields.io/badge/Demo_Page-Online-brightgreen" alt=""></a> \| <a href="https://github.com/JusperLee/TIGER"><img src="https://img.shields.io/github/stars/JusperLee/TIGER?style=social&amp;label=Code+Stars" alt=""></a> \| [![TIGER Speech Model](https://img.shields.io/badge/Huggingface-TIGER_Speech-orange?logo=huggingface)](https://huggingface.co/JusperLee/TIGER-speech) \| [![TIGER DnR Model](https://img.shields.io/badge/Huggingface-TIGER_DnR-orange?logo=huggingface)](https://huggingface.co/JusperLee/TIGER-DnR)
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICASSP 2025</div><img src='./images/apollo.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -13,8 +37,6 @@
 - Apollo is a generative model for high-sample-rate audio restoration that utilizes a frequency band split module to enhance audio quality, outperforming existing SR-GAN models in terms of restoration quality and computational efficiency.
 
 - <a href="https://cslikai.cn/Apollo/"><img src="https://img.shields.io/badge/Demo_Page-Online-brightgreen" alt=""></a> \| <a href="https://github.com/JusperLee/Apollo"><img src="https://img.shields.io/github/stars/JusperLee/Apollo?style=social&amp;label=Code+Stars" alt=""></a> \| [![Apollo Model](https://img.shields.io/badge/Huggingface-Apollo-orange?logo=huggingface)](https://huggingface.co/JusperLee/Apollo) \| [![Apollo Space](https://img.shields.io/badge/Huggingface-Apollo%20Space-blue?logo=huggingface)](https://huggingface.co/spaces/patriotyk/Apollo)
-
-
 
 </div>
 </div>
