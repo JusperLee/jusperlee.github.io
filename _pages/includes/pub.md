@@ -12,7 +12,7 @@
 
 - SonicSim is a customizable simulation platform built on Habitat-sim, designed to generate high-fidelity, diverse synthetic data for speech separation and enhancement tasks involving moving sound sources, addressing the limitations of real-world and existing synthetic datasets in acoustic realism and scalability.
 
-- <a href="https://cslikai.cn/SonicSim/"><img src="https://img.shields.io/badge/Demo_Page-Online-brightgreen" alt=""></a> \| <a href="https://github.com/JusperLee/SonicSim"><img src="https://img.shields.io/github/stars/JusperLee/SonicSim?style=social&amp;label=Code+Stars" alt=""></a> \| [![SonicSim Docker](https://img.shields.io/badge/Docker-TIGER_Speech-blue?logo=docker)](https://huggingface.co/JusperLee/TIGER-speech) \| [![SonicSet](https://img.shields.io/badge/Huggingface-SonicSet-orange?logo=huggingface)](https://huggingface.co/JusperLee/SonicSet) \| [![WeChat Article](https://img.shields.io/badge/Xinzhiyuan-新智元-green?logo=wechat)](https://mp.weixin.qq.com/s/7tZDu5nDBoG1h0YuXA1C2g)
+- <a href="https://cslikai.cn/SonicSim/"><img src="https://img.shields.io/badge/Demo_Page-Online-brightgreen" alt=""></a> \| <a href="https://github.com/JusperLee/SonicSim"><img src="https://img.shields.io/github/stars/JusperLee/SonicSim?style=social&amp;label=Code+Stars" alt=""></a> \| [![SonicSim Docker](https://img.shields.io/badge/Docker-SonicSim-blue?logo=docker)](https://hub.docker.com/r/jusperlee1/sonicsim/tags) \| [![SonicSet](https://img.shields.io/badge/Huggingface-SonicSet-orange?logo=huggingface)](https://huggingface.co/JusperLee/SonicSet) \| [![WeChat Article](https://img.shields.io/badge/Xinzhiyuan-新智元-green?logo=wechat)](https://mp.weixin.qq.com/s/7tZDu5nDBoG1h0YuXA1C2g)
 
 </div>
 </div>
