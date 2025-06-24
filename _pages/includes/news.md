@@ -9,6 +9,7 @@
 
 <div class="scrollable">
   <ul>
+  <li> <i>2025.04</i>: 🧩 Two paper is accepted by ICME 2025. </li>
   <li> <i>2025.01</i>: 🧩 Two paper is accepted by ICLR 2025. </li>
   <li> <i>2024.12</i>: 🎲 One paper is accepted by ICASSP 2025. </li>
   <li> <i>2024.12</i>: 🎉 Outstanding Master's Thesis Award from China Society of Image and Graphics. </li>

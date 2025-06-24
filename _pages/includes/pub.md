@@ -5,6 +5,30 @@
 
 # 2025
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2025</div><img src='./images/kdta.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Knowledge Transfer and Domain Adaptation for Fine-Grained Remote Sensing Image Segmentation.](https://arxiv.org/pdf/2412.06664) Shun Zhang, Xuechao Zou, **Kai Li**, Congyan Lang, Shiying Wang, Pin Tao, Tengfei Cao. **ICME 2025. Nantes, France.**
+
+- This paper proposes a knowledge transfer and domain adaptation framework that leverages pretrained vision transformers to guide CNN-based models for fine-grained remote sensing image segmentation, achieving significant improvements through Feature Alignment and Feature Modulation modules.
+
+- [![Demo-Page](https://img.shields.io/badge/Demo_Page-Online-brightgreen)](https://xavierjiezou.github.io/KTDA/) \| <a href="https://github.com/JusperLee/SPMamba"><img src="https://img.shields.io/github/stars/XavierJiezou/KTDA?style=social&amp;label=Code+Stars" alt=""></a> \| [![ktda-models](https://img.shields.io/badge/Huggingface-ktda_model-orange?logo=huggingface)](https://huggingface.co/XavierJiezou/ktda-models) \| [![ktda-datasets](https://img.shields.io/badge/Huggingface-ktda_datasets-orange?logo=huggingface)](https://huggingface.co/datasets/XavierJiezou/ktda-datasets)
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2025</div><img src='./images/spmamba.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[SPMamba: State-space model is all you need in speech separation.](https://arxiv.org/pdf/2404.02063) **Kai Li***, Guo Chen*, Runxuan Yang, Xiaolin Hu. **ICME 2025. Nantes, France.**
+
+- SPMamba revolutionizes the field of speech separation tasks by leveraging the power of **Mamba** in conjunction with the robust **TF-GridNet** infrastructure.
+
+- [![Demo-Page](https://img.shields.io/badge/Demo_Page-Online-brightgreen)](https://cslikai.cn/SPMamba/) \| <a href="https://github.com/JusperLee/SPMamba"><img src="https://img.shields.io/github/stars/JusperLee/SPMamba?style=social&amp;label=Code+Stars" alt=""></a> \| [![MITTR News](https://img.shields.io/badge/MITTR%20News-Article-blue?logo=read-the-docs)](https://www.mittrchina.com/news/detail/13425)
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='./images/sonicsim.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -88,18 +112,6 @@
 - This paper summarizes the cinematic demixing (CDX) track of the Sound Demixing Challenge 2023 (SDX’23). We provide a **comprehensive summary** of the challenge setup, detailing the structure of the competition and the datasets used.
 
 - [![Sound Demixing Challenge](https://img.shields.io/badge/Sound%20Demixing-Challenge-blue?logo=audio&logoColor=white)](https://www.aicrowd.com/challenges/sound-demixing-challenge-2023/problems/cinematic-sound-demixing-track-cdx-23)
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2024</div><img src='./images/spmamba.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[SPMamba: State-space model is all you need in speech separation.](https://arxiv.org/pdf/2404.02063) Kai Li, Guo Chen. **Arxiv 2024.**
-
-- SPMamba revolutionizes the field of speech separation tasks by leveraging the power of **Mamba** in conjunction with the robust **TF-GridNet** infrastructure.
-
-- [![Demo-Page](https://img.shields.io/badge/Demo_Page-Online-brightgreen)](https://cslikai.cn/SPMamba/) \| <a href="https://github.com/JusperLee/SPMamba"><img src="https://img.shields.io/github/stars/JusperLee/SPMamba?style=social&amp;label=Code+Stars" alt=""></a> \| [![MITTR News](https://img.shields.io/badge/MITTR%20News-Article-blue?logo=read-the-docs)](https://www.mittrchina.com/news/detail/13425)
 
 </div>
 </div>
