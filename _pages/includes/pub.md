@@ -8,7 +8,7 @@
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='./images/D2LS.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Dynamic Dictionary Learning for Remote Sensing Image Segmentation.](https://arxiv.org/abs/2503.06683) Xuechao Zou, Yue Li, Shun Zhang, **Kai Li**, Shiying Wang, Pin Tao, Junliang Xing, Congyan Lang. **ICME 2025. Nantes, France.**
+[Dynamic Dictionary Learning for Remote Sensing Image Segmentation.](https://arxiv.org/abs/2503.06683) Xuechao Zou, Yue Li, Shun Zhang, **Kai Li**, Shiying Wang, Pin Tao, Junliang Xing, Congyan Lang. **ICCV 2025. Honolulu, Hawaii.**
 
 - Tackling inter-class similarity, intra-class variability, and limited dynamic adaptability to scene changes (e.g., cloud thickness) in remote sensing segmentation, we propose a dynamic dictionary learning framework with multi-stage alternating cross-attention between image features and dictionary embeddings for dynamic refinement, plus a dictionary space contrastive constraint to boost intra-class compactness and inter-class separability—outperforming state-of-the-art on coarse/fine-grained datasets, especially LoveDA and UAVid online leaderboards.
 
