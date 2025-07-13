@@ -8,7 +8,7 @@
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECAI 2025</div><img src='./images/Swift-Net.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[A fast and lightweight model for Causal Audio-Visual Speech Separation.](https://arxiv.org/abs/2506.06689) Wendi Sang*, **Kai Li***, Runxuan Yang, Jianqiang Huang, Xiaolin Hu. **ECAI 2025. Bologna, Italy.**
+[A fast and lightweight model for Causal Audio-Visual Speech Separation.](https://arxiv.org/abs/2506.06689) Wendi Sang*, **Kai Li\***, Runxuan Yang, Jianqiang Huang, Xiaolin Hu. **ECAI 2025. Bologna, Italy.**
 
 - Swift-Net model achieves real-time efficient speech separation by combining visual (lip reading) and audio information
 
