@@ -5,6 +5,18 @@
 
 # 2025
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECAI 2025</div><img src='./images/Swift-Net.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[A fast and lightweight model for Causal Audio-Visual Speech Separation.](https://arxiv.org/abs/2506.06689) Wendi Sang*, **Kai Li***, Runxuan Yang, Jianqiang Huang, Xiaolin Hu. **ECAI 2025. Bologna, Italy.**
+
+- Swift-Net model achieves real-time efficient speech separation by combining visual (lip reading) and audio information
+
+- [![Demo-Page](https://img.shields.io/badge/Demo_Page-Online-brightgreen)](https://cslikai.cn/Swift-Net/) \| <a href="https://github.com/JusperLee/Swift-Net"><img src="https://img.shields.io/github/stars/JusperLee/Swift-Net?style=social&amp;label=Code+Stars" alt=""></a> 
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='./images/D2LS.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
