@@ -45,7 +45,7 @@
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICME 2025</div><img src='./images/spmamba.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[SPMamba: State-space model is all you need in speech separation.](https://arxiv.org/pdf/2404.02063) **Kai Li***, Guo Chen*, Runxuan Yang, Xiaolin Hu. **ICME 2025. Nantes, France.**
+[SPMamba: State-space model is all you need in speech separation.](https://arxiv.org/pdf/2404.02063) **Kai Li\***, Guo Chen*, Runxuan Yang, Xiaolin Hu. **ICME 2025. Nantes, France.**
 
 - SPMamba revolutionizes the field of speech separation tasks by leveraging the power of **Mamba** in conjunction with the robust **TF-GridNet** infrastructure.
 
