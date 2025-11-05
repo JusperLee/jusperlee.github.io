@@ -1,4 +1,5 @@
 # 🎖 Honors and Awards
+- *2025.09* Third Prize in CCF Advanced Audio Technology Competition (Task 2)
 - *2024.12* Outstanding Master's Thesis Award from China Society of Image and Graphics
 - *2024.08* Winner of the Best Student Presentation Award in NCMMSC 2024
 - *2024.06* Outstanding Graduate of Beijing

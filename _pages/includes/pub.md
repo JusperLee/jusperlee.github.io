@@ -5,6 +5,40 @@
 
 # 2025
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='./images/MMAR.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[MMAR: A Challenging Benchmark for Deep Reasoning in Speech, Audio, Music, and Their Mix](https://arxiv.org/abs/2505.13032) Ziyang Ma, Yinghao Ma, Yanqiao Zhu, Chen Yang, Yi-Wen Chao, Ruiyang Xu, Wenxi Chen, Yuanzhe Chen, Zhuo Chen, Jian Cong, **Kai Li**, et al. **NeurIPS 2025.**
+
+- MMAR is a comprehensive benchmark designed to evaluate Audio-Language Models' deep reasoning capabilities across multi-disciplinary audio tasks, featuring 1,000 curated audio-question-answer triplets with Chain-of-Thought rationales spanning speech, music, sound, and their mixtures.
+
+- <a href="https://github.com/ddlBoJack/MMAR"><img src="https://img.shields.io/github/stars/ddlBoJack/MMAR?style=social&amp;label=Code+Stars" alt=""></a> \| [![Huggingface-Dataset](https://img.shields.io/badge/Huggingface-Dataset-orange?logo=huggingface)](https://huggingface.co/datasets/ddlBoJack/MMAR)
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TGRS 2025</div><img src='./images/GDSR.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[GDSR: Global-Detail Integration Through Dual-Branch Network With Wavelet Losses for Remote Sensing Image Super-Resolution](https://ieeexplore.ieee.org/abstract/document/11192566) Qiwei Zhu, **Kai Li**, Guojing Zhang, Xiaoying Wang, Jianqiang Huang, Xilai Li. **IEEE Transactions on Geoscience and Remote Sensing (TGRS) 2025.**
+
+- GDSR proposes a dual-branch network integrating global and detail information with wavelet losses for enhanced remote sensing image super-resolution
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ASRU 2025</div><img src='./images/TFACM.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Time-Frequency-Based Attention Cache Memory Model for Real-Time Speech Separation](https://cslikai.cn/TFACM/) Guo Chen*, **Kai Li\***, Runxuan Yang, Xiaolin Hu. **ASRU 2025.**
+
+- TFACM introduces an attention cache memory mechanism for causal speech separation, achieving comparable performance to state-of-the-art TF-GridNet-Causal with significantly lower complexity and fewer parameters through effective spatio-temporal relationship modeling.
+
+- [![Demo-Page](https://img.shields.io/badge/Demo_Page-Online-brightgreen)](https://cslikai.cn/TFACM/)
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECAI 2025</div><img src='./images/Swift-Net.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -12,7 +46,7 @@
 
 - Swift-Net model achieves real-time efficient speech separation by combining visual (lip reading) and audio information
 
-- [![Demo-Page](https://img.shields.io/badge/Demo_Page-Online-brightgreen)](https://cslikai.cn/Swift-Net/) \| <a href="https://github.com/JusperLee/Swift-Net"><img src="https://img.shields.io/github/stars/JusperLee/Swift-Net?style=social&amp;label=Code+Stars" alt=""></a> 
+- [![Demo-Page](https://img.shields.io/badge/Demo_Page-Online-brightgreen)](https://cslikai.cn/Swift-Net/) \| <a href="https://github.com/JusperLee/Swift-Net"><img src="https://img.shields.io/github/stars/JusperLee/Swift-Net?style=social&amp;label=Code+Stars" alt=""></a>
 
 </div>
 </div>

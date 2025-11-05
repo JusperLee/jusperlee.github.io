@@ -5,6 +5,7 @@
 - *2013.09 - 2016.06*, Zhengzhou fourth Middle School, Zhengzhou.
 
 # 💻 Internships
+- *2025.03 - 2025.08*, [Bytedance Seed AI](https://seed.bytedance.com/), Beijing.
 - *2022.10 - 2024.06*, [Tencent AI Lab](https://ai.tencent.com/), Beijing.
 - *2021.07 - 2022.01*, [Tencent AI Lab](https://ai.tencent.com/), Beijing.
 - *2020.09 - 2021.01*, [Moyincloud](https://enjoymusic.ai/), Beijing.
@@ -14,6 +15,6 @@
 - Journal Reviewer: TASLP, TPAMI
 
 # 🧑‍🏫 Teaching
-- 2022 Fall, Head TA in Introduction to Deep Learning (00240332), instructed by Prof. Xiaolin Hu
-
+- 2025 Fall, Head TA in Introduction to Deep Learning (00240332), instructed by Prof. Xiaolin Hu
 - 2023 Fall, Head TA in Neurological and Cognitive Computing (80240642-0), instructed by Prof. Xiaolin Hu
+- 2022 Fall, Head TA in Introduction to Deep Learning (00240332), instructed by Prof. Xiaolin Hu

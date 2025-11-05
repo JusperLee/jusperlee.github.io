@@ -9,6 +9,11 @@
 
 <div class="scrollable">
   <ul>
+  <li> <i>2025.10</i>: 🎲 One paper is accepted by TGRS 2025. </li>
+  <li> <i>2025.10</i>: 🎲 One paper is accepted by TDSC 2025. </li>
+  <li> <i>2025.09</i>: 🎲 One paper is accepted by NeurIPS 2025. </li>
+  <li> <i>2025.08</i>: 🎉 Won the third prize 🥉 in the CCF Advanced Audio Technology Competition Task 2. </li>
+  <li> <i>2025.08</i>: 🎲 One paper is accepted by ASRU 2025. </li>
   <li> <i>2025.07</i>: 🎲 One paper is accepted by ECAI 2025. </li>
   <li> <i>2025.06</i>: 🎲 One paper is accepted by ICCV 2025. </li>
   <li> <i>2025.04</i>: 🧩 Two paper is accepted by ICME 2025. </li>
