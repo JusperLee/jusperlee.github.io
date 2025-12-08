@@ -9,6 +9,7 @@
 
 <div class="scrollable">
   <ul>
+  <li> <i>2025.12</i>: 🎉 One paper (Oral) and two papers are accepted by AAAI 2026. </li>
   <li> <i>2025.10</i>: 🎲 One paper is accepted by TGRS 2025. </li>
   <li> <i>2025.10</i>: 🎲 One paper is accepted by TDSC 2025. </li>
   <li> <i>2025.09</i>: 🎲 One paper is accepted by NeurIPS 2025. </li>

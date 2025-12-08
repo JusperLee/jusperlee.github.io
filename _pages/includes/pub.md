@@ -3,12 +3,47 @@
 
 > ( <sup>*</sup> equal contribution, <sup>#</sup> corresponding author)
 
-# 2025
+# 2026
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='./images/MMAR.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2026</div><img src='./images/DegVoC.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[MMAR: A Challenging Benchmark for Deep Reasoning in Speech, Audio, Music, and Their Mix](https://arxiv.org/abs/2505.13032) Ziyang Ma, Yinghao Ma, Yanqiao Zhu, Chen Yang, Yi-Wen Chao, Ruiyang Xu, Wenxi Chen, Yuanzhe Chen, Zhuo Chen, Jian Cong, **Kai Li**, et al. **NeurIPS 2025.**
+[DegVoC: Revisiting Neural Vocoder from a Degradation Perspective](https://arxiv.org/abs/2412.xxxxx) Andong Li, Tong Lei, Lingling Dai, **Kai Li**, Rilin Chen, Meng Yu, Xiaodong Li, Dong Yu, Chengshi Zheng. **AAAI 2026. Singapore, Singapore.**
+
+- DegVoC revisits neural vocoder from a degradation perspective, proposing a novel approach for high-quality speech synthesis.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2026</div><img src='./images/FGNet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[FGNet: Leveraging Feature-Guided Attention to Refine SAM2 for 3D EM Neuron Segmentation](https://arxiv.org/abs/2511.13063) Zhenghua Li, Hang Chen, Zihao Sun, **Kai Li**, Xiaolin Hu. **AAAI 2026. Singapore, Singapore.**
+
+- FGNet leverages feature-guided attention to refine SAM2 for accurate 3D electron microscopy neuron segmentation.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2026</div><img src='./images/SepPrune.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[SepPrune: Structured Pruning for Efficient Deep Speech Separation](https://arxiv.org/abs/2505.12079) Yuqi Li*, **Kai Li\***, Xin Yin, Zhifei Yang, Zeyu Dong, Zhengtao Yao, Haoyan Xu, Yingli Tian, Yao Lu. **AAAI 2026. Singapore, Singapore.**
+
+- SepPrune proposes structured pruning techniques for efficient deep speech separation, significantly reducing model complexity while maintaining performance.
+
+- <a href="https://github.com/itsnotacie/SepPrune"><img src="https://img.shields.io/github/stars/itsnotacie/SepPrune?style=social&amp;label=Code+Stars" alt=""></a>
+
+</div>
+</div>
+
+
+# 2025
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='./images/MMAR.png' alt="sym" width="50%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[MMAR: A Challenging Benchmark for Deep Reasoning in Speech, Audio, Music, and Their Mix](https://arxiv.org/abs/2505.13032) Ziyang Ma, Yinghao Ma, Yanqiao Zhu, Chen Yang, Yi-Wen Chao, Ruiyang Xu, Wenxi Chen, Yuanzhe Chen, Zhuo Chen, Jian Cong, **Kai Li**, et al. **NeurIPS 2025. San Diego, California.**
 
 - MMAR is a comprehensive benchmark designed to evaluate Audio-Language Models' deep reasoning capabilities across multi-disciplinary audio tasks, featuring 1,000 curated audio-question-answer triplets with Chain-of-Thought rationales spanning speech, music, sound, and their mixtures.
 
@@ -23,6 +58,7 @@
 [GDSR: Global-Detail Integration Through Dual-Branch Network With Wavelet Losses for Remote Sensing Image Super-Resolution](https://ieeexplore.ieee.org/abstract/document/11192566) Qiwei Zhu, **Kai Li**, Guojing Zhang, Xiaoying Wang, Jianqiang Huang, Xilai Li. **IEEE Transactions on Geoscience and Remote Sensing (TGRS) 2025.**
 
 - GDSR proposes a dual-branch network integrating global and detail information with wavelet losses for enhanced remote sensing image super-resolution
+- [![Demo-Page](https://img.shields.io/badge/Demo_Page-Online-brightgreen)](https://doswin.github.io/GDSR/) \| <a href="https://github.com/Doswin/GDSR"><img src="https://img.shields.io/github/stars/Doswin/GDSR?style=social&amp;label=Code+Stars" alt=""></a>
 
 </div>
 </div>
@@ -30,7 +66,7 @@
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ASRU 2025</div><img src='./images/TFACM.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Time-Frequency-Based Attention Cache Memory Model for Real-Time Speech Separation](https://cslikai.cn/TFACM/) Guo Chen*, **Kai Li\***, Runxuan Yang, Xiaolin Hu. **ASRU 2025.**
+[Time-Frequency-Based Attention Cache Memory Model for Real-Time Speech Separation](https://cslikai.cn/TFACM/) Guo Chen*, **Kai Li\***, Runxuan Yang, Xiaolin Hu. **ASRU 2025. Honolulu, Hawaii.**
 
 - TFACM introduces an attention cache memory mechanism for causal speech separation, achieving comparable performance to state-of-the-art TF-GridNet-Causal with significantly lower complexity and fewer parameters through effective spatio-temporal relationship modeling.
 
