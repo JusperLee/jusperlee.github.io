@@ -40,6 +40,18 @@
 
 # 2025
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TDSC 2025</div><img src='./images/safeear.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Critical Information Only: A Content Privacy-Preserving Framework for Detecting Audio Deepfakes](https://ieeexplore.ieee.org/document/11216043) Xinfeng Li, Yifan Zheng, Chen Yan, **Kai Li**, Chang Zeng, Xiaoyu Ji, Wenyuan Xu. **IEEE Transactions on Dependable and Secure Computing (TDSC) 2025.**
+
+- SafeEar is a novel framework that detects deepfake audios without accessing speech content by devising a neural audio codec into a decoupling model that separates semantic and acoustic information, using only acoustic features (e.g., prosody) for privacy-preserving detection.
+
+- <a href="https://safeearweb.github.io/Project/"><img src="https://img.shields.io/badge/Demo_Page-Online-brightgreen" alt=""></a> \| <a href="https://github.com/LetterLiGo/SafeEar"><img src="https://img.shields.io/github/stars/LetterLiGo/SafeEar?style=social&amp;label=Code+Stars" alt=""></a>
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='./images/MMAR.png' alt="sym" width="50%"></div></div>
 <div class='paper-box-text' markdown="1">
 
