@@ -13,6 +13,7 @@
   },
   "title": "Hi there, I'm Kai Li (李凯)",
   "avatar": "github.jpg",
+  "tagline": "专注于语音分离、视听学习与音频大语言模型的研究者。",
   "terminal": {
     "username": "kai",
     "rotatingSubtitles": [

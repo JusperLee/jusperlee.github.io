@@ -13,6 +13,7 @@
   },
   "title": "Hi there, I'm Kai Li (李凯)",
   "avatar": "github.jpg",
+  "tagline": "Researcher in Speech Separation, Audio-Visual Learning, and Audio LLM.",
   "terminal": {
     "username": "kai",
     "rotatingSubtitles": [
