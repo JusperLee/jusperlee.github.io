@@ -1,0 +1,27 @@
+[
+  {
+    "title": "最佳搭档奖 — Cookie & Lucas 玩耍大赛",
+    "org": "客厅锦标赛",
+    "date": "Dec 2024",
+    "kind": "competition"
+  },
+  {
+    "title": "邻里握手大赛冠军",
+    "org": "狗公园社区",
+    "date": "Apr 2024",
+    "kind": "hackathon"
+  },
+  {
+    "title": "毛茸茸伙伴奖学金",
+    "org": "国家零食基金会",
+    "date": "Sep 2023",
+    "kind": "scholarship",
+    "link": "#"
+  },
+  {
+    "title": "最佳撒娇奖（毕业班前 5%）",
+    "org": "温馨小窝学院",
+    "date": "May 2022",
+    "kind": "honor"
+  }
+]

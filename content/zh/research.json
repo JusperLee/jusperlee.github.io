@@ -1,0 +1,18 @@
+{
+  "currentResearch": [
+    {
+      "lab": "温暖角落",
+      "emoji": "🛋️",
+      "advisor": "暖膝盖博士",
+      "focus": "取暖行为和人类距离最小化优化",
+      "link": "#"
+    },
+    {
+      "lab": "Lucas & Cookie 玩耍实验室",
+      "emoji": "🐱",
+      "advisor": "Lucas 教授",
+      "focus": "跨物种玩耍动力学和协作午睡",
+      "link": "#"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "education": {
+    "courses": [
+      {
+        "course": "Master of Cuddle Sciences",
+        "institution": "Yaoyao's Lap Lab",
+        "year": "2024-2026"
+      },
+      {
+        "course": "Bachelor of Good Girl Arts",
+        "institution": "Home Sweet Home",
+        "year": "2020-2024"
+      }
+    ]
+  },
+  "reviewing": [
+    { "venue": "International Conference on Treat Fairness 2026", "role": "Reviewer" },
+    { "venue": "Workshop on Cross-Species Play Dynamics 2025", "role": "Reviewer" }
+  ],
+  "timeline": [
+    {
+      "title": "Senior Cuddle Researcher",
+      "company": "The Cozy Corner",
+      "companyUrl": "#",
+      "location": "Next to Yaoyao",
+      "start": "2024-09-01",
+      "category": "research",
+      "roleType": "research",
+      "isCurrent": true,
+      "summary": "Focus: warmth-seeking optimization and human-proximity maximization.",
+      "highlights": [
+        "Achieved 100% lap occupation rate during work-from-home hours.",
+        "Discovered that paw shakes increase treat yield by 60%.",
+        "Co-authored a paper with Lucas on optimal sunbeam sharing schedules."
+      ]
+    },
+    {
+      "title": "Junior Play Companion",
+      "company": "Lucas & Cookie Inc.",
+      "companyUrl": "#",
+      "location": "Living Room",
+      "start": "2023-01-15",
+      "end": "2024-05-20",
+      "category": "research",
+      "roleType": "research",
+      "highlights": [
+        "Developed a multi-species play protocol with Ragdoll cat brother Lucas.",
+        "Optimized chase-and-tumble sequences for maximum fun with minimum furniture damage.",
+        "Won Best Duo Award at the annual living room play session."
+      ]
+    },
+    {
+      "title": "Treat Quality Intern",
+      "company": "Kitchen Counter Labs",
+      "companyUrl": "#",
+      "location": "Kitchen",
+      "start": "2025-06-01",
+      "end": "2025-08-31",
+      "category": "industry",
+      "roleType": "sde",
+      "highlights": [
+        "Evaluated 200+ treat varieties using advanced sniff-and-taste methodology.",
+        "Reduced treat waste to 0% (consumed all samples).",
+        "Developed a paw-shake-to-treat conversion pipeline with 3x throughput improvement."
+      ]
+    }
+  ]
+}

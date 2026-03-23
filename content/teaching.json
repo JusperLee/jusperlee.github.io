@@ -1,0 +1,30 @@
+[
+  {
+    "course": "Introduction to Treat Negotiation",
+    "institution": "Home Sweet Home Academy",
+    "semester": "Fall 2024",
+    "role": "instructor",
+    "description": "Core course covering fundamentals of treat acquisition: paw shakes, sit-stay combos, and the puppy-eyes technique."
+  },
+  {
+    "course": "Advanced Cuddle Dynamics",
+    "institution": "The Cozy Corner Institute",
+    "semester": "Spring 2025",
+    "role": "ta",
+    "description": "Graduate seminar on lap positioning, blanket-sharing strategies, and multi-pet cuddle coordination."
+  },
+  {
+    "course": "Cross-Species Communication Lab",
+    "institution": "The Cozy Corner Institute",
+    "semester": "Fall 2025",
+    "role": "co-instructor",
+    "description": "Lab course co-taught with Lucas (Ragdoll cat). Students learn dog-cat interaction protocols, play initiation signals, and conflict resolution."
+  },
+  {
+    "course": "Warmth-Seeking Behavior: From Theory to Practice",
+    "institution": "Dog Park Community College",
+    "semester": "Spring 2024",
+    "role": "guest-lecturer",
+    "description": "Guest lecture on the physics of sunbeam tracking and optimal couch-spot selection."
+  }
+]

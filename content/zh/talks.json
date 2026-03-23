@@ -1,0 +1,46 @@
+[
+  {
+    "title": "最优膝盖定位：一种强化学习方法",
+    "event": "CozyCon 2025",
+    "date": "2025年12月",
+    "location": "客厅，加州",
+    "type": "oral",
+    "description": "报告了基于强化学习的博美取暖膝盖定位研究。",
+    "slidesUrl": "#",
+    "videoUrl": "#"
+  },
+  {
+    "title": "跨物种玩耍动力学：博美与布偶猫合作研究的启示",
+    "event": "国际跨物种玩耍研讨会",
+    "date": "2025年3月",
+    "location": "狗公园会议中心",
+    "type": "invited",
+    "description": "受邀报告 Cookie 与 Lucas 的合作玩耍建模研究，包含 PlayNet 预测的现场演示。",
+    "slidesUrl": "#"
+  },
+  {
+    "title": "WarmSeek：实时人类距离优化",
+    "event": "CompanionML 2024",
+    "date": "2024年10月",
+    "location": "线上",
+    "type": "oral",
+    "description": "报告 WarmSeek 系统，在多房间环境下实现 99% 的人类跟随准确率。",
+    "slidesUrl": "#",
+    "videoUrl": "#"
+  },
+  {
+    "title": "从握手到零食：一项统计分析",
+    "event": "零食科学研讨会",
+    "date": "2024年6月",
+    "location": "厨房台面实验室",
+    "type": "poster"
+  },
+  {
+    "title": "跟随主人的艺术：实操教程",
+    "event": "PetTech Workshop @ NeurIPS",
+    "date": "2023年12月",
+    "location": "新奥尔良",
+    "type": "tutorial",
+    "description": "实操教程，涵盖距离感知、房间切换检测和最优跟随距离校准。"
+  }
+]

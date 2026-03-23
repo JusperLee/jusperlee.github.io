@@ -1,0 +1,30 @@
+[
+  {
+    "course": "零食谈判入门",
+    "institution": "温馨小窝学院",
+    "semester": "2024年秋",
+    "role": "instructor",
+    "description": "核心课程，涵盖零食获取基础：握手、坐-等待连击和无辜大眼技巧。"
+  },
+  {
+    "course": "高级撒娇动力学",
+    "institution": "温暖角落研究所",
+    "semester": "2025年春",
+    "role": "ta",
+    "description": "研究生研讨课，主题为膝盖定位、毯子共享策略和多宠物撒娇协调。"
+  },
+  {
+    "course": "跨物种沟通实验",
+    "institution": "温暖角落研究所",
+    "semester": "2025年秋",
+    "role": "co-instructor",
+    "description": "与 Lucas（布偶猫）联合授课的实验课。学生学习狗猫交互协议、玩耍发起信号和冲突解决。"
+  },
+  {
+    "course": "取暖行为：从理论到实践",
+    "institution": "狗公园社区学院",
+    "semester": "2024年春",
+    "role": "guest-lecturer",
+    "description": "客座讲座，主题为阳光追踪物理学和最优沙发位置选择。"
+  }
+]

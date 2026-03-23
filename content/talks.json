@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Optimal Lap Positioning: A Reinforcement Learning Approach",
+    "event": "CozyCon 2025",
+    "date": "Dec 2025",
+    "location": "The Living Room, CA",
+    "type": "oral",
+    "description": "Presented our CozyCon paper on RL-based lap positioning for warmth-seeking Pomeranians.",
+    "slidesUrl": "#",
+    "videoUrl": "#"
+  },
+  {
+    "title": "Cross-Species Play Dynamics: Lessons from a Pomeranian-Ragdoll Partnership",
+    "event": "International Cross-Species Play Workshop",
+    "date": "Mar 2025",
+    "location": "Dog Park Convention Center",
+    "type": "invited",
+    "description": "Invited talk on cooperative play modeling between Cookie and Lucas, featuring live demo of PlayNet predictions.",
+    "slidesUrl": "#"
+  },
+  {
+    "title": "WarmSeek: Real-Time Human Proximity Optimization",
+    "event": "CompanionML 2024",
+    "date": "Oct 2024",
+    "location": "Virtual",
+    "type": "oral",
+    "description": "Presented WarmSeek, achieving 99% human-following accuracy across multi-room environments.",
+    "slidesUrl": "#",
+    "videoUrl": "#"
+  },
+  {
+    "title": "From Paw Shakes to Treat Yields: A Statistical Analysis",
+    "event": "Treat Science Symposium",
+    "date": "Jun 2024",
+    "location": "Kitchen Counter Labs",
+    "type": "poster"
+  },
+  {
+    "title": "The Art of Following Your Human: A Tutorial",
+    "event": "PetTech Workshop @ NeurIPS",
+    "date": "Dec 2023",
+    "location": "New Orleans, LA",
+    "type": "tutorial",
+    "description": "Hands-on tutorial covering proximity sensing, room-transition detection, and optimal follow-distance calibration."
+  }
+]

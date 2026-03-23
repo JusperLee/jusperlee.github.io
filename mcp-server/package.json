@@ -1,0 +1,28 @@
+{
+  "name": "termhub-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for TermHub - AI-powered academic portfolio management",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "termhub-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "pdf-parse": "^1.1.1",
+    "js-yaml": "^4.1.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.13.10",
+    "@types/pdf-parse": "^1.1.4",
+    "typescript": "^5.7.0"
+  }
+}

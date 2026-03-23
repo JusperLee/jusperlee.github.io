@@ -1,0 +1,93 @@
+{
+  "_comment": "中文版站点配置",
+
+  "template": "terminal",
+  "components": {},
+  "sections": [
+    "hero", "bio", "newsDisplay", "selectedPublications",
+    "journey", "skills", "mentorship", "talks", "teaching",
+    "accomplishments", "contact", "footer"
+  ],
+
+  "name": {
+    "full": "Cookie",
+    "first": "Cookie",
+    "nickname": "Cookie",
+    "last": "",
+    "display": "Cookie",
+    "authorVariants": ["Cookie"]
+  },
+
+  "title": "汪！我是 Cookie",
+  "tagline": "一只毛茸茸的博美，靠赖在主人身边写代码，一次握手换一块零食。",
+  "avatar": "cookie.jpg",
+
+  "terminal": {
+    "username": "cookie",
+    "rotatingSubtitles": [
+      "赖在主人身边",
+      "和弟弟 Lucas 玩耍",
+      "握手要零食",
+      "趴下装可怜",
+      "在主人腿上打盹"
+    ],
+    "skills": [
+      { "name": "握手", "icon": "FaHandshake" },
+      { "name": "趴下", "icon": "FaBed" },
+      { "name": "撒娇", "icon": "FaHeart" },
+      { "name": "跟着主人", "icon": "FaWalking" },
+      { "name": "午睡", "icon": "FaMoon" },
+      { "name": "零食谈判", "icon": "FaCookie" },
+      { "name": "和 Lucas 玩", "icon": "FaCat" },
+      { "name": "卖萌", "icon": "FaStar" }
+    ],
+    "timezone": "America/Los_Angeles"
+  },
+
+  "contact": {
+    "email": "limyoonaxi@gmail.com",
+    "academicEmail": "limyoonaxi@gmail.com",
+    "hiringEmail": "limyoonaxi@gmail.com",
+    "location": "Yaoyao 在哪我在哪"
+  },
+
+  "social": {
+    "github": "https://github.com/H-Freax/TermHub",
+    "linkedin": "",
+    "medium": "",
+    "googleScholar": "",
+    "twitter": "",
+    "youtube": "",
+    "bilibili": "",
+    "zhihu": "",
+    "csdn": "",
+    "blog": ""
+  },
+
+  "pets": [
+    {
+      "name": "Lucas (Lulu)",
+      "emoji": "🐱",
+      "image": "/images/lulu.jpg",
+      "title": "最佳伙伴 & 弟弟",
+      "description": "Cookie 的布偶猫弟弟。他们一起午睡、满屋追逐，还会抢窗边那块阳光最好的位置。"
+    }
+  ],
+
+  "features": {
+    "publications": true,
+    "projects": true,
+    "articles": true,
+    "experience": true,
+    "news": true,
+    "pets": true,
+    "guide": true
+  },
+
+  "heroSocialIcons": [
+    { "platform": "twitter", "icon": "SiX", "label": "X", "color": "#000" },
+    { "platform": "youtube", "icon": "FaYoutube", "label": "YouTube", "color": "#FF0000" }
+  ],
+
+  "selectedPublicationIds": ["napcon2025-cuddle-optimization", "fetchml2024-warmth-seeking", "arxiv2025-cross-species-play"]
+}

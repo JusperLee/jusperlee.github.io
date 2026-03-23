@@ -1,0 +1,172 @@
+{
+  "nav": {
+    "home": "Home",
+    "publications": "Publications",
+    "experience": "Experience",
+    "projects": "Projects",
+    "articles": "Articles",
+    "guide": "Guide",
+    "navigation": "Navigation"
+  },
+  "aria": {
+    "openNav": "Open navigation menu",
+    "toggleColorMode": "Toggle color mode",
+    "toggleLanguage": "Switch language"
+  },
+  "about": {
+    "recentUpdates": "Recent Updates",
+    "news": "News",
+    "selectedPublications": "Selected Publications",
+    "viewAllPublications": "View all publications",
+    "myJourney": "My Journey",
+    "viewAllExperience": "View all experience",
+    "equalContribution": "* equal contribution",
+    "abstract": "Abstract",
+    "paper": "Paper",
+    "arXiv": "arXiv",
+    "project": "Project",
+    "code": "Code",
+    "demo": "Demo",
+    "dataset": "Dataset",
+    "awardsAndHonors": "Awards & Honors",
+    "awardsSpanning": "awards spanning",
+    "categories": "categories"
+  },
+  "hero": {
+    "greeting": "Hi there, I'm",
+    "sometimesI": "Sometimes I"
+  },
+  "footer": {
+    "poweredBy": "Powered by"
+  },
+  "experience": {
+    "education": "EDUCATION",
+    "academicReviewing": "ACADEMIC REVIEWING",
+    "present": "Present",
+    "rolesAcross": "roles across academia & industry,",
+    "currentlyActive": "currently active",
+    "research": "research",
+    "industry": "industry",
+    "filterAll": "All",
+    "filterAcademic": "Academic",
+    "filterIndustry": "Industry",
+    "active": "active",
+    "noPositions": "No positions match the current filter.",
+    "typeHelp": "type 'help'",
+    "roleResearch": "Research",
+    "roleMLE": "MLE",
+    "roleSDE": "SDE",
+    "roleTeaching": "Teaching",
+    "roleLeadership": "Leadership"
+  },
+  "projects": {
+    "all": "ALL",
+    "projectsAcross": "projects across robotics, NLP & web,",
+    "independentlyBuilt": "independently built",
+    "independent": "independent",
+    "lead": "lead",
+    "techLead": "tech-lead",
+    "maintainer": "maintainer",
+    "source": "Source",
+    "details": "Details",
+    "less": "Less",
+    "noMatches": "grep: no matches found",
+    "tryAdjustingSearch": "Try adjusting your search or switch tabs.",
+    "projects": "projects",
+    "shown": "shown"
+  },
+  "articles": {
+    "allTopics": "all topics",
+    "article": "article",
+    "articles": "articles",
+    "technicalArticles": "technical articles & tutorials covering",
+    "domains": "domains",
+    "noMatches": "grep: no matches found",
+    "tryAdjustingFilter": "Try adjusting your search or filter.",
+    "shown": "shown"
+  },
+  "contact": {
+    "title": "Contact",
+    "responseTime": "Response time: 24-48h",
+    "contactInfo": "Contact Information",
+    "quickLinks": "Quick Links",
+    "email": "Email:",
+    "linkedin": "LinkedIn:",
+    "github": "GitHub:",
+    "medium": "Medium:",
+    "googleScholar": "Google Scholar:",
+    "viewProfile": "View Profile"
+  },
+  "news": {
+    "title": "News",
+    "lastUpdated": "Last updated:",
+    "sortedByDate": "Sorted by date (newest first)",
+    "currentFocus": "Current Focus"
+  },
+  "newsTimeline": {
+    "timestamp": "TIMESTAMP",
+    "time": "TIME",
+    "category": "CATEGORY",
+    "cat": "CAT",
+    "pid": "PID",
+    "memoryDump": "MEMORY.DUMP",
+    "links": "LINKS",
+    "ctrl": "CTRL",
+    "more": "[+more]",
+    "devNull": "/dev/null",
+    "clickToExpand": "# click rows to expand",
+    "easterEgg1": "// TODO: refactor brain.js",
+    "easterEgg2": "// keep exploring...",
+    "easterEgg3": "// you seem curious :)"
+  },
+  "interactionTier": {
+    "idle": "IDLE",
+    "scanning": "SCANNING...",
+    "curious": "CURIOUS",
+    "engaged": "ENGAGED",
+    "deepFocus": "DEEP_FOCUS",
+    "overclocked": "OVERCLOCKED",
+    "singularity": "SINGULARITY"
+  },
+  "researchStatus": {
+    "paperAccepted": "PAPER.ACCEPTED",
+    "modelTraining": "MODEL.TRAINING",
+    "ideaBrewing": "IDEA.BREWING",
+    "deadlineCrunch": "DEADLINE.CRUNCH",
+    "reviewPending": "REVIEW.PENDING",
+    "codeShipping": "CODE.SHIPPING"
+  },
+  "category": {
+    "robotics": "ROBOTICS",
+    "nlp": "NLP / AI",
+    "web-app": "WEB / APP",
+    "data": "DATA / ML",
+    "tooling": "TOOLING",
+    "healthcare": "HEALTHCARE"
+  },
+  "categoryLabel": {
+    "robotics": "Robotics",
+    "nlp": "NLP / AI",
+    "web-app": "Web / App",
+    "data": "Data / ML",
+    "tooling": "Tooling",
+    "healthcare": "Healthcare"
+  },
+  "awards": {
+    "grant": "Grant",
+    "hackathon": "Hackathon",
+    "travel": "Travel",
+    "scholarship": "Scholarship",
+    "honor": "Honor",
+    "employment": "Employment",
+    "competition": "Competition",
+    "innovation": "Innovation",
+    "other": "Other"
+  },
+  "publications": {
+    "conference": "CONFERENCE",
+    "workshop": "WORKSHOP",
+    "demo": "DEMO TRACK",
+    "preprint": "PREPRINT"
+  }
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "type": "publication",
+    "badge": "Publication",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "Paper on cuddle optimization accepted at CozyCon 2025",
+    "description": "Cookie's paper \"Optimal Lap Positioning for Warmth-Seeking Pomeranians\" has been accepted at CozyCon 2025.",
+    "date": "Dec 2025",
+    "sortDate": "2025-12-01",
+    "links": [
+      { "text": "Paper", "url": "#", "icon": "FaFilePdf" }
+    ]
+  },
+  {
+    "type": "talk",
+    "badge": "Talk",
+    "icon": "FaMicrophone",
+    "iconColor": "purple.400",
+    "title": "Invited bark at International Cross-Species Play Workshop",
+    "description": "Presented findings on cooperative play dynamics between Pomeranians and Ragdoll cats, featuring case study with brother Lucas.",
+    "date": "Mar 2025",
+    "sortDate": "2025-03-10",
+    "links": [
+      { "text": "Slides", "url": "#", "icon": "FaDesktop" }
+    ]
+  },
+  {
+    "type": "release",
+    "badge": "Release",
+    "icon": "FaRocket",
+    "iconColor": "green.400",
+    "title": "PawShake.js v1.0 released",
+    "description": "Released PawShake.js, an open-source library for modeling treat-acquisition strategies through handshake protocols.",
+    "date": "Jul 2024",
+    "sortDate": "2024-07-01",
+    "links": [
+      { "text": "GitHub", "url": "#", "icon": "FaGithub" }
+    ]
+  }
+]

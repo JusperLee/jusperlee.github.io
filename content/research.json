@@ -1,0 +1,18 @@
+{
+  "currentResearch": [
+    {
+      "lab": "The Cozy Corner",
+      "emoji": "🛋️",
+      "advisor": "Dr. Warm Lap",
+      "focus": "warmth-seeking behavior and human-proximity optimization",
+      "link": "#"
+    },
+    {
+      "lab": "Lucas & Cookie Play Lab",
+      "emoji": "🐱",
+      "advisor": "Prof. Lucas",
+      "focus": "cross-species play dynamics and cooperative napping",
+      "link": "#"
+    }
+  ]
+}

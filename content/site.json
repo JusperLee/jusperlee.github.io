@@ -1,0 +1,93 @@
+{
+  "_comment": "Your basic info. Edit the values below, then run: npm run dev",
+
+  "template": "terminal",
+  "components": {},
+  "sections": [
+    "hero", "bio", "newsDisplay", "selectedPublications",
+    "journey", "skills", "mentorship", "talks", "teaching",
+    "accomplishments", "contact", "footer"
+  ],
+
+  "name": {
+    "full": "Cookie",
+    "first": "Cookie",
+    "nickname": "Cookie",
+    "last": "",
+    "display": "Cookie",
+    "authorVariants": ["Cookie"]
+  },
+
+  "title": "Woof! I'm Cookie",
+  "tagline": "A fluffy Pomeranian who codes by staying glued to her human, one paw shake at a time.",
+  "avatar": "cookie.jpg",
+
+  "terminal": {
+    "username": "cookie",
+    "rotatingSubtitles": [
+      "cuddle with hooman",
+      "shake paws politely",
+      "lie down dramatically",
+      "play with brother Lucas",
+      "nap on hooman's lap"
+    ],
+    "skills": [
+      { "name": "Shake Hands", "icon": "FaHandshake" },
+      { "name": "Lie Down", "icon": "FaBed" },
+      { "name": "Cuddling", "icon": "FaHeart" },
+      { "name": "Following Hooman", "icon": "FaWalking" },
+      { "name": "Napping", "icon": "FaMoon" },
+      { "name": "Treat Negotiation", "icon": "FaCookie" },
+      { "name": "Playing with Lucas", "icon": "FaCat" },
+      { "name": "Being Fluffy", "icon": "FaStar" }
+    ],
+    "timezone": "America/Los_Angeles"
+  },
+
+  "contact": {
+    "email": "limyoonaxi@gmail.com",
+    "academicEmail": "limyoonaxi@gmail.com",
+    "hiringEmail": "limyoonaxi@gmail.com",
+    "location": "Wherever Yaoyao Is"
+  },
+
+  "social": {
+    "github": "https://github.com/H-Freax/TermHub",
+    "linkedin": "",
+    "medium": "",
+    "googleScholar": "",
+    "twitter": "",
+    "youtube": "",
+    "bilibili": "",
+    "zhihu": "",
+    "csdn": "",
+    "blog": ""
+  },
+
+  "pets": [
+    {
+      "name": "Lucas (Lulu)",
+      "emoji": "🐱",
+      "image": "/images/lulu.jpg",
+      "title": "Best Buddy & Little Brother",
+      "description": "Cookie's Ragdoll cat brother. They nap together, chase each other around the house, and share the sunny spot by the window."
+    }
+  ],
+
+  "features": {
+    "publications": true,
+    "projects": true,
+    "articles": true,
+    "experience": true,
+    "news": true,
+    "pets": true,
+    "guide": true
+  },
+
+  "heroSocialIcons": [
+    { "platform": "twitter", "icon": "SiX", "label": "X", "color": "#000" },
+    { "platform": "youtube", "icon": "FaYoutube", "label": "YouTube", "color": "#FF0000" }
+  ],
+
+  "selectedPublicationIds": ["napcon2025-cuddle-optimization", "fetchml2024-warmth-seeking", "arxiv2025-cross-species-play"]
+}

@@ -1,0 +1,172 @@
+{
+  "nav": {
+    "home": "首页",
+    "publications": "学术论文",
+    "experience": "工作经历",
+    "projects": "项目展示",
+    "articles": "博客文章",
+    "guide": "使用指南",
+    "navigation": "导航"
+  },
+  "aria": {
+    "openNav": "打开导航菜单",
+    "toggleColorMode": "切换颜色模式",
+    "toggleLanguage": "切换语言"
+  },
+  "about": {
+    "recentUpdates": "最新动态",
+    "news": "动态",
+    "selectedPublications": "精选论文",
+    "viewAllPublications": "查看全部论文",
+    "myJourney": "我的旅程",
+    "viewAllExperience": "查看全部经历",
+    "equalContribution": "* 同等贡献",
+    "abstract": "摘要",
+    "paper": "论文",
+    "arXiv": "arXiv",
+    "project": "项目",
+    "code": "代码",
+    "demo": "演示",
+    "dataset": "数据集",
+    "awardsAndHonors": "获奖与荣誉",
+    "awardsSpanning": "个奖项，涵盖",
+    "categories": "个类别"
+  },
+  "hero": {
+    "greeting": "你好，我是",
+    "sometimesI": "我有时会"
+  },
+  "footer": {
+    "poweredBy": "由以下技术驱动"
+  },
+  "experience": {
+    "education": "教育背景",
+    "academicReviewing": "学术审稿",
+    "present": "至今",
+    "rolesAcross": "个职位，横跨学术界与工业界，",
+    "currentlyActive": "个当前在职",
+    "research": "个学术",
+    "industry": "个工业",
+    "filterAll": "全部",
+    "filterAcademic": "学术",
+    "filterIndustry": "工业",
+    "active": "在职",
+    "noPositions": "没有匹配当前筛选条件的职位。",
+    "typeHelp": "type 'help'",
+    "roleResearch": "Research",
+    "roleMLE": "MLE",
+    "roleSDE": "SDE",
+    "roleTeaching": "Teaching",
+    "roleLeadership": "Leadership"
+  },
+  "projects": {
+    "all": "全部",
+    "projectsAcross": "个项目，涵盖机器人、NLP 和 Web，",
+    "independentlyBuilt": "个独立完成",
+    "independent": "独立",
+    "lead": "负责人",
+    "techLead": "tech-lead",
+    "maintainer": "维护者",
+    "source": "源码",
+    "details": "详情",
+    "less": "收起",
+    "noMatches": "grep: no matches found",
+    "tryAdjustingSearch": "尝试调整搜索条件或切换标签。",
+    "projects": "个项目",
+    "shown": "shown"
+  },
+  "articles": {
+    "allTopics": "全部主题",
+    "article": "篇文章",
+    "articles": "篇文章",
+    "technicalArticles": "篇技术文章与教程，涵盖",
+    "domains": "个领域",
+    "noMatches": "grep: no matches found",
+    "tryAdjustingFilter": "尝试调整搜索或筛选条件。",
+    "shown": "shown"
+  },
+  "contact": {
+    "title": "联系方式",
+    "responseTime": "回复时间：24-48 小时",
+    "contactInfo": "联系信息",
+    "quickLinks": "快速链接",
+    "email": "邮箱：",
+    "linkedin": "领英：",
+    "github": "GitHub：",
+    "medium": "Medium：",
+    "googleScholar": "谷歌学术：",
+    "viewProfile": "查看主页"
+  },
+  "news": {
+    "title": "动态",
+    "lastUpdated": "最后更新：",
+    "sortedByDate": "按日期排序（最新优先）",
+    "currentFocus": "当前重点"
+  },
+  "newsTimeline": {
+    "timestamp": "TIMESTAMP",
+    "time": "TIME",
+    "category": "CATEGORY",
+    "cat": "CAT",
+    "pid": "PID",
+    "memoryDump": "MEMORY.DUMP",
+    "links": "LINKS",
+    "ctrl": "CTRL",
+    "more": "[+more]",
+    "devNull": "/dev/null",
+    "clickToExpand": "# click rows to expand",
+    "easterEgg1": "// TODO: refactor brain.js",
+    "easterEgg2": "// keep exploring...",
+    "easterEgg3": "// you seem curious :)"
+  },
+  "interactionTier": {
+    "idle": "IDLE",
+    "scanning": "SCANNING...",
+    "curious": "CURIOUS",
+    "engaged": "ENGAGED",
+    "deepFocus": "DEEP_FOCUS",
+    "overclocked": "OVERCLOCKED",
+    "singularity": "SINGULARITY"
+  },
+  "researchStatus": {
+    "paperAccepted": "PAPER.ACCEPTED",
+    "modelTraining": "MODEL.TRAINING",
+    "ideaBrewing": "IDEA.BREWING",
+    "deadlineCrunch": "DEADLINE.CRUNCH",
+    "reviewPending": "REVIEW.PENDING",
+    "codeShipping": "CODE.SHIPPING"
+  },
+  "category": {
+    "robotics": "ROBOTICS",
+    "nlp": "NLP / AI",
+    "web-app": "WEB / APP",
+    "data": "DATA / ML",
+    "tooling": "TOOLING",
+    "healthcare": "HEALTHCARE"
+  },
+  "categoryLabel": {
+    "robotics": "机器人",
+    "nlp": "NLP / AI",
+    "web-app": "Web / 应用",
+    "data": "数据 / ML",
+    "tooling": "工具",
+    "healthcare": "医疗健康"
+  },
+  "awards": {
+    "grant": "资助",
+    "hackathon": "黑客松",
+    "travel": "差旅",
+    "scholarship": "奖学金",
+    "honor": "荣誉",
+    "employment": "就业",
+    "competition": "竞赛",
+    "innovation": "创新",
+    "other": "其他"
+  },
+  "publications": {
+    "conference": "会议论文",
+    "workshop": "研讨会",
+    "demo": "演示专场",
+    "preprint": "预印本"
+  }
+}

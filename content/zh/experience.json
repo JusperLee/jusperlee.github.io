@@ -1,0 +1,68 @@
+{
+  "education": {
+    "courses": [
+      {
+        "course": "撒娇科学硕士",
+        "institution": "Yaoyao 的膝盖实验室",
+        "year": "2024-2026"
+      },
+      {
+        "course": "乖乖艺术学士",
+        "institution": "温馨小窝",
+        "year": "2020-2024"
+      }
+    ]
+  },
+  "reviewing": [
+    { "venue": "国际零食公平会议 2026", "role": "审稿人" },
+    { "venue": "跨物种玩耍动力学研讨会 2025", "role": "审稿人" }
+  ],
+  "timeline": [
+    {
+      "title": "资深撒娇研究员",
+      "company": "温暖角落",
+      "companyUrl": "#",
+      "location": "Yaoyao 身边",
+      "start": "2024-09-01",
+      "category": "research",
+      "roleType": "research",
+      "isCurrent": true,
+      "summary": "研究方向：取暖行为优化和人类距离最小化。",
+      "highlights": [
+        "在居家办公时段实现了 100% 的膝盖占领率。",
+        "发现握手可将零食获取率提升 60%。",
+        "与 Lucas 合著了一篇关于最优阳光共享时间表的论文。"
+      ]
+    },
+    {
+      "title": "初级玩耍伙伴",
+      "company": "Lucas & Cookie 联合公司",
+      "companyUrl": "#",
+      "location": "客厅",
+      "start": "2023-01-15",
+      "end": "2024-05-20",
+      "category": "research",
+      "roleType": "research",
+      "highlights": [
+        "与布偶猫弟弟 Lucas 开发了跨物种玩耍协议。",
+        "优化了追逐翻滚序列，实现最大乐趣与最小家具损伤。",
+        "在年度客厅玩耍大赛中获得最佳搭档奖。"
+      ]
+    },
+    {
+      "title": "零食品鉴实习生",
+      "company": "厨房台面实验室",
+      "companyUrl": "#",
+      "location": "厨房",
+      "start": "2025-06-01",
+      "end": "2025-08-31",
+      "category": "industry",
+      "roleType": "sde",
+      "highlights": [
+        "使用先进的闻一闻尝一尝方法评估了 200+ 种零食。",
+        "将零食浪费率降至 0%（全部样品已消耗）。",
+        "开发了握手换零食流水线，吞吐量提升 3 倍。"
+      ]
+    }
+  ]
+}
