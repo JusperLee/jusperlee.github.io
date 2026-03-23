@@ -4,7 +4,7 @@
     "publications": "Publications",
     "experience": "Experience",
     "projects": "Projects",
-    "articles": "Articles",
+    "articles": "Blogs",
     "guide": "Guide",
     "navigation": "Navigation"
   },
@@ -142,7 +142,8 @@
     "web-app": "WEB / APP",
     "data": "DATA / ML",
     "tooling": "TOOLING",
-    "healthcare": "HEALTHCARE"
+    "healthcare": "HEALTHCARE",
+    "speech": "SPEECH"
   },
   "categoryLabel": {
     "robotics": "Robotics",
@@ -150,7 +151,8 @@
     "web-app": "Web / App",
     "data": "Data / ML",
     "tooling": "Tooling",
-    "healthcare": "Healthcare"
+    "healthcare": "Healthcare",
+    "speech": "Speech"
   },
   "awards": {
     "grant": "Grant",

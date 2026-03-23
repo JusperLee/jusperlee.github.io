@@ -123,7 +123,7 @@ export interface ProjectItem {
   extraLinks?: ProjectLink[]
   tags: string[]
   date?: string
-  category: 'robotics' | 'nlp' | 'web-app' | 'data' | 'tooling' | 'healthcare'
+  category: 'robotics' | 'nlp' | 'web-app' | 'data' | 'tooling' | 'healthcare' | 'speech'
   highlights?: string[]
   featuredImage?: string
   isOpenSource?: boolean
@@ -131,6 +131,8 @@ export interface ProjectItem {
   story?: string
   badge?: string
   featured?: boolean
+  slug?: string
+  _body?: string
 }
 
 export interface Publication {

@@ -3,7 +3,7 @@
 
 import { IconType } from 'react-icons'
 import {
-  FaRobot, FaBrain, FaGlobe, FaChartBar, FaWrench, FaHeartbeat,
+  FaRobot, FaBrain, FaGlobe, FaChartBar, FaWrench, FaHeartbeat, FaVolumeUp,
 } from 'react-icons/fa'
 import type { ProjectItem } from '../types'
 
@@ -84,12 +84,19 @@ export const buildCategoryThemes = (dk: boolean): Record<ProjectItem['category']
     color: dk ? '#f09090' : '#c04040', glow: dk ? 'rgba(255,128,128,0.25)' : 'rgba(192,64,64,0.12)',
     icon: FaHeartbeat, label: 'HEALTHCARE', cmd: '$ python recommend.py',
   },
+  speech: {
+    bg: dk ? '#1e2d3d' : '#e8f4ff', border: dk ? '#5b9bd5' : '#7bb8e8',
+    stripe: 'linear-gradient(180deg,#80b8ff,transparent)',
+    color: dk ? '#88c0d0' : '#2a769c', glow: dk ? 'rgba(136,192,208,0.25)' : 'rgba(42,118,156,0.12)',
+    icon: FaVolumeUp, label: 'SPEECH', cmd: '$ python separate.py',
+  },
 })
 
 /* ── Article category labels & colors ─────────────────────────── */
 export const articleCategoryLabels: Record<ProjectItem['category'], string> = {
   robotics: 'Robotics', nlp: 'NLP / AI', 'web-app': 'Web / App',
   data: 'Data / ML', tooling: 'Tooling', healthcare: 'Healthcare',
+  speech: 'Speech',
 }
 
 export const articleCategoryColors: Record<ProjectItem['category'], { fg: (dk: boolean) => string; bg: (dk: boolean) => string }> = {
@@ -99,6 +106,7 @@ export const articleCategoryColors: Record<ProjectItem['category'], { fg: (dk: b
   data:       { fg: dk => dk ? '#7ce3b6' : '#2f9e6a', bg: dk => dk ? 'rgba(124,227,182,0.15)' : 'rgba(47,158,106,0.1)' },
   tooling:    { fg: dk => dk ? '#7feeee' : '#2aa9a9', bg: dk => dk ? 'rgba(127,238,238,0.15)' : 'rgba(42,169,169,0.1)' },
   healthcare: { fg: dk => dk ? '#f09090' : '#c04040', bg: dk => dk ? 'rgba(240,144,144,0.15)' : 'rgba(192,64,64,0.1)' },
+  speech:     { fg: dk => dk ? '#88c0d0' : '#2a769c', bg: dk => dk ? 'rgba(136,192,208,0.15)' : 'rgba(42,118,156,0.1)' },
 }
 
 /* ── Publication venue colors ─────────────────────────────────── */
@@ -117,6 +125,11 @@ export const publicationVenueColors: Record<string, { bg: (dk: boolean) => strin
     bg: dk => dk ? 'rgba(208, 135, 112, 0.15)' : 'rgba(179, 90, 46, 0.1)',
     fg: dk => dk ? '#d08770' : '#b35a2e',
     label: 'DEMO TRACK',
+  },
+  journal: {
+    bg: dk => dk ? 'rgba(235, 203, 139, 0.15)' : 'rgba(191, 151, 50, 0.1)',
+    fg: dk => dk ? '#ebcb8b' : '#bf9732',
+    label: 'JOURNAL',
   },
   preprint: {
     bg: dk => dk ? 'rgba(163, 190, 140, 0.15)' : 'rgba(54, 128, 90, 0.1)',

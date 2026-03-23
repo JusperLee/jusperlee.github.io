@@ -1,17 +1,17 @@
 ---
-title: 零食新鲜度预测流水线
+title: Treat Freshness Prediction Pipeline
 category: data
 date: 2024-11-20
-tags: [时间序列, XGBoost, Pandas, Scikit-learn]
+tags: [Time Series, XGBoost, Pandas, Scikit-learn]
 link: "#"
 isOpenSource: true
-badge: "🍖 好吃 18%"
+badge: "🍖 18% Tastier"
 ---
 
-端到端机器学习流水线，利用嗅觉传感器数据预测零食新鲜度和最佳食用时机。
+End-to-end ML pipeline for predicting treat freshness and optimal consumption timing using sniff-sensor data.
 
-## 亮点
+## Highlights
 
-- 从 50+ 批次零食数据中构建了滞后特征和滚动统计量。
-- XGBoost 和 LSTM 集成模型将新鲜度预测误差降低了 18%。
-- 构建了零食品质低于握手阈值时自动报警的系统。
+- Engineered lag features and rolling statistics from 50+ treat batches.
+- Ensemble of XGBoost and LSTM models reduced freshness prediction error by 18%.
+- Built an automated alert system triggered when treat quality drops below paw-shake threshold.

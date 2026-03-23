@@ -1,93 +1,99 @@
 {
-  "_comment": "中文版站点配置",
-
-  "template": "terminal",
-  "components": {},
-  "sections": [
-    "hero", "bio", "newsDisplay", "selectedPublications",
-    "journey", "skills", "mentorship", "talks", "teaching",
-    "accomplishments", "contact", "footer"
-  ],
-
+  "_comment": "Kai Li's personal academic homepage",
   "name": {
-    "full": "Cookie",
-    "first": "Cookie",
-    "nickname": "Cookie",
-    "last": "",
-    "display": "Cookie",
-    "authorVariants": ["Cookie"]
+    "full": "Kai Li",
+    "first": "Kai",
+    "nickname": "Kai",
+    "last": "Li",
+    "display": "Kai Li (李凯)",
+    "authorVariants": [
+      "Kai Li",
+      "Li Kai"
+    ]
   },
-
-  "title": "汪！我是 Cookie",
-  "tagline": "一只毛茸茸的博美，靠赖在主人身边写代码，一次握手换一块零食。",
-  "avatar": "cookie.jpg",
-
+  "title": "Hi there, I'm Kai Li (李凯)",
+  "avatar": "github.jpg",
   "terminal": {
-    "username": "cookie",
+    "username": "kai",
     "rotatingSubtitles": [
-      "赖在主人身边",
-      "和弟弟 Lucas 玩耍",
-      "握手要零食",
-      "趴下装可怜",
-      "在主人腿上打盹"
+      "explore speech separation",
+      "build audio-visual models",
+      "write some code",
+      "explore AI research",
+      "share knowledge"
     ],
     "skills": [
-      { "name": "握手", "icon": "FaHandshake" },
-      { "name": "趴下", "icon": "FaBed" },
-      { "name": "撒娇", "icon": "FaHeart" },
-      { "name": "跟着主人", "icon": "FaWalking" },
-      { "name": "午睡", "icon": "FaMoon" },
-      { "name": "零食谈判", "icon": "FaCookie" },
-      { "name": "和 Lucas 玩", "icon": "FaCat" },
-      { "name": "卖萌", "icon": "FaStar" }
+      "Python",
+      "PyTorch",
+      "Speech Separation",
+      "Audio-Visual Learning",
+      "Audio LLM",
+      "Deep Learning",
+      "Docker",
+      "Kubernetes"
     ],
-    "timezone": "America/Los_Angeles"
+    "timezone": "Asia/Shanghai"
   },
-
   "contact": {
-    "email": "limyoonaxi@gmail.com",
-    "academicEmail": "limyoonaxi@gmail.com",
-    "hiringEmail": "limyoonaxi@gmail.com",
-    "location": "Yaoyao 在哪我在哪"
+    "email": "tsinghua.kaili@gmail.com",
+    "academicEmail": "tsinghua.kaili@gmail.com",
+    "hiringEmail": "tsinghua.kaili@gmail.com",
+    "location": "Beijing, China"
   },
-
   "social": {
-    "github": "https://github.com/H-Freax/TermHub",
-    "linkedin": "",
+    "github": "https://github.com/JusperLee",
+    "linkedin": "https://www.linkedin.com/in/kai-li-0bb2451a4/",
     "medium": "",
-    "googleScholar": "",
-    "twitter": "",
+    "googleScholar": "https://scholar.google.com.hk/citations?user=fHkHcMsAAAAJ&hl=en",
+    "twitter": "https://twitter.com/cs_kai_li",
     "youtube": "",
     "bilibili": "",
-    "zhihu": "",
+    "zhihu": "https://www.zhihu.com/people/li-kai-34-50",
     "csdn": "",
     "blog": ""
   },
-
-  "pets": [
-    {
-      "name": "Lucas (Lulu)",
-      "emoji": "🐱",
-      "image": "/images/lulu.jpg",
-      "title": "最佳伙伴 & 弟弟",
-      "description": "Cookie 的布偶猫弟弟。他们一起午睡、满屋追逐，还会抢窗边那块阳光最好的位置。"
-    }
-  ],
-
+  "pets": [],
   "features": {
     "publications": true,
-    "projects": true,
+    "projects": false,
     "articles": true,
     "experience": true,
     "news": true,
-    "pets": true,
-    "guide": true
+    "pets": false,
+    "guide": false
   },
-
   "heroSocialIcons": [
-    { "platform": "twitter", "icon": "SiX", "label": "X", "color": "#000" },
-    { "platform": "youtube", "icon": "FaYoutube", "label": "YouTube", "color": "#FF0000" }
+    {
+      "platform": "github",
+      "icon": "FaGithub",
+      "label": "GitHub",
+      "color": "#333"
+    },
+    {
+      "platform": "googleScholar",
+      "icon": "FaGraduationCap",
+      "label": "Google Scholar",
+      "color": "#4285F4"
+    },
+    {
+      "platform": "linkedin",
+      "icon": "FaLinkedin",
+      "label": "LinkedIn",
+      "color": "#0A66C2"
+    },
+    {
+      "platform": "twitter",
+      "icon": "FaTwitter",
+      "label": "Twitter",
+      "color": "#1DA1F2"
+    }
   ],
-
-  "selectedPublicationIds": ["napcon2025-cuddle-optimization", "fetchml2024-warmth-seeking", "arxiv2025-cross-species-play"]
+  "selectedPublicationIds": [
+    "iclr2025-sonicsim",
+    "iclr2025-tiger",
+    "icml2024-iianet",
+    "tpami2024-ctcnet",
+    "iclr2023-tdanet",
+    "neurips2021-afrcnn"
+  ]
 }

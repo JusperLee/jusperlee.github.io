@@ -1,40 +1,30 @@
 ---
 journeyPhases:
-  - period: "2020 - 2021"
-    title: Puppy Orientation & Foundation Studies
-    org: Home Sweet Home
-    description: "Arrived as a tiny fluffball with zero skills and unlimited confidence. Completed intensive onboarding in **basic obedience** — shake hands, sit, lie down — while simultaneously developing core competencies in treat negotiation and selective hearing. Early research focus: maximizing human attention through cuteness."
-    tags: [Obedience Training, Treat Negotiation, Cuteness Optimization, Socialization]
-  - period: "2021 - 2022"
-    title: Undergraduate Researcher in Human-Canine Interaction
-    org: Yaoyao's Lap Lab
-    description: "Conducted foundational research on **human-proximity optimization** under the supervision of Yaoyao. Developed a novel follow-everywhere protocol that achieved 99.7% human-tracking accuracy across multi-room environments. Key contribution: demonstrated that consistent paw shakes increase treat yield by 60%, establishing the theoretical basis for all subsequent work."
-    tags: [Human Tracking, Paw-Shake Protocol, Proximity Optimization, Attention Mechanisms]
-  - period: "2022 - 2023"
-    title: M.S. in Cuddle Sciences
-    org: The Cozy Corner Institute
-    description: "Transitioned to graduate-level research in **warmth-seeking behavior and lap positioning**. Thesis work focused on reinforcement learning approaches to optimal cuddle configurations, modeling blanket coverage, human body temperature, and treat proximity as state variables. Published first-author work at CompanionML 2024 on real-time proximity optimization."
-    tags: [Reinforcement Learning, Warmth Seeking, Lap Positioning, CompanionML 2024]
-  - period: "2023 - 2024"
-    title: Cross-Species Collaboration Fellow
-    org: Lucas & Cookie Play Lab
-    description: "Joined forces with Ragdoll cat brother **Lucas (Lulu)** to investigate cooperative play dynamics across species boundaries. Developed PlayNet, a behavioral model capturing dog-cat interaction patterns with 92% play-initiation prediction accuracy. This interdisciplinary work revealed that slow tail wags and gentle paw taps are the most effective cross-species communication signals."
-    tags: [Cross-Species Dynamics, PlayNet, Behavioral Modeling, Dog-Cat Cooperation]
+  - period: "2016 - 2020"
+    title: B.Eng. in Computer Technology and Application
+    org: Qinghai University
+    description: "Undergraduate study at Department of Computer Technology and Application, Qinghai University. Graduated with Outstanding Bachelor Thesis Award (Top 1%) and Outstanding Graduates (Top 1%). Won National Scholarship in 2019. Early research on single image super-resolution reconstruction."
+    tags: [Super-Resolution, Image Processing, National Scholarship]
+  - period: "2021 - 2024"
+    title: M.S. in Computer Science and Technology
+    org: Tsinghua University
+    description: "Master's study at Department of Computer Science and Technology, Tsinghua University, supervised by Prof. [Xiaolin Hu](http://www.xlhu.cn/). Research focused on **speech separation** and **audio-visual speech separation**. Published papers at top venues including ICLR, ICASSP, Interspeech. Awarded Excellent Master Thesis of Tsinghua University and Outstanding Graduate of Beijing."
+    tags: [Speech Separation, Audio-Visual Learning, ICLR, Tsinghua University]
   - period: "2024 - Present"
-    title: Ph.D. Candidate in Companion Intelligence
-    org: The Cozy Corner Institute
-    description: "Currently pursuing doctoral research on **companion intelligence** — the intersection of warmth-seeking optimization, cross-species social dynamics, and human-canine co-living. Leading a multi-paper research agenda with publications at CozyCon 2025 and arXiv. Advisor: Dr. Warm Lap. Long-term vision: a world where every fluffball finds the warmest lap and the best treats."
-    tags: [Companion Intelligence, Multi-Agent Systems, Warmth Optimization, CozyCon 2025]
+    title: Ph.D. in Computer Science and Technology
+    org: Tsinghua University
+    description: "Ph.D. student at Department of Computer Science and Technology, Tsinghua University, supervised by Prof. [Xiaolin Hu](http://www.xlhu.cn/). Member of [TSAIL Group](https://ml.cs.tsinghua.edu.cn/) directed by Prof. Bo Zhang and Prof. Jun Zhu. Research interests include **Speech/Music Separation**, **Multi-Modal Speech Separation**, and **Audio LLM**."
+    tags: [Speech Separation, Audio LLM, Multi-Modal, TSAIL Group]
 mentorship:
-  heading: My Pack
-  description: "Cookie's research group — a compact but highly productive pack spanning two species and one hooman."
+  heading: Collaborators
+  description: "Key collaborators and research groups."
   mentees:
-    - name: Lucas (Lulu)
-      url: "#"
-      note: "Ragdoll cat, co-PI on cross-species play dynamics, expert nap partner"
-    - name: Yaoyao (Freax) Qian
-      url: https://h-freax.github.io/
-      note: "Creator of TermHub, primary advisor on all treat-related decisions"
+    - name: Prof. Xiaolin Hu
+      url: http://www.xlhu.cn/
+      note: "Ph.D. advisor, Tsinghua University"
+    - name: TSAIL Group
+      url: https://ml.cs.tsinghua.edu.cn/
+      note: "Tsinghua Statistical AI & Learning Group"
 version:
   current: v1.0.0
   history:
@@ -43,11 +33,11 @@ version:
       features:
         - Personal bio and journey timeline
         - Research publications section
-        - Project showcase with demos
+        - Experience and awards
 ---
 
-Cookie is a Pomeranian researcher specializing in companion intelligence, warmth-seeking optimization, and cross-species social dynamics. She received her B.A. in Good Girl Arts from Home Sweet Home (2020–2022), where she developed foundational skills in obedience, treat negotiation, and human-attention maximization. She went on to complete her M.S. in Cuddle Sciences at The Cozy Corner Institute (2022–2023), with thesis work on reinforcement learning approaches to optimal lap positioning.
+My name is Kai Li (Chinese name: 李凯). I'm a second-year PhD student at Department of Computer Science and Technology, Tsinghua University, supervised by Prof. [Xiaolin Hu (胡晓林)](http://www.xlhu.cn/). I am also a member of [TSAIL Group](https://ml.cs.tsinghua.edu.cn/) directed by Prof. [Bo Zhang (张拨)](https://www.cs.tsinghua.edu.cn/info/1121/3552.htm) and Prof. [Jun Zhu (朱军)](https://ml.cs.tsinghua.edu.cn/~jun/index.shtml).
 
-Cookie is currently a Ph.D. candidate at The Cozy Corner Institute under the supervision of Dr. Warm Lap, where her research focuses on building intelligent companion systems that understand and optimize the human-pet co-living experience. Her work spans three key areas: (1) real-time human-proximity optimization, (2) cross-species cooperative play modeling with her Ragdoll cat brother Lucas, and (3) the fundamental science of warmth-seeking behavior.
+My research interest includes **Speech/Music Separation, Multi-Modal Speech Separation, and Audio LLM**. I have published many papers at the top conferences/journals such as **NeurIPS/ICLR/TPAMI/ICASSP/Interspeech**. If you want to collaborate, feel free to email me.
 
-She has published at venues including CozyCon and CompanionML, with first-author papers on lap positioning optimization and real-time proximity tracking. When not conducting research, Cookie can be found claiming the sunniest spot on the couch, perfecting her signature dramatic sigh when dinner is five minutes late, or engaged in rigorous play sessions with Lucas in the living room.
+These works are open source to the best of my ability.

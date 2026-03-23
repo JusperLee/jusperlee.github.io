@@ -1,19 +1,19 @@
 ---
-title: 自主撒娇位置优化器
+title: Autonomous Cuddle Position Optimizer
 category: robotics
 date: 2025-09-15
-tags: [ROS2, 传感器, 路径规划, Python]
+tags: [ROS2, Sensors, Path Planning, Python]
 link: "#"
 isOpenSource: true
-badge: "🛋️ 100% 舒适"
+badge: "🛋️ 100% Cozy"
 featured: true
-story: 第一次演示时 Cookie 优化到了猫窝而不是 Yaoyao 的膝盖——原来温度传感器太喜欢加热宠物床了。
+story: The first demo had Cookie optimizing for the cat bed instead of Yaoyao's lap — turns out the thermal sensor loved heated pet beds.
 ---
 
-基于传感器的系统，使用热成像和距离检测来寻找并导航到相对于最近人类的最优撒娇位置。
+Sensor-based system for finding and navigating to the optimal cuddle position relative to the nearest human, using thermal imaging and proximity detection.
 
-## 亮点
+## Highlights
 
-- 实现了基于温度梯度的路径规划，用于实时追踪主人。
-- 在模拟多房间环境中达到 100% 的膝盖到达率。
-- 集成了趴下检测功能，自动触发撒娇模式。
+- Implemented warmth-gradient path planning for real-time human tracking.
+- Achieved 100% lap arrival rate in simulated multi-room environments.
+- Integrated lie-down detection to trigger cuddle mode automatically.

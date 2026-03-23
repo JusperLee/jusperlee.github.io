@@ -7,7 +7,8 @@ const categoryColors: Record<ProjectItem['category'], string> = {
   'web-app': 'orange',
   data: 'green',
   tooling: 'cyan',
-  healthcare: 'red'
+  healthcare: 'red',
+  speech: 'blue'
 }
 
 const linkColor = (label: string) => {

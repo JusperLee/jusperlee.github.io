@@ -6,9 +6,10 @@ import {
 import { keyframes } from '@emotion/react'
 import { IconType } from 'react-icons'
 import {
-  FaGithub, FaMedium, FaYoutube, FaExternalLinkAlt,
+  FaGithub, FaMedium, FaYoutube, FaExternalLinkAlt, FaArrowRight,
 } from 'react-icons/fa'
 import { SiZhihu, SiCsdn } from 'react-icons/si'
+import { Link as RouterLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import type { ProjectItem } from '../types'
 import { highlightData } from '../utils/highlightData'
@@ -395,25 +396,39 @@ const Articles: React.FC = () => {
                               )}
 
                               {/* All links (visible on all screens when expanded) */}
-                              {resources.length > 0 && (
-                                <Flex wrap="wrap" gap={2}>
-                                  {resources.map(r => (
-                                    <Link key={r.url} href={r.url} isExternal
-                                      onClick={e => e.stopPropagation()} _hover={{ textDecoration: 'none' }}>
-                                      <HStack
-                                        spacing={1.5} px={2.5} py={1} borderRadius="sm"
-                                        border="1px solid" borderColor={termBorder}
-                                        color={termCommand} fontSize="xs" fontFamily="mono"
-                                        transition="all 0.15s"
-                                        _hover={{ borderColor: ct.fg(isDark), color: ct.fg(isDark) }}
-                                      >
-                                        <Icon as={linkIcon(r.url)} boxSize="11px" />
-                                        <Text>{r.label}</Text>
-                                      </HStack>
-                                    </Link>
-                                  ))}
-                                </Flex>
-                              )}
+                              <Flex wrap="wrap" gap={2}>
+                                {resources.map(r => (
+                                  <Link key={r.url} href={r.url} isExternal
+                                    onClick={e => e.stopPropagation()} _hover={{ textDecoration: 'none' }}>
+                                    <HStack
+                                      spacing={1.5} px={2.5} py={1} borderRadius="sm"
+                                      border="1px solid" borderColor={termBorder}
+                                      color={termCommand} fontSize="xs" fontFamily="mono"
+                                      transition="all 0.15s"
+                                      _hover={{ borderColor: ct.fg(isDark), color: ct.fg(isDark) }}
+                                    >
+                                      <Icon as={linkIcon(r.url)} boxSize="11px" />
+                                      <Text>{r.label}</Text>
+                                    </HStack>
+                                  </Link>
+                                ))}
+                                {/* Read Full Post link */}
+                                {item.slug && (
+                                  <Link as={RouterLink} to={`/articles/${item.slug}`}
+                                    onClick={e => e.stopPropagation()} _hover={{ textDecoration: 'none' }}>
+                                    <HStack
+                                      spacing={1.5} px={2.5} py={1} borderRadius="sm"
+                                      border="1px solid" borderColor={termPrompt}
+                                      color={termPrompt} fontSize="xs" fontFamily="mono"
+                                      transition="all 0.15s"
+                                      _hover={{ borderColor: termHighlight, color: termHighlight, bg: isDark ? 'rgba(163,190,140,0.1)' : 'rgba(54,128,90,0.08)' }}
+                                    >
+                                      <Text>Read Full Post</Text>
+                                      <Icon as={FaArrowRight} boxSize="10px" />
+                                    </HStack>
+                                  </Link>
+                                )}
+                              </Flex>
                             </Box>
                           </Collapse>
                         </Box>

@@ -32,15 +32,16 @@ const publicationMdsZh = import.meta.glob('/content/zh/publications/*.md', { eag
 const aboutMdZh = import.meta.glob('/content/zh/about.md', { eager: true }) as Record<string, { default: Record<string, unknown> }>
 
 function collectMd(modules: Record<string, { default: Record<string, unknown> }>): Record<string, unknown>[] {
-  return Object.values(modules).map(m => {
+  return Object.entries(modules).map(([path, m]) => {
     const { body, ...frontmatter } = m.default
-    return { ...frontmatter, _body: body }
+    const slug = path.split('/').pop()?.replace(/\.md$/, '') ?? ''
+    return { ...frontmatter, _body: body, slug }
   })
 }
 
 // Convert Markdown body into the fields components expect
 function mdToProject(raw: Record<string, unknown>): ProjectItem {
-  const { _body, ...rest } = raw
+  const { _body, slug, ...rest } = raw
   const bodyStr = (_body as string) || ''
 
   const highlights: string[] = []
@@ -50,14 +51,17 @@ function mdToProject(raw: Record<string, unknown>): ProjectItem {
     if (m) highlights.push(m[1].trim())
   }
 
-  const summary = lines
+  const fullText = lines
     .filter(l => l.trim() && !l.match(/^[-*#]/) && !l.match(/^</))
     .map(l => l.trim())
     .join(' ')
+  const summary = fullText.length > 200 ? fullText.slice(0, 200).replace(/\s\S*$/, '') + '...' : fullText
 
   return {
     summary,
     highlights: highlights.length > 0 ? highlights : undefined,
+    slug,
+    _body: bodyStr,
     ...rest,
   } as unknown as ProjectItem
 }

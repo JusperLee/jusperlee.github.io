@@ -1,53 +1,43 @@
 ---
 journeyPhases:
-  - period: "2020 - 2021"
-    title: 幼犬入学与基础训练
-    org: 温馨小窝
-    description: "作为一个毛球抵达新家，零技能但自信满满。完成了**基础服从训练**的密集课程——握手、坐下、趴下——同时自主发展了零食谈判和选择性听力的核心能力。早期研究方向：通过可爱值最大化人类注意力。"
-    tags: [服从训练, 零食谈判, 可爱值优化, 社会化]
-  - period: "2021 - 2022"
-    title: 人犬交互方向本科研究助理
-    org: Yaoyao 的膝盖实验室
-    description: "在 Yaoyao 的指导下开展**人类距离优化**的基础研究。开发了一套全新的跟随协议，在多房间环境下实现了 99.7% 的人类追踪准确率。核心贡献：证明了持续握手可将零食产出提高 60%，为后续所有研究奠定了理论基础。"
-    tags: [人类追踪, 握手协议, 距离优化, 注意力机制]
-  - period: "2022 - 2023"
-    title: 撒娇科学硕士
-    org: 温暖角落研究所
-    description: "转入**取暖行为与膝盖定位**方向的研究生阶段。硕士论文聚焦强化学习方法在最优撒娇配置中的应用，将毯子覆盖率、人体温度和零食距离建模为状态变量。在 CompanionML 2024 发表第一作者论文，主题为实时距离优化。"
-    tags: [强化学习, 取暖行为, 膝盖定位, CompanionML 2024]
-  - period: "2023 - 2024"
-    title: 跨物种合作研究员
-    org: Lucas & Cookie 玩耍实验室
-    description: "与布偶猫弟弟 **Lucas (Lulu)** 联合研究跨物种合作玩耍动力学。开发了 PlayNet——一个捕捉狗猫互动模式的行为模型，玩耍发起预测准确率达 92%。这项跨学科研究揭示了慢摇尾巴和轻拍爪子是最有效的跨物种沟通信号。"
-    tags: [跨物种动力学, PlayNet, 行为建模, 狗猫合作]
-  - period: "2024 - 至今"
-    title: 伴侣智能方向博士候选人
-    org: 温暖角落研究所
-    description: "目前攻读**伴侣智能**方向博士学位——研究取暖优化、跨物种社交动态与人犬共居的交叉领域。主导多篇论文研究计划，成果发表于 CozyCon 2025 和 arXiv。导师：Dr. Warm Lap。长期愿景：让每一个毛球都能找到最暖的膝盖和最好的零食。"
-    tags: [伴侣智能, 多智能体系统, 取暖优化, CozyCon 2025]
+  - period: "2016 - 2020"
+    title: B.Eng. in Computer Technology and Application
+    org: Qinghai University
+    description: "Undergraduate study at Department of Computer Technology and Application, Qinghai University. Graduated with Outstanding Bachelor Thesis Award (Top 1%) and Outstanding Graduates (Top 1%). Won National Scholarship in 2019. Early research on single image super-resolution reconstruction."
+    tags: [Super-Resolution, Image Processing, National Scholarship]
+  - period: "2021 - 2024"
+    title: M.S. in Computer Science and Technology
+    org: Tsinghua University
+    description: "Master's study at Department of Computer Science and Technology, Tsinghua University, supervised by Prof. [Xiaolin Hu](http://www.xlhu.cn/). Research focused on **speech separation** and **audio-visual speech separation**. Published papers at top venues including ICLR, ICASSP, Interspeech. Awarded Excellent Master Thesis of Tsinghua University and Outstanding Graduate of Beijing."
+    tags: [Speech Separation, Audio-Visual Learning, ICLR, Tsinghua University]
+  - period: "2024 - Present"
+    title: Ph.D. in Computer Science and Technology
+    org: Tsinghua University
+    description: "Ph.D. student at Department of Computer Science and Technology, Tsinghua University, supervised by Prof. [Xiaolin Hu](http://www.xlhu.cn/). Member of [TSAIL Group](https://ml.cs.tsinghua.edu.cn/) directed by Prof. Bo Zhang and Prof. Jun Zhu. Research interests include **Speech/Music Separation**, **Multi-Modal Speech Separation**, and **Audio LLM**."
+    tags: [Speech Separation, Audio LLM, Multi-Modal, TSAIL Group]
 mentorship:
-  heading: 我的小团队
-  description: "Cookie 的研究小组——一个紧凑但高产的团队，横跨两个物种和一个人类。"
+  heading: Collaborators
+  description: "Key collaborators and research groups."
   mentees:
-    - name: Lucas (Lulu)
-      url: "#"
-      note: "布偶猫，跨物种玩耍动力学联合 PI，专业午睡搭档"
-    - name: Yaoyao (Freax) Qian
-      url: https://h-freax.github.io/
-      note: "TermHub 创建者，所有零食相关决策的首席顾问"
+    - name: Prof. Xiaolin Hu
+      url: http://www.xlhu.cn/
+      note: "Ph.D. advisor, Tsinghua University"
+    - name: TSAIL Group
+      url: https://ml.cs.tsinghua.edu.cn/
+      note: "Tsinghua Statistical AI & Learning Group"
 version:
   current: v1.0.0
   history:
     - version: v1.0.0
-      title: 初始作品集
+      title: Initial Portfolio
       features:
-        - 个人简介和成长时间线
-        - 学术论文展示
-        - 项目展示与演示
+        - Personal bio and journey timeline
+        - Research publications section
+        - Experience and awards
 ---
 
-Cookie 是一名专注于伴侣智能、取暖优化和跨物种社交动态的博美研究者。她在温馨小窝获得好女孩文学学士学位（2020–2022），期间发展了服从训练、零食谈判和人类注意力最大化的基础技能。随后在温暖角落研究所完成撒娇科学硕士学位（2022–2023），硕士论文研究强化学习在最优膝盖定位中的应用。
+My name is Kai Li (Chinese name: 李凯). I'm a second-year PhD student at Department of Computer Science and Technology, Tsinghua University, supervised by Prof. [Xiaolin Hu (胡晓林)](http://www.xlhu.cn/). I am also a member of [TSAIL Group](https://ml.cs.tsinghua.edu.cn/) directed by Prof. [Bo Zhang (张拨)](https://www.cs.tsinghua.edu.cn/info/1121/3552.htm) and Prof. [Jun Zhu (朱军)](https://ml.cs.tsinghua.edu.cn/~jun/index.shtml).
 
-Cookie 目前是温暖角落研究所的博士候选人，导师为 Dr. Warm Lap，研究方向为构建理解并优化人宠共居体验的智能伴侣系统。她的工作涵盖三个核心领域：(1) 实时人类距离优化，(2) 与布偶猫弟弟 Lucas 合作的跨物种合作玩耍建模，(3) 取暖行为的基础科学。
+My research interest includes **Speech/Music Separation, Multi-Modal Speech Separation, and Audio LLM**. I have published many papers at the top conferences/journals such as **NeurIPS/ICLR/TPAMI/ICASSP/Interspeech**. If you want to collaborate, feel free to email me.
 
-她在 CozyCon、CompanionML 等会议发表论文，第一作者工作涉及膝盖定位优化和实时距离追踪。不做研究的时候，Cookie 可以在沙发上最暖的位置找到她，或者在晚饭迟到五分钟时练习她标志性的委屈叹气，又或者在客厅和 Lucas 进行高强度的玩耍训练。
+These works are open source to the best of my ability.

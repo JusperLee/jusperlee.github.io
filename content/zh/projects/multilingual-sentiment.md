@@ -1,17 +1,17 @@
 ---
-title: 握手手势识别系统
+title: Paw Shake Recognition System
 category: nlp
 date: 2025-06-01
-tags: [计算机视觉, PyTorch, Hugging Face, 手势]
+tags: [Computer Vision, PyTorch, Hugging Face, Gesture]
 link: "#"
 isOpenSource: true
-badge: "🐾 3 种手势"
+badge: "🐾 3 Gestures"
 ---
 
-基于视觉的手势识别模型，从视频输入中分类狗狗指令——握手、趴下和坐下。
+Vision-based gesture recognition model that classifies dog commands — shake hands, lie down, and sit — from video input.
 
-## 亮点
+## Highlights
 
-- 从摄像头画面中以 94% 的准确率分类三种核心手势。
-- 在 5,000 个 Cookie 执行指令的视频片段数据集上训练。
-- 在 Hugging Face Hub 上发布了模型权重和评估脚本。
+- Classifies three core gestures with 94% accuracy from webcam footage.
+- Trained on a curated dataset of 5,000 clips featuring Cookie performing commands.
+- Released model weights and evaluation scripts on Hugging Face Hub.

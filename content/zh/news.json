@@ -1,41 +1,579 @@
 [
   {
     "type": "publication",
-    "badge": "论文发表",
+    "badge": "AAAI 2026",
     "icon": "FaFileAlt",
     "iconColor": "blue.400",
-    "title": "撒娇优化论文被 CozyCon 2025 录用",
-    "description": "Cookie 的论文《取暖型博美的最优膝盖占领位置》已被 CozyCon 2025 录用。",
+    "title": "Three Papers Accepted by AAAI 2026",
+    "description": "One paper (Oral) and two papers are accepted by AAAI 2026.",
     "date": "Dec 2025",
     "sortDate": "2025-12-01",
     "links": [
-      { "text": "论文", "url": "#", "icon": "FaFilePdf" }
+      { "text": "DegVoC", "url": "https://arxiv.org/abs/2412.xxxxx", "icon": "FaFilePdf" },
+      { "text": "FGNet", "url": "https://arxiv.org/abs/2511.13063", "icon": "FaFilePdf" },
+      { "text": "SepPrune", "url": "https://arxiv.org/abs/2505.12079", "icon": "FaFilePdf" }
     ]
   },
   {
-    "type": "talk",
-    "badge": "受邀报告",
-    "icon": "FaMicrophone",
-    "iconColor": "purple.400",
-    "title": "在国际跨物种玩耍研讨会上受邀演讲",
-    "description": "报告了博美与布偶猫之间的合作玩耍动力学研究成果，以与弟弟 Lucas 的案例为主。",
-    "date": "Mar 2025",
-    "sortDate": "2025-03-10",
+    "type": "publication",
+    "badge": "TGRS 2025",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by TGRS 2025",
+    "description": "One paper is accepted by TGRS 2025.",
+    "date": "Oct 2025",
+    "sortDate": "2025-10-15",
     "links": [
-      { "text": "幻灯片", "url": "#", "icon": "FaDesktop" }
+      { "text": "GDSR", "url": "https://ieeexplore.ieee.org/abstract/document/11192566", "icon": "FaFilePdf" },
+      { "text": "Code", "url": "https://github.com/Doswin/GDSR", "icon": "FaGithub" }
     ]
   },
   {
-    "type": "release",
-    "badge": "发布",
-    "icon": "FaRocket",
-    "iconColor": "green.400",
-    "title": "PawShake.js v1.0 发布",
-    "description": "发布了 PawShake.js，一个通过握手协议建模零食获取策略的开源库。",
-    "date": "Jul 2024",
-    "sortDate": "2024-07-01",
+    "type": "publication",
+    "badge": "TDSC 2025",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by TDSC 2025",
+    "description": "One paper is accepted by TDSC 2025.",
+    "date": "Oct 2025",
+    "sortDate": "2025-10-01",
     "links": [
-      { "text": "GitHub", "url": "#", "icon": "FaGithub" }
+      { "text": "Paper", "url": "https://ieeexplore.ieee.org/document/11216043", "icon": "FaFilePdf" },
+      { "text": "Code", "url": "https://github.com/LetterLiGo/SafeEar", "icon": "FaGithub" }
     ]
+  },
+  {
+    "type": "publication",
+    "badge": "NeurIPS 2025",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by NeurIPS 2025",
+    "description": "One paper is accepted by NeurIPS 2025.",
+    "date": "Sep 2025",
+    "sortDate": "2025-09-01",
+    "links": [
+      { "text": "MMAR", "url": "https://arxiv.org/abs/2505.13032", "icon": "FaFilePdf" },
+      { "text": "Code", "url": "https://github.com/ddlBoJack/MMAR", "icon": "FaGithub" }
+    ]
+  },
+  {
+    "type": "award",
+    "badge": "Competition",
+    "icon": "FaTrophy",
+    "iconColor": "yellow.400",
+    "title": "Third Prize in CCF Advanced Audio Technology Competition",
+    "description": "Won the third prize in the CCF Advanced Audio Technology Competition Task 2.",
+    "date": "Aug 2025",
+    "sortDate": "2025-08-15",
+    "links": []
+  },
+  {
+    "type": "publication",
+    "badge": "ASRU 2025",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by ASRU 2025",
+    "description": "One paper is accepted by ASRU 2025.",
+    "date": "Aug 2025",
+    "sortDate": "2025-08-01",
+    "links": [
+      { "text": "Demo", "url": "https://cslikai.cn/TFACM/", "icon": "FaDesktop" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "ECAI 2025",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by ECAI 2025",
+    "description": "One paper is accepted by ECAI 2025.",
+    "date": "Jul 2025",
+    "sortDate": "2025-07-01",
+    "links": [
+      { "text": "Demo", "url": "https://cslikai.cn/Swift-Net/", "icon": "FaDesktop" },
+      { "text": "Code", "url": "https://github.com/JusperLee/Swift-Net", "icon": "FaGithub" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "ICCV 2025",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by ICCV 2025",
+    "description": "One paper is accepted by ICCV 2025.",
+    "date": "Jun 2025",
+    "sortDate": "2025-06-01",
+    "links": [
+      { "text": "Paper", "url": "https://arxiv.org/abs/2503.06683", "icon": "FaFilePdf" },
+      { "text": "Code", "url": "https://github.com/XavierJiezou/D2LS", "icon": "FaGithub" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "ICME 2025",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "Two Papers Accepted by ICME 2025",
+    "description": "Two papers accepted by ICME 2025.",
+    "date": "Apr 2025",
+    "sortDate": "2025-04-01",
+    "links": [
+      { "text": "SPMamba", "url": "https://arxiv.org/pdf/2404.02063", "icon": "FaFilePdf" },
+      { "text": "KDTA", "url": "https://arxiv.org/pdf/2412.06664", "icon": "FaFilePdf" },
+      { "text": "Code", "url": "https://github.com/JusperLee/SPMamba", "icon": "FaGithub" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "ICLR 2025",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "Two Papers Accepted by ICLR 2025",
+    "description": "Two papers accepted by ICLR 2025.",
+    "date": "Jan 2025",
+    "sortDate": "2025-01-01",
+    "links": [
+      { "text": "SonicSim", "url": "https://openreview.net/pdf?id=Hx2ADQLi8M", "icon": "FaFilePdf" },
+      { "text": "TIGER", "url": "https://openreview.net/pdf?id=rzx3vcvlzj", "icon": "FaFilePdf" },
+      { "text": "Code", "url": "https://github.com/JusperLee/SonicSim", "icon": "FaGithub" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "ICASSP 2025",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by ICASSP 2025",
+    "description": "One paper is accepted by ICASSP 2025.",
+    "date": "Dec 2024",
+    "sortDate": "2024-12-15",
+    "links": [
+      { "text": "Apollo", "url": "https://arxiv.org/pdf/2409.08514", "icon": "FaFilePdf" },
+      { "text": "Demo", "url": "https://cslikai.cn/Apollo/", "icon": "FaDesktop" },
+      { "text": "Code", "url": "https://github.com/JusperLee/Apollo", "icon": "FaGithub" }
+    ]
+  },
+  {
+    "type": "award",
+    "badge": "Honor",
+    "icon": "FaTrophy",
+    "iconColor": "yellow.400",
+    "title": "Outstanding Master's Thesis Award",
+    "description": "Outstanding Master's Thesis Award from China Society of Image and Graphics.",
+    "date": "Dec 2024",
+    "sortDate": "2024-12-01",
+    "links": []
+  },
+  {
+    "type": "publication",
+    "badge": "CCS 2024",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by CCS 2024",
+    "description": "One paper is accepted by CCS 2024.",
+    "date": "Sep 2024",
+    "sortDate": "2024-09-01",
+    "links": [
+      { "text": "Paper", "url": "https://dl.acm.org/doi/abs/10.1145/3658644.3670285", "icon": "FaFilePdf" },
+      { "text": "Demo", "url": "https://safeearweb.github.io/Project/", "icon": "FaDesktop" },
+      { "text": "Code", "url": "https://github.com/LetterLiGo/SafeEar", "icon": "FaGithub" }
+    ]
+  },
+  {
+    "type": "award",
+    "badge": "Honor",
+    "icon": "FaTrophy",
+    "iconColor": "yellow.400",
+    "title": "Best Student Presentation Award at NCMMSC 2024",
+    "description": "Best Student Presentation Award in NCMMSC 2024.",
+    "date": "Aug 2024",
+    "sortDate": "2024-08-15",
+    "links": []
+  },
+  {
+    "type": "publication",
+    "badge": "Remote Sensing 2024",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by Remote Sensing 2024",
+    "description": "One paper is accepted by Remote Sensing 2024.",
+    "date": "Aug 2024",
+    "sortDate": "2024-08-01",
+    "links": [
+      { "text": "Paper", "url": "https://www.mdpi.com/2072-4292/16/16/2899", "icon": "FaFilePdf" },
+      { "text": "Code", "url": "https://github.com/XavierJiezou/Pansharpening", "icon": "FaGithub" }
+    ]
+  },
+  {
+    "type": "award",
+    "badge": "Honor",
+    "icon": "FaTrophy",
+    "iconColor": "yellow.400",
+    "title": "Excellent Master Thesis of Tsinghua University",
+    "description": "Awarded Excellent Master Thesis of Tsinghua University.",
+    "date": "Jun 2024",
+    "sortDate": "2024-06-15",
+    "links": []
+  },
+  {
+    "type": "award",
+    "badge": "Honor",
+    "icon": "FaTrophy",
+    "iconColor": "yellow.400",
+    "title": "Outstanding Graduate of Beijing",
+    "description": "Awarded Outstanding Graduate of Beijing.",
+    "date": "Jun 2024",
+    "sortDate": "2024-06-01",
+    "links": []
+  },
+  {
+    "type": "publication",
+    "badge": "ICML 2024",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by ICML 2024",
+    "description": "One paper is accepted by ICML 2024.",
+    "date": "May 2024",
+    "sortDate": "2024-05-01",
+    "links": [
+      { "text": "Paper", "url": "https://openreview.net/pdf?id=FM61SQzF3N", "icon": "FaFilePdf" },
+      { "text": "Demo", "url": "https://cslikai.cn/IIANet/", "icon": "FaDesktop" },
+      { "text": "Code", "url": "https://github.com/JusperLee/IIANet", "icon": "FaGithub" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "ISMIR 2024",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by ISMIR 2024",
+    "description": "One paper is accepted by ISMIR 2024.",
+    "date": "Apr 2024",
+    "sortDate": "2024-04-15",
+    "links": [
+      { "text": "Paper", "url": "https://arxiv.org/pdf/2308.06981", "icon": "FaFilePdf" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "ICME 2024",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by ICME 2024",
+    "description": "One paper is accepted by ICME 2024.",
+    "date": "Apr 2024",
+    "sortDate": "2024-04-01",
+    "links": [
+      { "text": "Paper", "url": "https://arxiv.org/pdf/2308.08443", "icon": "FaFilePdf" },
+      { "text": "Code", "url": "https://github.com/BastianChen/LEPrompter", "icon": "FaGithub" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "TPAMI 2024",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by TPAMI 2024",
+    "description": "One paper is accepted by TPAMI 2024.",
+    "date": "Mar 2024",
+    "sortDate": "2024-03-01",
+    "links": [
+      { "text": "Paper", "url": "https://arxiv.org/abs/2212.10744", "icon": "FaFilePdf" },
+      { "text": "Code", "url": "https://github.com/JusperLee/CTCNet", "icon": "FaGithub" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "ICLR 2024",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by ICLR 2024",
+    "description": "One paper is accepted by ICLR 2024.",
+    "date": "Jan 2024",
+    "sortDate": "2024-01-15",
+    "links": [
+      { "text": "Paper", "url": "https://arxiv.org/html/2309.17189v3", "icon": "FaFilePdf" },
+      { "text": "Code", "url": "https://github.com/spkgyk/RTFS-Net", "icon": "FaGithub" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "TGRS 2024",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by TGRS 2024",
+    "description": "One paper is accepted by TGRS 2024.",
+    "date": "Jan 2024",
+    "sortDate": "2024-01-01",
+    "links": [
+      { "text": "Paper", "url": "https://arxiv.org/pdf/2308.04417", "icon": "FaFilePdf" },
+      { "text": "Demo", "url": "https://xavierjiezou.github.io/DiffCR/", "icon": "FaDesktop" },
+      { "text": "Code", "url": "https://github.com/XavierJiezou/DiffCR", "icon": "FaGithub" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "ICASSP 2024",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "Two Papers Accepted by ICASSP 2024",
+    "description": "Two papers are accepted by ICASSP 2024.",
+    "date": "Dec 2023",
+    "sortDate": "2023-12-01",
+    "links": [
+      { "text": "Sub-to-go", "url": "https://arxiv.org/pdf/2312.03464", "icon": "FaFilePdf" },
+      { "text": "LEFormer", "url": "https://arxiv.org/pdf/2308.04397", "icon": "FaFilePdf" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "ECAI 2023",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by ECAI 2023 (Oral)",
+    "description": "One paper is accepted by ECAI 2023 (Oral).",
+    "date": "Jul 2023",
+    "sortDate": "2023-07-01",
+    "links": [
+      { "text": "Paper", "url": "https://arxiv.org/pdf/2303.16565.pdf", "icon": "FaFilePdf" },
+      { "text": "Code", "url": "https://github.com/XavierJiezou/PMAA", "icon": "FaGithub" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "Interspeech 2023",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "Two Papers Accepted by Interspeech 2023",
+    "description": "Two papers are accepted by Interspeech 2023.",
+    "date": "May 2023",
+    "sortDate": "2023-05-15",
+    "links": [
+      { "text": "AVLIT", "url": "https://arxiv.org/pdf/2306.00160", "icon": "FaFilePdf" },
+      { "text": "S4M", "url": "https://arxiv.org/pdf/2305.16932", "icon": "FaFilePdf" }
+    ]
+  },
+  {
+    "type": "award",
+    "badge": "Competition",
+    "icon": "FaTrophy",
+    "iconColor": "yellow.400",
+    "title": "First Prize in Cinematic Sound Demixing Track 23",
+    "description": "Won the first prize of the Cinematic Sound Demixing Track 23 in the Leaderboard A and B.",
+    "date": "May 2023",
+    "sortDate": "2023-05-10",
+    "links": [
+      { "text": "Challenge", "url": "https://www.aicrowd.com/challenges/sound-demixing-challenge-2023/problems/cinematic-sound-demixing-track-cdx-23", "icon": "FaExternalLinkAlt" }
+    ]
+  },
+  {
+    "type": "award",
+    "badge": "Competition",
+    "icon": "FaTrophy",
+    "iconColor": "yellow.400",
+    "title": "First Prize and Best Application Award in ASC23",
+    "description": "Won the first prize of the ASC23 and Best Application Award.",
+    "date": "May 2023",
+    "sortDate": "2023-05-01",
+    "links": []
+  },
+  {
+    "type": "publication",
+    "badge": "ICASSP 2023",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by ICASSP 2023",
+    "description": "One paper is accepted by ICASSP 2023.",
+    "date": "Feb 2023",
+    "sortDate": "2023-02-01",
+    "links": [
+      { "text": "Paper", "url": "https://arxiv.org/pdf/2206.07340", "icon": "FaFilePdf" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "ICLR 2023",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by ICLR 2023",
+    "description": "One paper is accepted by ICLR 2023.",
+    "date": "Jan 2023",
+    "sortDate": "2023-01-01",
+    "links": [
+      { "text": "Paper", "url": "https://arxiv.org/pdf/2209.15200", "icon": "FaFilePdf" },
+      { "text": "Code", "url": "https://github.com/JusperLee/TDANet", "icon": "FaGithub" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "Neural Computation",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by Neural Computation",
+    "description": "One paper is accepted by Neural Computation.",
+    "date": "Jun 2022",
+    "sortDate": "2022-06-15",
+    "links": [
+      { "text": "Code", "url": "https://github.com/liaoyd16/cocktail_lk", "icon": "FaGithub" }
+    ]
+  },
+  {
+    "type": "publication",
+    "badge": "InterSpeech 2022",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by InterSpeech 2022",
+    "description": "One paper is accepted by InterSpeech 2022.",
+    "date": "Jun 2022",
+    "sortDate": "2022-06-01",
+    "links": [
+      { "text": "Paper", "url": "http://arxiv.org/pdf/2206.07347v1", "icon": "FaFilePdf" }
+    ]
+  },
+  {
+    "type": "award",
+    "badge": "Competition",
+    "icon": "FaTrophy",
+    "iconColor": "yellow.400",
+    "title": "First Prize in ASC22 Supercomputer Challenge",
+    "description": "Won the first prize of the Global College Student Supercomputer Challenge (ASC22).",
+    "date": "Mar 2022",
+    "sortDate": "2022-03-01",
+    "links": []
+  },
+  {
+    "type": "publication",
+    "badge": "NeurIPS 2021",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by NeurIPS 2021",
+    "description": "Paper is accepted by NeurIPS 2021.",
+    "date": "Oct 2021",
+    "sortDate": "2021-10-01",
+    "links": [
+      { "text": "Paper", "url": "https://papers.nips.cc/paper/2021/file/be1bc7997695495f756312886f566110-Paper.pdf", "icon": "FaFilePdf" },
+      { "text": "Code", "url": "https://github.com/JusperLee/AFRCNN-For-Speech-Separation", "icon": "FaGithub" }
+    ]
+  },
+  {
+    "type": "award",
+    "badge": "Competition",
+    "icon": "FaTrophy",
+    "iconColor": "yellow.400",
+    "title": "First Prize in ASC20-21 Supercomputer Challenge",
+    "description": "Won the first prize of the Global College Student Supercomputer Challenge (ASC20-21).",
+    "date": "Jan 2021",
+    "sortDate": "2021-01-01",
+    "links": []
+  },
+  {
+    "type": "award",
+    "badge": "Honor",
+    "icon": "FaTrophy",
+    "iconColor": "yellow.400",
+    "title": "Outstanding Bachelor Thesis Award",
+    "description": "Outstanding Bachelor Thesis Award, Qinghai University.",
+    "date": "Jun 2020",
+    "sortDate": "2020-06-15",
+    "links": []
+  },
+  {
+    "type": "award",
+    "badge": "Honor",
+    "icon": "FaTrophy",
+    "iconColor": "yellow.400",
+    "title": "Outstanding Graduates, Qinghai University",
+    "description": "Outstanding Graduates, Qinghai University.",
+    "date": "Jun 2020",
+    "sortDate": "2020-06-01",
+    "links": []
+  },
+  {
+    "type": "publication",
+    "badge": "IET Image Processing",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by IET Image Processing",
+    "description": "One paper is accepted by IET Image Processing.",
+    "date": "Apr 2020",
+    "sortDate": "2020-04-01",
+    "links": []
+  },
+  {
+    "type": "award",
+    "badge": "Competition",
+    "icon": "FaTrophy",
+    "iconColor": "yellow.400",
+    "title": "First Prize in Ganqingning Innovation and Entrepreneurship Competition",
+    "description": "Won the first prize of the first \"Ganqingning\" Innovation and Entrepreneurship Competition.",
+    "date": "Nov 2019",
+    "sortDate": "2019-11-15",
+    "links": []
+  },
+  {
+    "type": "award",
+    "badge": "Scholarship",
+    "icon": "FaTrophy",
+    "iconColor": "yellow.400",
+    "title": "National Scholarship",
+    "description": "Won the National Scholarship, Ministry of Education, China.",
+    "date": "Nov 2019",
+    "sortDate": "2019-11-01",
+    "links": []
+  },
+  {
+    "type": "award",
+    "badge": "Competition",
+    "icon": "FaTrophy",
+    "iconColor": "yellow.400",
+    "title": "Second Prize in National Challenge Cup",
+    "description": "Won the second prize in Natural Academic Paper category of the National College Student Challenge Cup.",
+    "date": "May 2019",
+    "sortDate": "2019-05-15",
+    "links": []
+  },
+  {
+    "type": "award",
+    "badge": "Competition",
+    "icon": "FaTrophy",
+    "iconColor": "yellow.400",
+    "title": "First Prize in Youth Science Innovation Experiment Competition",
+    "description": "Won the first prize in the Qinghai Division of the 6th National Youth Science Innovation Experiment Competition.",
+    "date": "May 2019",
+    "sortDate": "2019-05-10",
+    "links": []
+  },
+  {
+    "type": "publication",
+    "badge": "ICDIP 2019",
+    "icon": "FaFileAlt",
+    "iconColor": "blue.400",
+    "title": "One Paper Accepted by ICDIP 2019",
+    "description": "One paper is accepted by ICDIP2019.",
+    "date": "May 2019",
+    "sortDate": "2019-05-01",
+    "links": []
+  },
+  {
+    "type": "award",
+    "badge": "Competition",
+    "icon": "FaTrophy",
+    "iconColor": "yellow.400",
+    "title": "Second Prize in Blue Bridge Cup Java Group A",
+    "description": "Won the second prize at the provincial level in the Blue Bridge Cup Java Group A.",
+    "date": "Apr 2019",
+    "sortDate": "2019-04-01",
+    "links": []
+  },
+  {
+    "type": "award",
+    "badge": "Competition",
+    "icon": "FaTrophy",
+    "iconColor": "yellow.400",
+    "title": "First Prize in Principals Cup Innovation and Entrepreneurship Competition",
+    "description": "Won the first prize of natural academic paper in the first \"Principals Cup\" Innovation and Entrepreneurship Competition.",
+    "date": "Dec 2018",
+    "sortDate": "2018-12-01",
+    "links": []
   }
 ]

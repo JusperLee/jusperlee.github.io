@@ -9,6 +9,7 @@ import Home from '../../components/Home'
 import Publications from '../../components/Publications'
 import Projects from '../../components/Projects'
 import Articles from '../../components/Articles'
+import ArticleDetail from '../../components/ArticleDetail'
 import Experience from '../../components/Experience'
 import GuideLanding from '../../components/GuideLanding'
 import GuideDocs from '../../components/GuideDocs'
@@ -39,6 +40,7 @@ const terminalTemplate: TemplateConfig = {
     publications: Publications,
     projects: Projects,
     articles: Articles,
+    articleDetail: ArticleDetail,
     experience: Experience,
     guide: GuideLanding,
     guideDocs: GuideDocs,

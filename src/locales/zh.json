@@ -4,7 +4,7 @@
     "publications": "学术论文",
     "experience": "工作经历",
     "projects": "项目展示",
-    "articles": "博客文章",
+    "articles": "博客",
     "guide": "使用指南",
     "navigation": "导航"
   },
@@ -142,7 +142,8 @@
     "web-app": "WEB / APP",
     "data": "DATA / ML",
     "tooling": "TOOLING",
-    "healthcare": "HEALTHCARE"
+    "healthcare": "HEALTHCARE",
+    "speech": "SPEECH"
   },
   "categoryLabel": {
     "robotics": "机器人",
@@ -150,7 +151,8 @@
     "web-app": "Web / 应用",
     "data": "数据 / ML",
     "tooling": "工具",
-    "healthcare": "医疗健康"
+    "healthcare": "医疗健康",
+    "speech": "语音"
   },
   "awards": {
     "grant": "资助",

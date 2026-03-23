@@ -2,9 +2,9 @@
   "mcpServers": {
     "termhub": {
       "command": "/opt/homebrew/bin/node",
-      "args": ["/Users/freax/Downloads/gitee/TermHub/mcp-server/dist/index.js"],
+      "args": ["/Users/likai/Downloads/个人主页/jusperlee.github.io/mcp-server/dist/index.js"],
       "env": {
-        "TERMHUB_ROOT": "/Users/freax/Downloads/gitee/TermHub"
+        "TERMHUB_ROOT": "/Users/likai/Downloads/个人主页/jusperlee.github.io"
       }
     }
   }

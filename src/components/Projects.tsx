@@ -34,7 +34,7 @@ const buildThemes = (dk: boolean): Record<ProjectItem['category'], CatThemeWithA
   const base = buildCategoryThemes(dk)
   const b = bob
   const durations: Record<ProjectItem['category'], number> = {
-    robotics: 2.2, nlp: 1.8, 'web-app': 2.0, data: 2.4, tooling: 2.6, healthcare: 1.6,
+    robotics: 2.2, nlp: 1.8, 'web-app': 2.0, data: 2.4, tooling: 2.6, healthcare: 1.6, speech: 2.0,
   }
   const result = {} as Record<ProjectItem['category'], CatThemeWithAnim>
   for (const [k, v] of Object.entries(base) as [ProjectItem['category'], CatTheme][]) {
@@ -295,7 +295,7 @@ const Projects: React.FC = () => {
   const tabs = useMemo(() => {
     const cnt: Record<string, number> = { all: projects.length }
     projects.forEach(p => { cnt[p.category] = (cnt[p.category] || 0) + 1 })
-    const cats: ProjectItem['category'][] = ['robotics', 'nlp', 'web-app', 'data', 'tooling', 'healthcare']
+    const cats: ProjectItem['category'][] = ['robotics', 'nlp', 'web-app', 'data', 'tooling', 'healthcare', 'speech']
     return [
       { key: 'all' as TabKey, icon: FaFolderOpen, label: t('projects.all'), color: termInfo, count: cnt.all },
       ...cats.filter(k => cnt[k] > 0).map(k => ({

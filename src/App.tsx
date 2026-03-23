@@ -29,6 +29,9 @@ function App() {
               {features.articles && pages.articles && (
                 <Route path="/articles" element={<pages.articles />} />
               )}
+              {features.articles && pages.articleDetail && (
+                <Route path="/articles/:slug" element={<pages.articleDetail />} />
+              )}
               {features.experience && pages.experience && (
                 <Route path="/experience" element={<pages.experience />} />
               )}

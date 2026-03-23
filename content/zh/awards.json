@@ -1,27 +1,80 @@
 [
   {
-    "title": "最佳搭档奖 — Cookie & Lucas 玩耍大赛",
-    "org": "客厅锦标赛",
-    "date": "Dec 2024",
+    "title": "Third Prize in CCF Advanced Audio Technology Competition (Task 2)",
+    "org": "CCF",
+    "date": "Sep 2025",
     "kind": "competition"
   },
   {
-    "title": "邻里握手大赛冠军",
-    "org": "狗公园社区",
-    "date": "Apr 2024",
-    "kind": "hackathon"
-  },
-  {
-    "title": "毛茸茸伙伴奖学金",
-    "org": "国家零食基金会",
-    "date": "Sep 2023",
-    "kind": "scholarship",
-    "link": "#"
-  },
-  {
-    "title": "最佳撒娇奖（毕业班前 5%）",
-    "org": "温馨小窝学院",
-    "date": "May 2022",
+    "title": "Outstanding Master's Thesis Award",
+    "org": "China Society of Image and Graphics",
+    "date": "Dec 2024",
     "kind": "honor"
+  },
+  {
+    "title": "Best Student Presentation Award",
+    "org": "NCMMSC 2024",
+    "date": "Aug 2024",
+    "kind": "honor"
+  },
+  {
+    "title": "Outstanding Graduate of Beijing",
+    "org": "Beijing Municipal Education Commission",
+    "date": "Jun 2024",
+    "kind": "honor"
+  },
+  {
+    "title": "Excellent Master Thesis",
+    "org": "Tsinghua University",
+    "date": "Jun 2024",
+    "kind": "honor"
+  },
+  {
+    "title": "Xueye Scholarship",
+    "org": "Tsinghua University",
+    "date": "Oct 2023",
+    "kind": "scholarship"
+  },
+  {
+    "title": "Longhu Scholarship",
+    "org": "Tsinghua University",
+    "date": "Oct 2023",
+    "kind": "scholarship"
+  },
+  {
+    "title": "First Prize, Cinematic Sound Demixing Track 23",
+    "org": "Cinematic Sound Demixing Track 23",
+    "date": "May 2023",
+    "kind": "competition"
+  },
+  {
+    "title": "First Prize, ASC23 Supercomputer Challenge",
+    "org": "ASC23 Supercomputer Challenge",
+    "date": "May 2023",
+    "kind": "competition"
+  },
+  {
+    "title": "First Prize, ASC22 Supercomputer Challenge",
+    "org": "ASC22 Supercomputer Challenge",
+    "date": "Mar 2022",
+    "kind": "competition"
+  },
+  {
+    "title": "Outstanding Bachelor Thesis Award (Top 1%)",
+    "org": "Qinghai University",
+    "date": "Jun 2020",
+    "kind": "honor"
+  },
+  {
+    "title": "Outstanding Graduates (Top 1%)",
+    "org": "Qinghai University",
+    "date": "Jun 2020",
+    "kind": "honor"
+  },
+  {
+    "title": "National Scholarship",
+    "org": "Ministry of Education China",
+    "date": "Nov 2019",
+    "kind": "scholarship"
   }
 ]
