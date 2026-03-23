@@ -12,7 +12,11 @@
     ]
   },
   "title": "Hi there, I'm Kai Li (李凯)",
-  "avatar": "github.jpg",
+  "avatar": "github.png",
+  "photoCredit": {
+    "label": "Photos by Dr. Xinxin Xing",
+    "href": "https://scholar.google.com/citations?user=j5qrk0kAAAAJ&hl=zh-CN"
+  },
   "tagline": "Researcher in Speech Separation, Audio-Visual Learning, and Audio LLM.",
   "terminal": {
     "username": "kai",

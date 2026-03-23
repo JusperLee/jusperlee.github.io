@@ -36,6 +36,7 @@ interface HeroSectionProps {
 const HeroSection = ({ title, avatar, research = [], researchLogos = {}, education = [], educationLogos = {} }: HeroSectionProps) => {
   const { t } = useTranslation()
   const { siteOwner, siteConfig } = useLocalizedData()
+  const photoCredit = siteConfig.photoCredit as { label?: string; href?: string } | undefined
   const headingColor = useColorModeValue('gray.800', 'white')
   const textColor = useColorModeValue('gray.600', 'gray.400')
   const bg = useColorModeValue('gray.50', 'gray.900')
@@ -255,6 +256,20 @@ const HeroSection = ({ title, avatar, research = [], researchLogos = {}, educati
                 boxSize={["150px", "180px", "220px"]}
                 objectFit="cover"
               />
+              {photoCredit?.label && photoCredit?.href && (
+                <Link
+                  href={photoCredit.href}
+                  isExternal
+                  fontSize="xs"
+                  color={useColorModeValue('gray.500', 'gray.400')}
+                  textAlign="center"
+                  lineHeight="short"
+                  transition="color 0.2s"
+                  _hover={{ color: 'cyan.400', textDecoration: 'none' }}
+                >
+                  {photoCredit.label}
+                </Link>
+              )}
               {/* Social icons row below avatar */}
               <HStack spacing={[1, 1.5]} justify="center">
                 {heroSocialIcons.map((item) => (

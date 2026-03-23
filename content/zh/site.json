@@ -12,7 +12,11 @@
     ]
   },
   "title": "Hi there, I'm Kai Li (李凯)",
-  "avatar": "github.jpg",
+  "avatar": "github.png",
+  "photoCredit": {
+    "label": "Photos by Dr. Xinxin Xing",
+    "href": "https://scholar.google.com/citations?user=j5qrk0kAAAAJ&hl=zh-CN"
+  },
   "tagline": "专注于语音分离、视听学习与音频大语言模型的研究者。",
   "terminal": {
     "username": "kai",
