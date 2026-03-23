@@ -33,7 +33,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          BASE_URL: /${{ github.event.repository.name }}/
+          BASE_URL: /
 
       - name: Ensure SPA fallback and .nojekyll
         run: |
