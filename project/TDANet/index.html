@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>An efficient encoder-decoder architecture with top-down attention for speech separation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <!-- <link rel="shortcut icon" href="../../img/ico.png"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                $("#div1").toggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <br>
+                <h1>An efficient encoder-decoder architecture with top-down attention for speech separation</h1>
+                <br>
+                <h4><a href="https://cslikai.show">Kai Li</a><sup></sup>, Runxuan Yang<sup></sup>, <a href="http://www.xlhu.cn/">Xiaolin Hu</a><sup></sup></h4>
+                <h4>Department of Computer Science and Technology, Tsinghua University, Beijing, China</h4>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                        <img class="img-responsive" style="width: 50%;" src="./pipeline.png">
+                    </div>
+                    <!-- <div class="col-xs-12 col-sm-4" style="margin-top: 5%">
+                        <img class="img-responsive" src="img/ours_0087.gif">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-left">
+                <h3>Abstract</h3>
+                <p>Deep neural networks have shown excellent prospects in speech separation tasks. However, finding the
+                    balance between model complexity and performance is still challenging in real-world applications. In
+                    this paper, we provide a bio-inspired efficient encoder-decoder architecture by mimicking the
+                    brain's top-down attention, called TDANet, with decreased model complexity without sacrificing
+                    performance. More specifically, the top-down attention in TDANet is extracted by the global
+                    attention (GA) module and the cascaded local attention (LA) layers. The GA module takes multi-scale
+                    acoustic features as input to extract global attention signal, which then modulates features of
+                    different scale by direct top-down connections. The LA layers use features of adjacent layers as
+                    input to extract the local attention signal, which is used to modulate the lateral input in a
+                    top-down manner. On three benchmark datasets, TDANet consistently achieved competitive separation
+                    performance with high efficiency. Specifically, TDANet's multiply-accumulate operations (MACs) are
+                    only 3.7% of A-FRCNN, and CPU inference time is only 14.8% of A-FRCNN. In addition, we propose a
+                    large-size variant: TDANet Large, which can obtain state-of-the-art results on three datasets, with
+                    MACs still only 7% of A-FRCNN and the CPU inference time is only 33% of A-FRCNN. Our study suggests
+                    that top-down attention can be a more efficient strategy for speech separation with less
+                    computational cost.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-left">
+                <h3>Links</h3>
+                <!-- <a href="#">
+                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span> Paper</button>
+                </a> -->
+                <!-- <a href="#">
+                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-save-file" aria-hidden="true"></span> Supplementary Material (11MB)</button>
+                </a> -->
+                <a href="#">
+                    <button type="button" class="btn btn-primary"><img src="./GitHub-Mark-Light-32px.png"
+                            height="16px">
+                        Codes</button>
+                </a>
+                <a href="https://drive.google.com/file/d/1dCWD5OIGcj43qTidmU18unoaqo_6QetW/view?usp=sharing">
+                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-folder-open"
+                            aria-hidden="true"></span>&nbsp;&nbsp;LRS2-2Mix Dataset</button>
+                </a>
+            </div>
+        </div>
+        <div class="row" , style="overflow: overlay">
+            <div class="col-xs-12 text-left">
+                <!-- <h3>Examples</h3> -->
+                <!-- <button id="button1" type="button" class="btn btn-info">More Comparisons <span
+                        class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button> -->
+                <!-- <a href="result.html"><button type="button" class="btn btn-info">Full Results on ETH3D Datasets <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button></a> -->
+                <!-- <a href="https://1drv.ms/u/s!AoA3NyEQIlSOcs4HBTm4lY9WwZc?e=N1hpmF">
+                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-download-alt"
+                            aria-hidden="true"></span> Download Full Results on DEMAND Datasets (300M)</button>
+                </a> -->
+                <h3>Speech Samples</h3>
+                <p>The model is evaluated with LRS2-2Mix [<a class="text-success" href="#1">1</a>]:
+                </p>
+            </div>
+            <!-- <h3>&nbsp</h3> -->
+            <hr>
+            <table class="table table-hover">
+                <thead class="w-100">
+                    <tr style="border-top:1px solid black" class="text-center">
+                        <th style="width: 180px;">Mixture input</th>
+                        <th style="width: 180px;">SudoRM-RF<sup><a class="text-success" href="#2">2</a></sup></th>
+                        <th style="width: 180px;">DualPathRNN<sup><a class="text-success" href="#3">3</a></sup></th>
+                        <th style="width: 180px;">A-FRCNN-16<sup><a class="text-success" href="#4">4</a></sup></th>
+                        <th style="width: 180px;">Sepformer<sup><a class="text-success" href="#5">5</a></sup></th>
+                        <th style="width: 180px;">TDANet (ours)</th>
+                        <th style="width: 180px;">TDANet Large (ours)</th>
+                        <th style="width: 180px;">Ground-Truth</th>
+                    </tr>
+                </thead>
+                <tbody class="w-100">
+                    <tr style="border-top:1px solid black">
+                        <td scope="row" rowspan="2"><audio controls="" class="audio-player" preload="metadata"
+                                style="width: 180px;">
+                                <source
+                                    src="./datas/mixture/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/mixture/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/SuDORM-RF/s1/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/SuDORM-RF/s1/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/DualPathRNN/s1/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/DualPathRNN/s1/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/A-FRCNN/s1/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/A-FRCNN/s1/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/Sepformer/s1/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/Sepformer/s1/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/TDANet/s1/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/TDANet/s1/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/TDANet-Large/s1/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/TDANet-Large/s1/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/clean/s1/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/clean/s1/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.png"></img>
+                        </td>
+                    </tr>
+                    <tr style="border-top:1px solid black">
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/SuDORM-RF/s2/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/SuDORM-RF/s2/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/DualPathRNN/s2/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/DualPathRNN/s2/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/A-FRCNN/s2/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/A-FRCNN/s2/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/Sepformer/s2/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/Sepformer/s2/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/TDANet/s2/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/TDANet/s2/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/TDANet-Large/s2/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/TDANet-Large/s2/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/clean/s2/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/clean/s2/6332062124509813446_00059_1.2026_6351424266576959115_00014_-1.2026.png"></img>
+                        </td>
+                    </tr>
+
+
+
+                    <tr style="border-top:1px solid black">
+                        <td scope="row" rowspan="2"><audio controls="" class="audio-player" preload="metadata"
+                                style="width: 180px;">
+                                <source
+                                    src="./datas/mixture/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/mixture/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/SuDORM-RF/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/SuDORM-RF/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/DualPathRNN/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/DualPathRNN/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/A-FRCNN/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/A-FRCNN/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/Sepformer/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/Sepformer/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/TDANet/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/TDANet/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/TDANet-Large/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/TDANet-Large/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/clean/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/clean/s1/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
+                        </td>
+                    </tr>
+                    <tr style="border-top:1px solid black">
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/SuDORM-RF/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/SuDORM-RF/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/DualPathRNN/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/DualPathRNN/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/A-FRCNN/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/A-FRCNN/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/Sepformer/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/Sepformer/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/TDANet/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/TDANet/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/TDANet-Large/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/TDANet-Large/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/clean/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/clean/s2/6337531765361335111_00018_2.5425_6382618614178237455_00017_-2.5425.png"></img>
+                        </td>
+                    </tr>
+
+
+                    <tr style="border-top:1px solid black">
+                        <td scope="row" rowspan="2"><audio controls="" class="audio-player" preload="metadata"
+                                style="width: 180px;">
+                                <source
+                                    src="./datas/mixture/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/mixture/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/SuDORM-RF/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/SuDORM-RF/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/DualPathRNN/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/DualPathRNN/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/A-FRCNN/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/A-FRCNN/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/Sepformer/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/Sepformer/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/TDANet/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/TDANet/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/TDANet-Large/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/TDANet-Large/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/clean/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/clean/s1/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
+                        </td>
+                    </tr>
+                    <tr style="border-top:1px solid black">
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/SuDORM-RF/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/SuDORM-RF/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/DualPathRNN/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/DualPathRNN/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/A-FRCNN/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/A-FRCNN/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/Sepformer/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/Sepformer/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/TDANet/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/TDANet/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/TDANet-Large/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/TDANet-Large/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/clean/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/clean/s2/6340299442417279404_00006_0.33477_6382618614178237455_00029_-0.33477.png"></img>
+                        </td>
+                    </tr>
+
+
+                    <tr style="border-top:1px solid black">
+                        <td scope="row" rowspan="2"><audio controls="" class="audio-player" preload="metadata"
+                                style="width: 180px;">
+                                <source
+                                    src="./datas/mixture/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/mixture/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/SuDORM-RF/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/SuDORM-RF/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/DualPathRNN/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/DualPathRNN/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/A-FRCNN/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/A-FRCNN/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/Sepformer/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/Sepformer/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/TDANet/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/TDANet/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/TDANet-Large/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/TDANet-Large/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/clean/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/clean/s1/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
+                        </td>
+                    </tr>
+                    <tr style="border-top:1px solid black">
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/SuDORM-RF/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/SuDORM-RF/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/DualPathRNN/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/DualPathRNN/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/A-FRCNN/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/A-FRCNN/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/Sepformer/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/Sepformer/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/TDANet/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/TDANet/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/TDANet-Large/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/TDANet-Large/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/clean/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/clean/s2/6363654615448994597_00013_0.61525_6366944130901006716_00007_-0.61525.png"></img>
+                        </td>
+                    </tr>
+
+
+
+                    <tr style="border-top:1px solid black">
+                        <td scope="row" rowspan="2"><audio controls="" class="audio-player" preload="metadata"
+                                style="width: 180px;">
+                                <source
+                                    src="./datas/mixture/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/mixture/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/SuDORM-RF/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/SuDORM-RF/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/DualPathRNN/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/DualPathRNN/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/A-FRCNN/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/A-FRCNN/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/Sepformer/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/Sepformer/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/TDANet/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/TDANet/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/TDANet-Large/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/TDANet-Large/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/clean/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/clean/s1/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
+                        </td>
+                    </tr>
+                    <tr style="border-top:1px solid black">
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/SuDORM-RF/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/SuDORM-RF/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/DualPathRNN/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/DualPathRNN/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/A-FRCNN/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/A-FRCNN/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/Sepformer/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/Sepformer/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/TDANet/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/TDANet/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/TDANet-Large/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/TDANet-Large/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
+                        </td>
+                        <td><audio controls="" class="audio-player" preload="metadata" style="width: 180px;">
+                                <source
+                                    src="./datas/clean/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.wav"
+                                    type="audio/wav">
+                            </audio>
+                            <img controls="" class="rounded" style="width: 100%;"
+                                src="./datas/clean/s2/6382618614178237455_00026_0.29401_6374802632562566873_00011_-0.29401.png"></img>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <!-- <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-3 col-md-offset-0">
+                <div class="row">
+                    <div class="col-xs-12 teaser-img">
+                        <img class="img-responsive" src="img/teaser_0030.gif">
+                    </div>
+                    <div class="col-xs-12 teaser-img">
+                        <img class="img-responsive" src="img/ours_0030.gif">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0 col-md-3 col-md-offset-0">
+                <div class="row">
+                    <div class="col-xs-12 teaser-img">
+                        <img class="img-responsive" src="img/teaser_0010.gif">
+                    </div>
+                    <div class="col-xs-12 teaser-img">
+                        <img class="img-responsive" src="img/ours_0010.gif">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-3 col-md-offset-0">
+                <div class="row">
+                    <div class="col-xs-12 teaser-img">
+                        <img class="img-responsive" src="img/teaser_0110.gif">
+                    </div>
+                    <div class="col-xs-12 teaser-img">
+                        <img class="img-responsive" src="img/ours_0110.gif">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0 col-md-3 col-md-offset-0">
+                <div class="row">
+                    <div class="col-xs-12 teaser-img">
+                        <img class="img-responsive" src="img/teaser_0126.gif">
+                    </div>
+                    <div class="col-xs-12 teaser-img">
+                        <img class="img-responsive" src="img/ours_0126.gif">
+                    </div>
+                </div>
+            </div> -->
+        <div class="row" id="ref">
+            <div class="col">
+                <h2>References</h2>
+                <div>
+                    <p>
+                        <a name="1">[1]</a> Triantafyllos Afouras, Joon Son Chung, Andrew Senior, Oriol Vinyals, and Andrew Zisserman.
+                        Deep audio-visual speech recognition. IEEE transactions on pattern analysis and machine intel-
+                        ligence, 2018.
+                    </p>
+                    <p>
+                        <a name="2">[2]</a> Efthymios Tzinis, Zhepei Wang, and Paris Smaragdis. Sudo rm-rf: efficient networks for universal
+                        audio source separation. In IEEE 30th International Workshop on Machine Learning for Signal
+                        Processing (MLSP), pp. 1–6. IEEE, 2020.
+
+                    </p>
+                    <p>
+                        <a name="3">[3]</a> Yi Luo, Zhuo Chen, and Takuya Yoshioka. Dual-path rnn: efficient long sequence modeling for
+                        time-domain single-channel speech separation. In IEEE International Conference on Acoustics,
+                        Speech and Signal Processing (ICASSP), pp. 46–50. IEEE, 2020.
+                    </p>
+                    <p>
+                        <a name="4">[4]</a> Cem Subakan, Mirco Ravanelli, Samuele Cornell, Mirko Bronzi, and Jianyuan Zhong. Attention is
+                        all you need in speech separation. In IEEE International Conference on Acoustics, Speech and
+                        Signal Processing (ICASSP), pp. 21–25. IEEE, 2021.
+
+                    </p>
+                    <p>
+                        <a name="5">[5]</a> Xiaolin Hu, Kai Li, Weiyi Zhang, Yi Luo, Jean-Marie Lemercier, and Timo Gerkmann. Speech
+                        separation using an asynchronous fully recurrent convolutional neural network. volume 34, pp.
+                        22509–22522, 2021.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <style type="text/css">
+        .container {
+            background-color: #FBFBFC;
+        }
+
+        .teaser-img {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .img-responsive {
+            margin: auto;
+        }
+    </style>
+</body>
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=tt&d=SPQzIPBhDWmD-p39nZbUjR6miPKEbrMPPw8Uu3ThVZE'></script>
+</html>

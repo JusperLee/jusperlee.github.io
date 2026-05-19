@@ -1,0 +1,12 @@
+# 🎖 Honors and Awards
+- *2025.12* Young Talents Cultivation Program (Doctoral Special), China Association for Science and Technology (CAST)
+- *2025.09* Third Prize in CCF Advanced Audio Technology Competition (Task 2)
+- *2024.12* Outstanding Master's Thesis Award from China Society of Image and Graphics
+- *2024.08* Winner of the Best Student Presentation Award in NCMMSC 2024
+- *2024.06* Outstanding Graduate of Beijing
+- *2024.06* Excellent Master Thesis of Tsinghua University
+- *2023.10* Xueye Scholarship
+- *2023.10* Longhu Scholarship
+- *2020.06* Outstanding Bachelor Thesis Award (Top 1%)
+- *2020.06* Outstanding Graduates (Top 1%)
+- *2019.11* National Scholarship (Top 1%)
