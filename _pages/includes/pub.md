@@ -5,6 +5,42 @@
 
 # 2026
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">APSIPA ASC 2026</div><img src='./images/unsepdiff.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Unsupervised Single-Channel Speech Separation with Diffusion under Speaker-Embedding Guidance](https://arxiv.org/abs/2509.24395) Runwu Shi, **Kai Li**, Yiyan Wang, Jiang Wang, Chang Li, Ragib Amin Nihal, Sihan Tan, Kazuhiro Nakadai. **APSIPA ASC 2026. Thailand.**
+
+- UnSepDiff trains a diffusion prior on anechoic speech only and casts separation as a diffusion inverse problem, using speaker-embedding guidance and a separation-oriented solver to keep speaker identities temporally consistent.
+
+- [![Demo-Page](https://img.shields.io/badge/Demo_Page-Online-brightgreen)](https://runwushi.github.io/UnSepDiff_demo/) \| <a href="https://github.com/RunwuShi/UnSepDiff"><img src="https://img.shields.io/github/stars/RunwuShi/UnSepDiff?style=social&amp;label=Code+Stars" alt=""></a>
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TPAMI 2026</div><img src='./images/face-mogle.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Mixture of Global and Local Experts with Diffusion Transformer for Controllable Face Generation](https://arxiv.org/abs/2509.00428) Xuechao Zou, Shun Zhang, Xing Fu, Yue Li, **Kai Li**, Yushe Cao, Congyan Lang, Pin Tao, Junliang Xing. **IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) 2026.**
+
+- Face-MoGLE couples mask-conditioned semantic-decoupled latent modeling with a mixture of global and local experts and a diffusion-aware dynamic gating network, enabling fine-grained controllable face generation.
+
+- [![Project-Page](https://img.shields.io/badge/Project_Page-Online-brightgreen)](https://xavierjiezou.github.io/Face-MoGLE/) \| <a href="https://github.com/XavierJiezou/Face-MoGLE"><img src="https://img.shields.io/github/stars/XavierJiezou/Face-MoGLE?style=social&amp;label=Code+Stars" alt=""></a> \| [![HF Space](https://img.shields.io/badge/Huggingface-Space-orange?logo=huggingface)](https://huggingface.co/spaces/XavierJiezou/face-mogle) \| [![Face-MoGLE Model](https://img.shields.io/badge/Huggingface-Models-orange?logo=huggingface)](https://huggingface.co/XavierJiezou/face-mogle-models) \| [![Face-MoGLE Dataset](https://img.shields.io/badge/Huggingface-Datasets-orange?logo=huggingface)](https://huggingface.co/datasets/XavierJiezou/face-mogle-datasets)
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SLT 2026</div><img src='./images/real-tse.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[The SonicAGI System for the REAL-TSE Challenge](https://real-tse.github.io/assets/pdf/SonicAGI-Track1-Track2.pdf) **Kai Li\***, Wendi Sang*, Jintao Cheng, Xiaolin Hu. **REAL-TSE Challenge @ IEEE SLT 2026.**
+
+- The SonicAGI system takes a data-centric approach to real-world target speaker extraction, pairing SwiftNet-Lookahead (96 ms total latency) for the online track with an enrollment cross-attention USEF-TFGridNet for the offline track, ranking **3rd in Track 1** and **5th in Track 2**.
+
+- [![Challenge-Page](https://img.shields.io/badge/Challenge_Page-Online-brightgreen)](https://real-tse.github.io/) \| [![Leaderboard](https://img.shields.io/badge/Leaderboard-REAL--TSE-blue)](https://leaderboard.real-tse.com/)
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2026</div><img src='./images/hive.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 

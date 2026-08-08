@@ -1,4 +1,5 @@
 # 🎖 Honors and Awards
+- *2026.06* Third Place in Track 1 and Fifth Place in Track 2, REAL-TSE Challenge (IEEE SLT 2026)
 - *2025.12* Young Talents Cultivation Program (Doctoral Special), China Association for Science and Technology (CAST)
 - *2025.09* Third Prize in CCF Advanced Audio Technology Competition (Task 2)
 - *2024.12* Outstanding Master's Thesis Award from China Society of Image and Graphics
