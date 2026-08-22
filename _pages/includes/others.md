@@ -11,6 +11,7 @@
 - *2020.09 - 2021.01*, [Moyincloud](https://enjoymusic.ai/), Beijing.
 
 # 🏁 Services
+- Challenge Organizer: [Real-World Audio-Visual Speech Enhancement (AVSE) Challenge](https://real-world-avse.github.io/) @ ISCSLP 2026.
 - Conference Reviewer: Interspeech 2023/2024/2025/2026, ICASSP 2023/2024/2025/2026, NeurIPS 2023/2024/2026, ECAI 2023, ICLR 2024/2025/2026, AAAI 2025, ICML 2026, ACL 2026, CVPR 2026, ECCV 2026, IEEE SLT 2026.
 - Journal Reviewer: TASLP, TPAMI, Speech Communication.
 

@@ -9,7 +9,9 @@
 
 <div class="scrollable">
   <ul>
+  <li> <i>2026.08</i>: 🎲 One paper is accepted by <a href="https://react-ws.github.io/2026_mrac/">MRAC 2026</a> @ ACM Multimedia 2026. </li>
   <li> <i>2026.07</i>: 🎲 One paper is accepted by APSIPA ASC 2026. </li>
+  <li> <i>2026.06</i>: 📣 We are organizing the <a href="https://real-world-avse.github.io/">Real-World AVSE Challenge</a> @ ISCSLP 2026. </li>
   <li> <i>2026.06</i>: 🎉 Won the <b>third place</b> 🥉 in Track 1 and the <b>fifth place</b> in Track 2 of the <a href="https://real-tse.github.io/">REAL-TSE Challenge</a> (IEEE SLT 2026). </li>
   <li> <i>2026.06</i>: 🎲 One paper is accepted by IEEE TPAMI 2026. </li>
   <li> <i>2026.05</i>: 🧩 Two papers are accepted by ICML 2026. </li>

@@ -5,6 +5,18 @@
 
 # 2026
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MRAC 2026</div><img src='./images/eapo.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+Learning to Prefer Reliably: Error-Augmented Emotion Preference Optimization with Calibrated Fusion. Zilong Huang, Junyi Peng, Junjie Li, **Kai Li**, Wenze Ren, Kong Aik Lee, Man-Wai Mak, Tatsuya Kawahara. **MRAC 2026 @ ACM Multimedia 2026. Rio de Janeiro, Brazil.**
+
+- EAPO augments sparse human preference pairs with four controlled error types (Emotion Flip, Intensity Mismatch, Evidence Contradiction, and Modality Conflict), adapts multiple MLLM judges independently via LoRA-based SFT and DPO, and combines them through margin-calibrated soft fusion, ranking **6th on the MER2026 MER-Prefer leaderboard**.
+
+- [![Challenge-Page](https://img.shields.io/badge/Challenge_Page-MER2026-brightgreen)](https://zeroqiaoba.github.io/MER-Challenge/) \| [![Workshop](https://img.shields.io/badge/Workshop-MRAC_2026-blue)](https://react-ws.github.io/2026_mrac/)
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">APSIPA ASC 2026</div><img src='./images/unsepdiff.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
