@@ -1,7 +1,7 @@
 # 📖 Educations
 - *2024.09 - now*, Ph.D., Tsinghua University, Beijing.
 - *2021.09 - 2024.06*, Master, Tsinghua University, Beijing.
-- *2016.09 - 2020.06*, Undergraduate, Department of Computer Technology and Application, Qinghai Univeristy, Xining.
+- *2016.09 - 2020.06*, Undergraduate, Department of Computer Technology and Application, Qinghai University, Xining.
 - *2013.09 - 2016.06*, Zhengzhou fourth Middle School, Zhengzhou.
 
 # 💻 Internships

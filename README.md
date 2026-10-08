@@ -44,7 +44,7 @@ Some examples:
     1. `repository`: USER_NAME/REPO_NAME  
     1. `google_analytics_id` (optional): google analytics ID
     1. SEO Related keys (optional): get these keys from search engine consoles (e.g. Google, Bing and Baidu) and paste here.
-    1. `author`: the author information of this homepage, including some other websites, emails, city and univeristy.
+    1. `author`: the author information of this homepage, including some other websites, emails, city and university.
     1. More configuration details are described in the comments.
 1. Add your homepage content in `_pages/about.md`.
     1. You can use html+markdown syntax just same as jekyll.
