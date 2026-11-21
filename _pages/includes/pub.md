@@ -5,6 +5,44 @@
 
 # 2026
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2026</div><img src='./images/falcon.png' alt="Falcon model architecture" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Efficient Streaming Audio-Visual Target Speaker Extraction for Real-World Acoustic Scenes](https://arxiv.org/abs/2610.32749) Wendi Sang\*, **Kai Li\***, Yifan Li, Jianqiang Huang, Xiaolin Hu. **NeurIPS 2026.**
+
+- Falcon uses a single-pass multi-scale separator for causal audio-visual target speaker extraction and trains with a speaker contrastive loss to suppress nearby interfering voices. The paper also introduces RealSSA, a benchmark with simulated scenes and real recordings.
+
+- [![Project-Page](https://img.shields.io/badge/Project_Page-Online-brightgreen)](https://cslikai.cn/Falcon/) \| <a href="https://github.com/JusperLee/Falcon"><img src="https://img.shields.io/github/stars/JusperLee/Falcon?style=social&amp;label=Code+Stars" alt="Falcon code on GitHub"></a> \| [![Falcon Model](https://img.shields.io/badge/Huggingface-Falcon-orange?logo=huggingface)](https://huggingface.co/JusperLee/Falcon) \| [![RealSSA-Sim](https://img.shields.io/badge/Huggingface-RealSSA--Sim-orange?logo=huggingface)](https://huggingface.co/datasets/JusperLee/RealSSA-Sim) \| [![RealSSA-Real](https://img.shields.io/badge/Huggingface-RealSSA--Real-orange?logo=huggingface)](https://huggingface.co/datasets/JusperLee/RealSSA-Real)
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2026</div><img src='./images/brainem.png' alt="FIB25 electron microscopy slice and neuron segmentation labels" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[BrainEM: A Large-Scale and Diverse Benchmark for EM Neuron Segmentation in Connectomics](https://neurips.cc/virtual/2026/poster/139121) Zhenghua Li, Lanyue Zhang, Zekang Yang, **Kai Li**, Yuwei Peng, Song-Hai Shi, Xiaolin Hu. **NeurIPS 2026, Evaluations and Datasets Track (Poster). Sydney, Australia.**
+
+- BrainEM brings together 16 electron microscopy datasets to benchmark 3D neuron segmentation under matched imaging conditions and across held-out data sources.
+
+- [OpenReview](https://openreview.net/forum?id=juzLIwAl0Y) \| <a href="https://github.com/kwinderic/BrainEM"><img src="https://img.shields.io/github/stars/kwinderic/BrainEM?style=social&amp;label=Code+Stars" alt="BrainEM code on GitHub"></a> \| [![BrainEM Dataset](https://img.shields.io/badge/Huggingface-BrainEM-orange?logo=huggingface)](https://huggingface.co/datasets/kwinderic/BrainEM)
+
+<small><a href="https://huggingface.co/datasets/kwinderic/BrainEM/blob/main/FIB25/0_preview.png">BrainEM preview</a> of FIB25 data by <a href="https://doi.org/10.7554/eLife.26975">Takemura et al.</a> (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>).</small>
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ISCSLP 2026 Challenge</div><img src='./images/iscslp-avse.png' alt="Real-World AVSE Challenge logo" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[The ISCSLP 2026 Real-World Audio-Visual Speech Enhancement Challenge: A Benchmark with Natural Mixtures and Degraded Video](https://arxiv.org/abs/2608.23759) **Kai Li\***, Wenze Ren\*, Junjie Li\*, Chien-yu Huang, Cheng Yu, Peijun Yang, Haibin Wu, Szu-Wei Fu, Wen-Chin Huang, Hsin-Min Wang, Xiaolin Hu, Ming Li, Yu Tsao<sup>#</sup>, DeLiang Wang. **Challenge overview paper (arXiv, 2026).**
+
+- Track 1 compares naturally recorded two-speaker mixtures with remixes made from separate recordings of the same speakers. Track 2 adds five types of video degradation and recordings at 3 meters. The best character error rate rose from 9.0% on remixes to 14.7% on natural mixtures.
+
+- [![Challenge-Page](https://img.shields.io/badge/Challenge_Page-Online-brightgreen)](https://real-world-avse.github.io/) \| [![Leaderboard](https://img.shields.io/badge/Leaderboard-Real--World_AVSE-blue)](https://avse.renwenze.com/) \| [![AVSE Dataset](https://img.shields.io/badge/Huggingface-Dev_%26_Test_Sets-orange?logo=huggingface)](https://huggingface.co/datasets/Rezzsl/Real-World_AVSE_Challenge_dev_and_test_sets_ISCSLP_2026) \| <a href="https://github.com/Real-World-AVSE/Baseline"><img src="https://img.shields.io/github/stars/Real-World-AVSE/Baseline?style=social&amp;label=Baseline+Code" alt="AVSE baseline code on GitHub"></a>
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">MRAC 2026</div><img src='./images/eapo.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 

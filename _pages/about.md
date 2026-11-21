@@ -25,5 +25,5 @@ redirect_from:
     -->
     <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=300&t=tt&d=VRRQJ6KmoqjmbZ05UC2Co80Zfb5dLgPJ2gZRnLiM-_8&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>
 
-      <br> &copy; Kai Li | Last updated: Aug. 22nd, 2026 | Theme by Yi Ren
+      <br> &copy; Kai Li | Last updated: Nov. 20th, 2026 | Theme by Yi Ren
 </center>

@@ -9,6 +9,8 @@
 
 <div class="scrollable">
   <ul>
+  <li> <i>2026.11</i> 🎉 We wrapped up the Real-World AVSE Challenge at ISCSLP 2026 in Penang, Malaysia. Thank you to all participating teams and fellow organizers! The full dataset, including the development and test sets for both tracks and their ground truth, is now public. We plan to return in 2027 with several new organizers. <a href="https://real-world-avse.github.io/">Challenge website</a> · <a href="https://avse.renwenze.com/">Leaderboard</a> · <a href="https://huggingface.co/datasets/Rezzsl/Real-World_AVSE_Challenge_dev_and_test_sets_ISCSLP_2026">Download on Hugging Face</a> · <a href="https://arxiv.org/abs/2608.23759">Challenge paper</a>. </li>
+  <li> <i>2026.09</i> 🧩 <a href="https://cslikai.cn/Falcon/">Falcon</a> and <a href="https://neurips.cc/virtual/2026/poster/139121">BrainEM</a> were accepted to NeurIPS 2026. BrainEM will be presented as a poster in the Evaluations and Datasets Track. </li>
   <li> <i>2026.08</i>: 🎲 One paper is accepted by <a href="https://react-ws.github.io/2026_mrac/">MRAC 2026</a> @ ACM Multimedia 2026. </li>
   <li> <i>2026.07</i>: 🎲 One paper is accepted by APSIPA ASC 2026. </li>
   <li> <i>2026.06</i>: 📣 We are organizing the <a href="https://real-world-avse.github.io/">Real-World AVSE Challenge</a> @ ISCSLP 2026. </li>
